@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: operaciones combinadas con fracciones",
+    "subtitulo": "Treinta y seis ejercicios graduados con fracciones positivas y negativas",
+    "encabezado": "Guía de ejercicios: operaciones combinadas con fracciones",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "27 de agosto de 2026",
+    "asunto": "Matemáticas — operatoria con números racionales"
+  },
+
+  "resumen": "El presente material reúne treinta y seis ejercicios de operatoria con fracciones positivas y negativas, organizados en seis bloques de dificultad creciente. La secuencia avanza desde sumas y restas de igual denominador hasta expresiones con potencias, divisiones y varios niveles de paréntesis. Cada bloque incorpora una única variable nueva —el denominador distinto, el producto y el cociente, la prioridad de las operaciones, el paréntesis, la potencia—, de modo que el error, cuando se produce, resulta atribuible a una causa identificable. La guía no incluye solucionario: incluye, en cambio, un ayuda memoria en el Apéndice A con todas las reglas necesarias para resolverla y un apartado de errores frecuentes.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Cada bloque prepara el siguiente, de manera que omitir uno de ellos vuelve innecesariamente difícil el que viene a continuación."},
+        {"vinetas": [
+          "Desarrolle cada ejercicio en el cuaderno, dejando registro escrito de todos los pasos intermedios. En la tabla escriba <b>únicamente el resultado final</b>.",
+          "Toda respuesta debe entregarse <b>simplificada</b> y con el signo escrito delante de la fracción, no en el denominador. Si el resultado es un entero, escríbalo como entero.",
+          "El símbolo <b>:</b> indica división. Los paréntesis se resuelven siempre primero, y dentro de ellos vuelve a regir el orden habitual de las operaciones:"
+        ]},
+        {"formula": "paréntesis  →  potencias  →  multiplicación y división  →  suma y resta"},
+        {"p": "En el <b>Apéndice A</b> se encuentra el ayuda memoria con todas las reglas necesarias. Conviene tenerlo a la vista mientras se trabaja: está pensado para consultarse, no para memorizarse de antemano."},
+        {"nota": "Esta guía no incluye solucionario. Para verificar un resultado, rehaga el ejercicio por un camino distinto —por ejemplo, transformando toda resta en una suma de opuestos— y compare ambos desarrollos: si coinciden, el resultado es correcto."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Expresión",
+      "columnas": ["Resultado"],
+      "bloques": [
+        {
+          "titulo": "Suma y resta con igual denominador",
+          "glosa": "Calentamiento. Como el denominador es común, basta operar los numeradores. Toda la dificultad está en los <b>signos</b>: observe que restar un número negativo equivale a sumarlo.",
+          "ancho_enunciado": 0.5,
+          "items": [
+            "3/5 + (-1/5)",
+            "-4/7 - 2/7",
+            "-5/9 + 8/9",
+            "7/4 - (-3/4)",
+            "-11/6 + 5/6 - 1/6",
+            "-3/8 - (-7/8) - 1/8"
+          ]
+        },
+        {
+          "titulo": "Suma y resta con distinto denominador",
+          "glosa": "Aparece el mínimo común múltiplo. El procedimiento es el mismo del bloque anterior, pero antes hay que igualar los denominadores. Recuerde que amplificar una fracción no cambia su signo.",
+          "nota": "<b>Estrategia sugerida.</b> Antes de calcular el m.c.m. observe si un denominador es múltiplo del otro: en 3/4 y 1/6 no lo es y el m.c.m. es 12, pero en 5/8 y 1/2 basta con llevar todo a octavos. Elegir el denominador más pequeño posible ahorra la simplificación final.",
+          "ancho_enunciado": 0.5,
+          "items": [
+            "1/2 + (-1/3)",
+            "-3/4 - 1/6",
+            "5/6 - (-2/9)",
+            "-7/10 + 3/4",
+            "2/3 - 5/12 + (-1/4)",
+            "-5/8 + 1/2 - (-3/16)"
+          ]
+        },
+        {
+          "titulo": "Multiplicación y división",
+          "glosa": "Cambia por completo el procedimiento: aquí <b>no</b> se busca denominador común. Se multiplica numerador con numerador y denominador con denominador, y para dividir se multiplica por el recíproco del divisor.",
+          "nota": "<b>Estrategia sugerida.</b> Simplifique <i>antes</i> de multiplicar, cruzando numeradores con denominadores. En (-2/3) · 9/4 conviene cancelar el 3 con el 9 y el 2 con el 4 antes de operar: se llega al mismo resultado con números mucho más pequeños.",
+          "ancho_enunciado": 0.5,
+          "items": [
+            "(-2/3) · 9/4",
+            "(-5/6) · (-3/10)",
+            "7/8 : (-14/5)",
+            "(-9/4) : (-3/2)",
+            "(-2/5) · 10/3 : (-4/9)",
+            "3/7 : (-6/35) · (-2/5)"
+          ]
+        },
+        {
+          "titulo": "Operaciones combinadas sin paréntesis",
+          "glosa": "Primer nivel realmente combinado. Conviven sumas con productos y cocientes, de modo que ya no se puede operar de izquierda a derecha: la multiplicación y la división se resuelven <b>antes</b> que la suma y la resta.",
+          "nota": "<b>Estrategia sugerida.</b> Marque con un subrayado los productos y cocientes antes de empezar, resuélvalos por separado y recién entonces sume. Reduce la expresión a una suma de dos o tres fracciones y evita el error de encadenar operaciones en el orden equivocado.",
+          "ancho_enunciado": 0.55,
+          "items": [
+            "1/2 + 2/3 · (-3/4)",
+            "-5/6 - 1/4 · 2/3",
+            "3/5 · (-10/9) + 1/3",
+            "-7/4 : 7/2 - 1/6",
+            "2/3 - (-1/2) · 4/5 + (-1/15)",
+            "-3/8 · 4/9 + 5/6 : (-5/3)"
+          ]
+        },
+        {
+          "titulo": "Operaciones combinadas con paréntesis",
+          "glosa": "El paréntesis altera el orden anterior y obliga a resolver primero la suma o resta que encierra. Note que un signo negativo delante de un paréntesis cambia el signo de <b>todo</b> lo que hay dentro.",
+          "ancho_enunciado": 0.6,
+          "items": [
+            "(1/2 - 3/4) · (-8/3)",
+            "(-2/3 + 1/6) : (-1/2)",
+            "(3/5 - (-1/2)) · (-10/11)",
+            "(-1/4 - 1/2) : (3/8 + (-1/2))",
+            "2/5 · (1/2 - 5/6) + (-1/3)",
+            "(-3/2) : (2/3 - 5/6) - (1/4 - (-1/2))"
+          ]
+        },
+        {
+          "titulo": "Potencias y paréntesis anidados",
+          "glosa": "Nivel final. Se agrega la potencia, que se resuelve inmediatamente después de los paréntesis, y aparecen paréntesis dentro de paréntesis: se trabaja siempre desde el más interior hacia afuera.",
+          "nota": "<b>Advertencia sobre los signos.</b> Al elevar una fracción negativa, el exponente <b>par</b> entrega resultado positivo y el <b>impar</b>, negativo. Además, (-2/3)² no es lo mismo que -(2/3)²: en el primer caso se eleva el número completo, en el segundo solo la fracción, y el signo queda fuera.",
+          "ancho_enunciado": 0.6,
+          "items": [
+            "(-2/3)² - 1/9",
+            "(-1/2)³ + 3/4 · 1/2",
+            "[1/2 - (2/3 - 3/4)] · (-12/7)",
+            "[(-3/5) : 9/10] · (1/4 - 5/6)",
+            "(1 - 2/3) : (1/2 + (-5/6))",
+            "(-1/3)² : (2/9 - 1/3) - (-1/2) · 2/5"
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Errores frecuentes",
+      "cuerpo": [
+        {"p": "Los seis errores que se enumeran a continuación concentran la mayor parte de los resultados incorrectos en este tipo de ejercicios. Conviene revisarlos cada vez que un resultado no calce con lo esperado."},
+        {"vinetas": [
+          "<b>Sumar denominadores.</b> Al sumar fracciones el denominador común <b>no</b> se suma: 1/2 + 1/3 no es 2/5. El denominador común se conserva y solo se operan los numeradores.",
+          "<b>Buscar denominador común para multiplicar.</b> Es un procedimiento propio de la suma y la resta. En el producto y el cociente no se iguala nada: se multiplica directamente en línea.",
+          "<b>Perder el signo del segundo término.</b> Restar un negativo equivale a sumar: 7/4 - (-3/4) da 10/4, no 4/4. Si el signo doble confunde, transforme toda resta en suma del opuesto antes de operar.",
+          "<b>No repartir el signo del paréntesis.</b> Un menos delante de un paréntesis afecta a cada uno de los términos que contiene, no solo al primero.",
+          "<b>Operar de izquierda a derecha.</b> En 1/2 + 2/3 · (-3/4) el producto va primero. Resolver la suma inicial conduce a un resultado equivocado aunque cada cálculo individual esté bien hecho.",
+          "<b>Entregar la respuesta sin simplificar.</b> Un resultado como 6/8 está incompleto: debe escribirse 3/4. Antes de cerrar el ejercicio, revise si numerador y denominador comparten algún divisor."
+        ]}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "Esta página reúne todo lo necesario para resolver la guía. Está pensada para tenerla a la vista mientras se trabaja."},
+
+        {"p": "<b>A.1. Signos.</b> El signo de una fracción se escribe siempre delante, nunca en el denominador. Las tres escrituras siguientes designan el mismo número:"},
+        {"formula": "-3/4 = (-3)/4 = 3/(-4)"},
+        {"vinetas": [
+          "Sumar un negativo es restar: a + (-b) = a - b.",
+          "Restar un negativo es sumar: a - (-b) = a + b.",
+          "En el producto y el cociente: signos <b>iguales</b> dan positivo; signos <b>distintos</b>, negativo."
+        ]},
+
+        {"p": "<b>A.2. Suma y resta.</b> Con igual denominador se operan solo los numeradores. Con distinto denominador se lleva todo al mínimo común múltiplo y recién entonces se opera:"},
+        {"formula": "a/b + c/d = (a·d + c·b) / (b·d)"},
+        {"nota": "El producto b·d siempre funciona como denominador común, pero rara vez es el más pequeño. Usar el m.c.m. ahorra la simplificación final."},
+
+        {"p": "<b>A.3. Multiplicación y división.</b> Aquí no se busca denominador común. Se multiplica en línea, y dividir equivale a multiplicar por el recíproco:"},
+        {"formula": "a/b · c/d = (a·c)/(b·d)"},
+        {"formula": "a/b : c/d = a/b · d/c = (a·d)/(b·c)"},
+        {"nota": "Conviene simplificar en cruz antes de multiplicar: los números se mantienen pequeños y el resultado sale ya reducido."},
+
+        {"p": "<b>A.4. Potencias.</b> El exponente afecta al numerador y al denominador por separado:"},
+        {"formula": "(a/b)<super>n</super> = a<super>n</super> / b<super>n</super>"},
+        {"vinetas": [
+          "Base negativa con exponente <b>par</b> → resultado positivo: (-2/3)² = 4/9.",
+          "Base negativa con exponente <b>impar</b> → resultado negativo: (-1/2)³ = -1/8.",
+          "Cuidado con la diferencia: (-2/3)² = 4/9, mientras que -(2/3)² = -4/9."
+        ]},
+
+        {"p": "<b>A.5. Orden de las operaciones.</b> Toda expresión combinada se resuelve en esta secuencia, y dentro de cada paréntesis rige de nuevo el mismo orden, desde el paréntesis más interior hacia afuera:"},
+        {"tabla": {
+          "cabecera": ["Prioridad", "Operación", "Ejemplo"],
+          "filas": [
+            ["1.ª", "Paréntesis y corchetes", "(1/2 - 3/4) = -1/4"],
+            ["2.ª", "Potencias", "(-2/3)² = 4/9"],
+            ["3.ª", "Multiplicación y división", "2/3 · (-3/4) = -1/2"],
+            ["4.ª", "Suma y resta", "1/2 + (-1/2) = 0"]
+          ],
+          "leyenda": "Tabla A.1. Orden de resolución de una expresión combinada. Entre operaciones de la misma prioridad se avanza de izquierda a derecha."
+        }},
+
+        {"p": "<b>A.6. Simplificación y equivalencias.</b> Una fracción está simplificada cuando numerador y denominador no comparten ningún divisor común distinto de 1. Conviene tener presentes además estas equivalencias:"},
+        {"formula": "a/a = 1      0/a = 0      a/1 = a      8/4 = 2"},
+        {"nota": "Un resultado entero es una respuesta perfectamente válida: si la expresión da 6/1, la respuesta es 6."}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Nota didáctica",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "Los bloques 1 a 3 corresponden a operatoria aislada y pueden trabajarse en una sesión. El salto real de dificultad ocurre en el bloque 4, cuando la prioridad de las operaciones se vuelve el contenido central: conviene destinarle tiempo propio y no darlo por sabido. Los bloques 5 y 6 ya están en el nivel de exigencia con que el eje de números aparece en la PAES M1, donde la operatoria con racionales rara vez se pregunta de manera directa y casi siempre viene incorporada dentro de un problema mayor."},
+        {"p": "Al no haber solucionario, la corrección conviene hacerla en la pizarra pidiendo el <b>desarrollo</b> y no solo el resultado. Varios ejercicios están construidos para dar resultados notables —0, 1, -1— porque un resultado redondo funciona como señal de que el camino fue el correcto y hace evidente el error cuando no lo fue."}
+      ]
+    }
+  ]
+}

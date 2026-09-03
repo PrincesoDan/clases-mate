@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: proporcionalidad directa y porcentajes",
+    "subtitulo": "Dos métodos de resolución y veinte ejercicios de dificultad creciente",
+    "encabezado": "Proporcionalidad directa y porcentajes",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "20 de agosto de 2026",
+    "asunto": "Matemáticas — proporcionalidad y porcentaje"
+  },
+
+  "resumen": "Esta guía aborda la proporcionalidad directa y el porcentaje presentando, para cada uno, los dos métodos de resolución de uso más extendido: la reducción a la unidad y la regla de tres. Ambos métodos se desarrollan sobre un mismo ejemplo, de modo que puedan compararse directamente y elegirse según convenga. La sección de ejercicios reúne veinte problemas organizados en cinco bloques de dificultad creciente, que avanzan desde el cálculo de un valor faltante con números sencillos hasta la variación porcentual y los aumentos y descuentos encadenados. Se pide indicar en cada ejercicio cuál de los dos métodos se empleó.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Proporcionalidad directa",
+      "cuerpo": [
+        {"p": "Dos magnitudes son <b>directamente proporcionales</b> cuando al aumentar una, la otra aumenta en la misma proporción: si una se duplica, la otra se duplica; si una se reduce a la tercera parte, la otra también. El precio total de un producto y la cantidad comprada, o la distancia recorrida y el tiempo a velocidad constante, se comportan de esa manera."},
+        {"p": "La prueba definitiva es que el <b>cociente entre ambas magnitudes se mantiene constante</b>. Esa constante se denomina constante de proporcionalidad y se anota <i>k</i>:"},
+        {"formula": "y / x = k,  de donde  y = k · x"},
+        {"nota": "Advertencia: no toda relación creciente es proporcional. La edad y la estatura de una persona crecen juntas, pero nadie mide el doble a los veinte años que a los diez. Antes de aplicar cualquiera de los dos métodos conviene comprobar que la proporcionalidad realmente existe."},
+
+        {"p": "<b>Método A. Reducción a la unidad.</b> Consiste en averiguar primero cuánto vale <b>una</b> unidad y multiplicar después por la cantidad pedida. Si 3 kg de un producto cuestan $4.500 y se quiere saber el precio de 7 kg:"},
+        {"vinetas": [
+          "Valor de una unidad: 4.500 : 3 = 1.500 pesos por kilogramo. Esta es la constante <i>k</i>.",
+          "Valor pedido: 7 × 1.500 = <b>$10.500</b>."
+        ]},
+
+        {"p": "<b>Método B. Regla de tres.</b> Consiste en escribir los cuatro valores en una proporción y multiplicar en cruz. Con los mismos datos:"},
+        {"formula": "3 kg → $4.500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7 kg → x"},
+        {"formula": "x = (7 × 4.500) / 3 = <b>$10.500</b>"},
+
+        {"p": "<b>Cuál conviene.</b> El método A es preferible cuando el valor unitario resulta exacto y va a reutilizarse en varias preguntas del mismo enunciado, porque deja a la vista el significado de la constante. El método B es preferible cuando la división inicial no es exacta, ya que evita arrastrar decimales en los pasos intermedios. Ambos entregan siempre el mismo resultado."}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Porcentajes",
+      "cuerpo": [
+        {"p": "Un porcentaje es una fracción de denominador cien: el 25 % equivale a 25/100. Todo problema de porcentaje es, en el fondo, un problema de proporcionalidad directa en el que una de las magnitudes es el total y la otra es 100. De ahí que sirvan los mismos dos métodos, apenas readaptados."},
+
+        {"p": "<b>Método A. Factor multiplicativo.</b> Se transforma el porcentaje en un número decimal y se multiplica. Para el 25 % de 840:"},
+        {"formula": "25 % = 25/100 = 0,25&nbsp;&nbsp;&nbsp;&nbsp;luego&nbsp;&nbsp;&nbsp;&nbsp;0,25 × 840 = 210"},
+        {"p": "Este método es el más rápido y el que conviene automatizar, sobre todo en pruebas de alternativas con tiempo limitado."},
+
+        {"p": "<b>Método B. Regla de tres.</b> Se plantea que el total corresponde al 100 % y se despeja el valor buscado:"},
+        {"formula": "840 → 100 %&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x → 25 %"},
+        {"formula": "x = (840 × 25) / 100 = 210"},
+        {"p": "Su ventaja es que funciona igual sin importar cuál de los tres valores sea la incógnita: el porcentaje, la parte o el total. Por eso resulta especialmente útil en los ejercicios del cuarto bloque."},
+
+        {"p": "Conviene memorizar las equivalencias siguientes, que permiten resolver mentalmente buena parte de los casos:"},
+        {"tabla": {
+          "cabecera": ["Porcentaje", "Fracción", "Decimal", "Atajo mental"],
+          "filas": [
+            ["10 %", "1/10", "0,1", "correr la coma un lugar"],
+            ["20 %", "1/5", "0,2", "el 10 % dos veces"],
+            ["25 %", "1/4", "0,25", "la mitad de la mitad"],
+            ["50 %", "1/2", "0,5", "la mitad"],
+            ["75 %", "3/4", "0,75", "el total menos su cuarta parte"]
+          ],
+          "leyenda": "Tabla 2.1. Equivalencias de uso frecuente."
+        }},
+
+        {"p": "<b>Aumentos y descuentos.</b> Cuando el porcentaje se suma o se resta del total, el método A admite una simplificación importante: en lugar de calcular la parte y luego sumarla o restarla, se multiplica una sola vez por el factor correspondiente."},
+        {"formula": "aumento del 15 % : multiplicar por 1,15<br/>descuento del 20 % : multiplicar por 0,80"},
+        {"p": "Así, un artículo de $24.000 con un aumento del 15 % cuesta 24.000 × 1,15 = $27.600, en un solo paso. Esta forma de operar es la que hace manejables los descuentos sucesivos del quinto bloque."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Enunciado",
+      "columnas": ["Método (A o B)", "Resultado"],
+      "intro": "Resuelva los veinte ejercicios sin calculadora, dejando el desarrollo escrito en el cuaderno. En la columna central indique con una letra cuál de los dos métodos empleó. En los bloques 1 y 3 conviene resolver <b>algunos ejercicios por ambos métodos</b> y comprobar que el resultado coincide: es la mejor manera de entender que son dos caminos hacia el mismo lugar.",
+      "bloques": [
+        {
+          "titulo": "Proporcionalidad directa con valores sencillos",
+          "glosa": "El valor unitario es exacto, de modo que ambos métodos resultan igual de cómodos. Resuelva cada uno por los dos caminos.",
+          "alineacion": "izquierda",
+          "ancho_enunciado": 0.55,
+          "items": [
+            "Si 3 kg de un producto cuestan $4.500, ¿cuánto cuestan 7 kg?",
+            "Si 5 lápices cuestan $1.200, ¿cuánto cuestan 8 lápices?",
+            "Un automóvil recorre 240 km con 15 litros de combustible. ¿Cuántos kilómetros recorre con 25 litros?",
+            "Si 4 metros de género cuestan $9.200, ¿cuánto cuestan 10 metros?"
+          ]
+        },
+        {
+          "titulo": "Proporcionalidad directa en contexto",
+          "glosa": "Los números dejan de ser redondos y la incógnita no siempre ocupa el mismo lugar. Observe en cuáles de estos ejercicios la regla de tres resulta más cómoda que la reducción a la unidad.",
+          "alineacion": "izquierda",
+          "ancho_enunciado": 0.55,
+          "items": [
+            "Una máquina embotella 450 botellas en 6 minutos. ¿Cuántas botellas embotella en 22 minutos?",
+            "Con 7 kg de harina se elaboran 91 panes. ¿Cuántos kilogramos de harina se necesitan para elaborar 156 panes?",
+            "Una receta para 8 personas lleva 600 g de arroz. ¿Cuánto arroz se necesita para 14 personas?",
+            "Un ciclista recorre 63 km en 3,5 horas a velocidad constante. ¿Cuántos kilómetros recorre en 5 horas?"
+          ]
+        },
+        {
+          "titulo": "Porcentaje de una cantidad",
+          "glosa": "El caso más directo: se conocen el total y el porcentaje, y se busca la parte. Resuelva los dos primeros por ambos métodos.",
+          "alineacion": "izquierda",
+          "ancho_enunciado": 0.55,
+          "items": [
+            "Calcule el 25 % de 840.",
+            "Calcule el 15 % de 3.600.",
+            "En un curso de 40 estudiantes, el 35 % son mujeres. ¿Cuántas mujeres hay en el curso?",
+            "Un producto cuesta $18.900 y tiene un 20 % de descuento. ¿A cuánto asciende el descuento?"
+          ]
+        },
+        {
+          "titulo": "La incógnita cambia de lugar",
+          "glosa": "Ahora lo desconocido es el porcentaje o el total, no la parte. Aquí el método B suele ser más seguro, porque el planteamiento es siempre el mismo aunque cambie la incógnita.",
+          "alineacion": "izquierda",
+          "ancho_enunciado": 0.55,
+          "items": [
+            "¿Qué porcentaje de 250 es 60?",
+            "El número 48 corresponde al 30 % de una cantidad. ¿Cuál es esa cantidad?",
+            "En una prueba de 45 preguntas, una estudiante respondió correctamente 36. ¿Qué porcentaje de la prueba respondió bien?",
+            "El 12 % de los asistentes a un evento son 54 personas. ¿Cuántos asistentes hay en total?"
+          ]
+        },
+        {
+          "titulo": "Aumentos, descuentos y variación porcentual",
+          "glosa": "Nivel final. Conviene resolver estos ejercicios con el factor multiplicativo, en un solo paso. El ejercicio 20 tiene una respuesta que sorprende a casi todo el mundo: piénselo antes de calcular y compare después.",
+          "alineacion": "izquierda",
+          "ancho_enunciado": 0.55,
+          "items": [
+            "Un artículo cuesta $24.000 y su precio aumenta un 15 %. ¿Cuál es el precio final?",
+            "Un artículo cuesta $32.500 y se le aplica un descuento del 20 %. ¿Cuál es el precio final?",
+            "Un sueldo pasó de $500.000 a $560.000. ¿Qué porcentaje de aumento representa?",
+            "Un producto que cuesta $50.000 sube un 20 % y, al mes siguiente, baja un 20 %. ¿Cuál es su precio final? ¿Vuelve al precio inicial?"
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Errores frecuentes",
+      "cuerpo": [
+        {"p": "Los errores que se enumeran a continuación concentran la mayor parte de los resultados incorrectos en este tipo de ejercicios."},
+        {"vinetas": [
+          "<b>Aplicar proporcionalidad donde no la hay.</b> Antes de plantear cualquier método debe verificarse que el cociente entre las magnitudes sea efectivamente constante.",
+          "<b>Invertir la regla de tres.</b> Al escribir la proporción, las magnitudes de la misma naturaleza deben quedar enfrentadas: los kilogramos con los kilogramos y los pesos con los pesos. Si el resultado obtenido es absurdo por su tamaño, casi siempre la proporción quedó invertida.",
+          "<b>Confundir la parte con el total.</b> En el enunciado «48 es el 30 % de una cantidad», el número 48 es la parte y no el total. Conviene subrayar en el enunciado cuál de los tres valores es la incógnita antes de escribir nada.",
+          "<b>Restar el porcentaje al porcentaje.</b> Un descuento del 20 % no significa multiplicar por 0,20, sino por 0,80. El factor 0,20 entrega el descuento, no el precio final.",
+          "<b>Suponer que un aumento y un descuento iguales se cancelan.</b> No lo hacen, porque se aplican sobre bases distintas: el aumento sobre el precio original y el descuento sobre el precio ya aumentado. El ejercicio 20 está puesto para hacer visible este punto."
+        ]}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice. Nota didáctica",
+      "cuerpo": [
+        {"p": "El propósito de exigir que se indique el método empleado no es administrativo: obliga a decidir conscientemente antes de calcular, que es justamente la habilidad que se evalúa cuando los ejercicios vienen mezclados y sin indicación de tema, como ocurre en una prueba estandarizada."},
+        {"p": "Se recomienda revisar en clase, junto al estudiante, al menos dos ejercicios resueltos por ambos métodos, y detenerse en la pregunta de cuál resultó más económico en pasos y por qué. La conversación sobre la elección del método rinde más que la corrección del resultado."},
+        {"p": "El ejercicio 20 conviene reservarlo para el cierre de la clase y discutirlo en voz alta. Comprender por qué el precio final no coincide con el inicial equivale a comprender que el porcentaje siempre se calcula sobre una base determinada, y ese es el concepto que sostiene todo el resto del tema."}
+      ]
+    }
+  ]
+}

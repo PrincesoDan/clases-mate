@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: divisiones de dificultad progresiva",
+    "subtitulo": "Veinte ejercicios graduados, del divisor de una cifra al de dos cifras",
+    "encabezado": "Guía de ejercicios: divisiones de dificultad progresiva",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "20 de agosto de 2026",
+    "asunto": "Matemáticas — operatoria con números naturales"
+  },
+
+  "resumen": "El presente material reúne veinte ejercicios de división entera organizados en cinco bloques de dificultad creciente. La secuencia avanza desde divisiones de dos cifras por una cifra, exactas, hasta divisiones de tres cifras por dos cifras con resto. La progresión no incorpora todos los factores de dificultad de manera simultánea: cada bloque agrega una única variable nueva, de modo que el error, cuando se produce, resulta atribuible a una causa identificable. Se incluye un apartado de errores frecuentes y un solucionario completo con la verificación de cada resultado.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Cada bloque prepara el siguiente, de manera que omitir uno de ellos vuelve innecesariamente difícil el que viene a continuación."},
+        {"vinetas": [
+          "Resuelva cada división aplicando el algoritmo, dejando registro escrito de todos los pasos intermedios.",
+          "Cuando la división no sea exacta, indique el <b>cociente</b> y el <b>resto</b> en las columnas correspondientes.",
+          "Verifique siempre el resultado obtenido mediante la relación fundamental de la división:"
+        ]},
+        {"formula": "cociente × divisor + resto = dividendo"},
+        {"p": "Si la igualdad no se cumple, existe un error en algún paso y debe rehacerse el ejercicio antes de continuar."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "etiqueta_enunciado": "Dividendo y divisor",
+      "columnas": ["Cociente", "Resto"],
+      "bloques": [
+        {
+          "titulo": "Dos dígitos divididos por un dígito (división exacta)",
+          "glosa": "Calentamiento. Las cuatro divisiones son exactas: el resto es cero. El objetivo es recuperar la fluidez con las tablas de multiplicar antes de agregar dificultad.",
+          "auto": "division",
+          "items": ["48 : 2", "96 : 3", "84 : 4", "91 : 7"]
+        },
+        {
+          "titulo": "Dos dígitos divididos por un dígito (con resto)",
+          "glosa": "Aparece el resto. Recuerde que el resto debe ser siempre <b>menor</b> que el divisor: si obtiene un resto igual o mayor, el cociente quedó corto y debe aumentarlo en una unidad.",
+          "auto": "division",
+          "items": ["47 : 2", "59 : 4", "86 : 5", "73 : 6"]
+        },
+        {
+          "titulo": "Tres dígitos divididos por un dígito",
+          "glosa": "Crece el dividendo y con él la cantidad de pasos intermedios. El ejercicio 10 contiene una dificultad deliberada: observe con atención qué ocurre cuando una cifra intermedia no alcanza para dividir.",
+          "auto": "division",
+          "items": ["246 : 3", "618 : 3", "735 : 5", "869 : 7"]
+        },
+        {
+          "titulo": "Tres dígitos divididos por dos dígitos (división exacta)",
+          "glosa": "Aquí se produce el salto real de dificultad. Con un divisor de dos cifras ya no basta con recordar una tabla: hay que <b>estimar</b> cuántas veces cabe el divisor y luego ajustar.",
+          "nota": "<b>Estrategia sugerida.</b> Redondee el divisor a la decena más próxima para hacer un primer tanteo. En 156 : 12, por ejemplo, conviene razonar que 12 se aproxima a 10 y que 10 cabe unas quince veces en 156; se ensaya entonces con 13, se multiplica y se corrige según el resultado. Tantear y ajustar forma parte del método y no constituye un error.",
+          "auto": "division",
+          "items": ["156 : 12", "322 : 14", "525 : 21", "672 : 24"]
+        },
+        {
+          "titulo": "Tres dígitos divididos por dos dígitos (con resto)",
+          "glosa": "Nivel final: estimación y resto de manera simultánea. Los divisores elegidos no son cercanos a una decena redonda, de modo que el tanteo exige más de un intento.",
+          "auto": "division",
+          "items": ["187 : 15", "425 : 18", "638 : 27", "947 : 36"]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Errores frecuentes",
+      "cuerpo": [
+        {"p": "Los cuatro errores que se enumeran a continuación concentran la mayor parte de los resultados incorrectos en este tipo de ejercicios. Conviene revisarlos antes de consultar el solucionario."},
+        {"vinetas": [
+          "<b>Resto mayor o igual que el divisor.</b> Indica que el cociente quedó corto. Si en 59 : 4 se obtiene 13 con resto 7, el resto todavía contiene un 4 más: el cociente correcto es 14 y el resto, 3.",
+          "<b>Omitir el cero en el cociente.</b> Cuando se baja una cifra y el número formado es menor que el divisor, corresponde escribir un <b>0</b> en el cociente y bajar la cifra siguiente. Saltarse ese cero es el error más habitual de todos y aparece de manera expresa en el ejercicio 10.",
+          "<b>Restar mal en un paso intermedio.</b> Un error de resta se arrastra hacia todos los pasos posteriores, de modo que el resultado final queda equivocado aunque el procedimiento sea correcto. La verificación final permite detectarlo.",
+          "<b>Estimar de más y no corregir.</b> Si al multiplicar se excede el número disponible, debe reducirse el tanteo en una unidad e intentarlo nuevamente."
+        ]}
+      ]
+    },
+
+    {
+      "tipo": "solucionario",
+      "titulo": "Apéndice A. Solucionario",
+      "salto_antes": true,
+      "intro": "Se presentan el cociente y el resto de cada ejercicio junto con su verificación mediante la relación cociente × divisor + resto = dividendo. Las líneas tenues separan los cinco bloques.",
+      "leyenda": "Tabla A.1. Soluciones de los veinte ejercicios, con verificación."
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Nota didáctica: del resto a la fracción",
+      "cuerpo": [
+        {"p": "Los ejercicios con resto ofrecen una oportunidad directa para trabajar el sentido de fracción, en la medida en que la fracción <i>a/b</i> es precisamente la división <i>a : b</i>. Tomando el ejercicio 6 como ejemplo, de 59 : 4 = 14 con resto 3 se sigue que"},
+        {"formula": "59/4 = 14 + 3/4 = 14,75"},
+        {"p": "Conviene realizar esta traducción en voz alta con dos o tres ejercicios del bloque 2 y otros tantos del bloque 5. El propósito es que el resto deje de interpretarse como aquello que sobra y pase a comprenderse como la <b>parte fraccionaria del resultado</b>, que es el significado que suele faltar cuando un estudiante manifiesta dificultades con fracciones."}
+      ]
+    }
+  ]
+}

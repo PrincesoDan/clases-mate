@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: fracciones II",
+    "subtitulo": "Multiplicación, división y fracción de una cantidad — cuarenta y ocho ejercicios graduados",
+    "encabezado": "Guía de ejercicios: fracciones II",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "3 de septiembre de 2026",
+    "asunto": "PAES M1 — eje Números: operatoria con fracciones y problemas de varias etapas"
+  },
+
+  "resumen": "El presente material corresponde a la tercera clase de la preparación PAES M1 y reúne cuarenta y ocho ejercicios sobre multiplicación y división de fracciones, fracción de una cantidad y problemas encadenados de dos o tres etapas. La secuencia parte de la operatoria aislada, incorpora enseguida la traducción de la palabra «de» en una multiplicación —que es el punto donde la prueba concentra sus preguntas— y culmina en los problemas de fracción del resto, cuyo error característico consiste en referir la segunda fracción al total en lugar de referirla a lo que quedaba. El último bloque entrena la estimación previa al cálculo, herramienta central para descartar alternativas cuando el tiempo por pregunta es de dos minutos. La guía no incluye solucionario: incluye, en cambio, un ayuda memoria en el Apéndice A y un repertorio de errores frecuentes en el Apéndice B.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Cada bloque prepara el siguiente: los tres primeros son operatoria, el cuarto introduce la traducción que sostiene todo el resto, y los tres últimos son ya problemas en el formato en que la PAES pregunta el tema."},
+        {"vinetas": [
+          "Desarrolle cada ejercicio en el cuaderno, dejando registro escrito de <b>todos</b> los pasos intermedios. En la tabla escriba únicamente el resultado final.",
+          "Toda respuesta debe entregarse <b>simplificada</b>. Si el resultado es un entero, escríbalo como entero.",
+          "El símbolo <b>:</b> indica división y el símbolo <b>·</b> indica multiplicación.",
+          "En los problemas con enunciado, escriba primero la <b>operación</b> que va a hacer y solo después calcule. La mitad de los errores de este tema no son de cálculo, sino de haber planteado la operación equivocada."
+        ]},
+        {"p": "Antes de calcular, deténgase un segundo y anticipe si el resultado será <b>mayor o menor</b> que el número con que empezó. Multiplicar por una fracción menor que 1 achica; dividir por una fracción menor que 1 agranda. Esa anticipación es lo que permite descartar alternativas absurdas en la prueba."},
+        {"formula": "«fracción <b>de</b> una cantidad»  =  fracción  ·  cantidad"},
+        {"p": "En el <b>Apéndice A</b> está el ayuda memoria con todas las reglas necesarias, y en el <b>Apéndice B</b>, los errores frecuentes. Conviene tenerlos a la vista mientras se trabaja."},
+        {"nota": "Esta guía no incluye solucionario. Para verificar un resultado, rehaga el ejercicio por un camino distinto —por ejemplo, calculando la fracción complementaria y restando— y compare: si ambos caminos coinciden, el resultado es correcto."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Enunciado",
+      "columnas": ["Respuesta"],
+      "bloques": [
+        {
+          "titulo": "Multiplicación de fracciones",
+          "glosa": "Calentamiento. Aquí <b>no</b> se busca denominador común: se multiplica numerador con numerador y denominador con denominador.",
+          "nota": "<b>Estrategia sugerida.</b> Simplifique en cruz <i>antes</i> de multiplicar. En 4/9 · 3/8 conviene cancelar el 3 con el 9 y el 4 con el 8 primero: se llega al mismo resultado con números mucho más pequeños y sin tener que reducir al final.",
+          "ancho_enunciado": 0.45,
+          "items": [
+            "2/3 · 3/5",
+            "4/9 · 3/8",
+            "5/6 · 9/10",
+            "7/12 · 4/21",
+            "3/4 · 8/15 · 5/2",
+            "6/25 · 15/8 · 10/9"
+          ]
+        },
+        {
+          "titulo": "División de fracciones",
+          "glosa": "Dividir por una fracción es multiplicar por su <b>recíproco</b>: se da vuelta la segunda fracción y se multiplica. Un entero se escribe como fracción de denominador 1 antes de operar.",
+          "nota": "<b>Advertencia.</b> Solo se invierte el <i>divisor</i>, nunca el dividendo, y el orden importa: 3/4 : 2/5 no es lo mismo que 2/5 : 3/4. Observe además que al dividir por una fracción menor que 1 el resultado <b>crece</b>: eso no es un error, es lo esperado.",
+          "ancho_enunciado": 0.45,
+          "items": [
+            "3/4 : 2/5",
+            "5/8 : 15/16",
+            "7/9 : 14/3",
+            "6 : 3/4",
+            "2/5 : 4",
+            "9/10 : 3/10"
+          ]
+        },
+        {
+          "titulo": "Operaciones combinadas",
+          "glosa": "Se mezclan las dos operaciones anteriores con sumas y paréntesis. Rige el orden habitual: primero los paréntesis, después multiplicación y división de izquierda a derecha, y al final suma y resta.",
+          "ancho_enunciado": 0.45,
+          "items": [
+            "2/3 · 9/4 : 3/8",
+            "5/7 : 10/21 · 2/3",
+            "(3/5 · 10/9) : 4/3",
+            "(1/2 + 1/3) · 6/5",
+            "(7/8 - 1/4) : 5/6",
+            "(3/4 - 1/6) · (2/5 + 1/2)"
+          ]
+        },
+        {
+          "titulo": "Fracción de una cantidad",
+          "glosa": "<b>Este es el bloque central de la guía.</b> La palabra «de» se traduce siempre en una multiplicación. Todo el resto del material depende de tener automatizada esa traducción.",
+          "nota": "<b>Estrategia sugerida.</b> Con números grandes conviene dividir primero por el denominador y multiplicar después por el numerador: para 5/8 de 96, calcular 96 : 8 = 12 y luego 12 · 5 = 60 es mucho más rápido que multiplicar 96 · 5 y dividir al final.",
+          "ancho_enunciado": 0.45,
+          "items": [
+            "2/3 de 45",
+            "3/5 de 120",
+            "5/8 de 96",
+            "7/10 de 250",
+            "3/8 de 2 400",
+            "3/4 de 1/2",
+            "2/5 de 3/7",
+            "5/6 de 2/3 de 90"
+          ]
+        },
+        {
+          "titulo": "Problemas de una etapa",
+          "glosa": "Mismo contenido del bloque anterior, ahora dentro de un enunciado. Antes de calcular, escriba la operación. Atención a lo que pregunta cada problema: no siempre pide la parte, a veces pide lo que queda.",
+          "ancho_enunciado": 0.66,
+          "alineacion": "izquierda",
+          "items": [
+            "Un curso tiene 40 estudiantes y 3/5 de ellos son mujeres. ¿Cuántas mujeres hay en el curso?",
+            "Una receta lleva 3/4 de taza de azúcar. Si se prepara el triple de la receta, ¿cuánta azúcar se necesita?",
+            "Un estanque de 120 litros está lleno hasta sus 5/6. ¿Cuántos litros contiene?",
+            "Un pantalón cuesta $24.000 y se pagan 2/3 del precio al contado. ¿Cuánto se paga al contado?",
+            "Una jornada laboral dura 8 horas y 3/8 de ella se ocupó en reuniones. ¿Cuántas horas duraron las reuniones?",
+            "Un ciclista recorrió 2/5 de una ruta de 75 km. ¿Cuántos kilómetros le <b>faltan</b> por recorrer?",
+            "Una cinta de 5/6 de metro se corta en 5 trozos iguales. ¿Cuánto mide cada trozo?",
+            "Cada envase contiene 3/4 de kilogramo de arroz. ¿Cuántos envases se llenan con 9 kilogramos?"
+          ]
+        },
+        {
+          "titulo": "Problemas encadenados: la fracción del resto",
+          "glosa": "<b>El bloque más importante para la prueba.</b> En todos ellos la segunda fracción está referida a <i>lo que quedaba</i>, no al total. Conviene dibujar una barra y dividirla: el dibujo evita el error mucho mejor que la fórmula.",
+          "nota": "<b>Advertencia.</b> Si de una ruta se recorre 1/3 y luego 3/5 <i>de lo que faltaba</i>, ese segundo tramo <b>no</b> es 3/5 del total: es 3/5 de los 2/3 restantes. Lea el enunciado buscando a qué cantidad se refiere cada fracción antes de operar.",
+          "ancho_enunciado": 0.66,
+          "alineacion": "izquierda",
+          "items": [
+            "Un ciclista recorre el primer día 1/3 de una ruta y el segundo día 3/5 de lo que le faltaba. ¿Qué fracción <b>del total</b> recorrió el segundo día?",
+            "En la situación anterior, ¿qué fracción del total le falta por recorrer al terminar el segundo día?",
+            "De un estanque lleno se ocupan 2/5 del agua y luego 1/3 del resto. ¿Qué fracción del estanque queda con agua?",
+            "Un libro tiene 240 páginas. El lunes se leyó 1/4 del libro y el martes, 2/3 de lo que quedaba. ¿Cuántas páginas quedan sin leer?",
+            "De un sueldo se gasta 1/3 en arriendo y 1/4 del resto en alimentación. ¿Qué fracción del sueldo queda disponible?",
+            "En un curso, 3/5 de los estudiantes son mujeres y 1/3 de las mujeres juega vóleibol. ¿Qué fracción del curso son mujeres que juegan vóleibol?",
+            "Una jarra contiene 3/4 de litro de jugo. Se sirve 1/3 del contenido y después la mitad de lo que quedó. ¿Cuántos litros quedan en la jarra?",
+            "Un artículo de $30.000 tiene un descuento de 1/5 del precio y, sobre el precio ya rebajado, otro descuento de 1/4. ¿Cuál es el precio final?"
+          ]
+        },
+        {
+          "titulo": "Estimación y descarte de alternativas",
+          "glosa": "Entrenamiento específico para el formato de la prueba: responder sin desarrollar todo el cálculo. En estos ejercicios se pide una <b>decisión justificada</b>, no un desarrollo completo.",
+          "ancho_enunciado": 0.66,
+          "alineacion": "izquierda",
+          "items": [
+            "Sin calcular el resultado exacto, decida si 7/8 · 5/6 es mayor o menor que 5/6, y explique por qué.",
+            "Sin calcular el resultado exacto, decida si 4/5 : 2/3 es mayor o menor que 4/5, y explique por qué.",
+            "Ordene de menor a mayor, sin calcular los valores exactos: 2/3 · 3/4, 2/3 : 3/4 y 2/3 + 3/4.",
+            "Estime, sin operar, un valor aproximado de 24/25 · 49/50 · 99/100. ¿Se acerca a 0, a 1/2 o a 1?",
+            "El producto de dos fracciones positivas menores que 1, ¿puede ser mayor que ambas? Responda sí o no y justifique con un ejemplo o con un argumento.",
+            "Los 5/6 de un número son 45. ¿Cuál es el número? Indique además qué operación deshace la multiplicación por 5/6."
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "<b>A.1. Multiplicación.</b> Se multiplican los numeradores entre sí y los denominadores entre sí. No se busca denominador común:"},
+        {"formula": "a/b · c/d = (a·c)/(b·d)"},
+        {"nota": "Simplificar en cruz antes de multiplicar mantiene los números pequeños y entrega el resultado ya reducido. Un entero se escribe con denominador 1: 3 = 3/1."},
+
+        {"p": "<b>A.2. División.</b> Dividir es multiplicar por el recíproco del divisor, es decir, por la fracción dada vuelta:"},
+        {"formula": "a/b : c/d = a/b · d/c = (a·d)/(b·c)"},
+        {"vinetas": [
+          "Solo se invierte el <b>divisor</b> (la fracción que va después del signo), nunca la primera.",
+          "El orden importa: a/b : c/d no es igual a c/d : a/b.",
+          "<b>Por qué funciona:</b> 6 : 3/4 pregunta cuántos trozos de 3/4 caben en 6. Como en cada unidad caben 4/3 de esos trozos, en 6 unidades caben 6 · 4/3 = 8."
+        ]},
+
+        {"p": "<b>A.3. Fracción de una cantidad.</b> La palabra «de» equivale al signo de multiplicar. Es la traducción más usada en la prueba:"},
+        {"formula": "3/5 <b>de</b> 120 = 3/5 · 120 = 72"},
+        {"nota": "Camino corto: divida primero por el denominador y multiplique después por el numerador. 120 : 5 = 24 y 24 · 3 = 72."},
+
+        {"p": "<b>A.4. Cómo cambia el tamaño del resultado.</b> Conviene anticiparlo antes de operar, porque permite detectar un error de inmediato:"},
+        {"tabla": {
+          "cabecera": ["Operación", "Efecto sobre el número inicial", "Ejemplo"],
+          "filas": [
+            ["Multiplicar por una fracción menor que 1", "El resultado achica", "8 · 3/4 = 6"],
+            ["Multiplicar por una fracción mayor que 1", "El resultado crece", "8 · 5/4 = 10"],
+            ["Dividir por una fracción menor que 1", "El resultado crece", "8 : 1/2 = 16"],
+            ["Dividir por una fracción mayor que 1", "El resultado achica", "8 : 4/3 = 6"]
+          ],
+          "leyenda": "Tabla A.1. Anticipar si el resultado crece o achica permite descartar alternativas sin terminar el cálculo."
+        }},
+
+        {"p": "<b>A.5. El resto y su fracción.</b> Cuando de un total se ocupa una fracción, lo que queda es el complemento a 1. Si después se ocupa una fracción <i>del resto</i>, esa segunda fracción se multiplica por el resto, no por el total:"},
+        {"formula": "resto = 1 - fracción ocupada"},
+        {"formula": "segunda etapa (respecto del total) = fracción nueva · resto"},
+        {"nota": "Ejemplo. Se recorre 1/3 y luego 3/5 de lo que faltaba. Resto = 1 - 1/3 = 2/3. Segundo tramo = 3/5 · 2/3 = 2/5 del total. Recorrido acumulado = 1/3 + 2/5 = 11/15. Falta 4/15."},
+
+        {"p": "<b>A.6. Fracción del total con varias etapas.</b> Para encadenar dos o tres etapas conviene trabajar siempre con la fracción que <b>queda</b>, porque las fracciones que quedan se multiplican directamente entre sí:"},
+        {"formula": "queda = (1 - f<super>1</super>) · (1 - f<super>2</super>) · (1 - f<super>3</super>)"},
+        {"nota": "Con 2/5 y luego 1/3 del resto: queda = 3/5 · 2/3 = 2/5 del estanque. Este atajo evita las restas intermedias y es el más rápido bajo presión de tiempo."},
+
+        {"p": "<b>A.7. Recuperar el total a partir de la parte.</b> Si se conoce el valor de una fracción del total y se busca el total, se divide:"},
+        {"formula": "si (a/b) · x = P, entonces x = P : (a/b) = P · (b/a)"},
+
+        {"p": "<b>A.8. Equivalencias útiles.</b> Conviene tenerlas memorizadas para no perder tiempo en la prueba:"},
+        {"tabla": {
+          "cabecera": ["Fracción", "Decimal", "Porcentaje"],
+          "filas": [
+            ["1/2", "0,5", "50 %"],
+            ["1/3", "0,333…", "33,3 %"],
+            ["1/4", "0,25", "25 %"],
+            ["1/5", "0,2", "20 %"],
+            ["2/5", "0,4", "40 %"],
+            ["3/4", "0,75", "75 %"],
+            ["1/8", "0,125", "12,5 %"]
+          ],
+          "leyenda": "Tabla A.2. Equivalencias de uso frecuente entre fracción, decimal y porcentaje."
+        }}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Errores frecuentes",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "Los errores que siguen son los que efectivamente aparecen al resolver esta guía. Conviene leerlos <i>antes</i> de empezar y volver a ellos al corregir: casi todo resultado equivocado en este tema cae en alguno de los seis."},
+        {"tabla": {
+          "cabecera": ["Error", "Ejemplo del error", "Lo correcto"],
+          "filas": [
+            ["Buscar denominador común para multiplicar", "2/3 · 3/5 llevado a quintos y tercios", "Se multiplica directo: 6/15 = 2/5"],
+            ["Invertir la fracción equivocada", "3/4 : 2/5 = 4/3 · 2/5", "Se invierte solo el divisor: 3/4 · 5/2"],
+            ["Referir la segunda fracción al total", "«3/5 de lo que faltaba» tomado como 3/5 del total", "Se multiplica por el resto: 3/5 · 2/3"],
+            ["Sumar las fracciones de cada etapa", "1/5 y 1/4 de descuento leídos como 1/5 + 1/4", "El segundo descuento se aplica al precio ya rebajado"],
+            ["Responder la parte cuando se pide el resto", "Calcular 2/5 de 75 cuando se pregunta lo que falta", "Restar del total, o usar la fracción complementaria"],
+            ["Multiplicar cuando había que dividir", "9 kg y envases de 3/4 kg resuelto como 9 · 3/4", "Se pregunta cuántos caben: 9 : 3/4 = 12"]
+          ],
+          "leyenda": "Tabla B.1. Errores frecuentes en multiplicación, división y problemas encadenados con fracciones."
+        }},
+        {"p": "<b>Cómo verificar sin solucionario.</b> Tres controles rápidos permiten detectar casi cualquier error de los anteriores:"},
+        {"vinetas": [
+          "<b>Control de tamaño.</b> Compare el resultado con el número inicial usando la Tabla A.1. Si multiplicó por algo menor que 1 y el resultado creció, hay un error.",
+          "<b>Control por el complemento.</b> En los problemas de varias etapas, calcule por separado la parte ocupada y la parte que queda: deben sumar exactamente 1, o el total en unidades.",
+          "<b>Control por el camino inverso.</b> Si obtuvo que 3/5 de 120 es 72, verifique dividiendo: 72 : 3/5 debe devolver 120."
+        ]},
+        {"nota": "Al corregir en clase, lo que se pide es el <b>planteamiento</b> antes que el resultado. En este tema la respuesta correcta con un planteamiento equivocado es más frecuente de lo que parece —y no sobrevive al cambio de números que hace la prueba."}
+      ]
+    }
+  ]
+}

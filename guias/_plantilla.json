@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: TEMA",
+    "subtitulo": "Subtítulo descriptivo de la guía",
+    "encabezado": "Guía de ejercicios: TEMA",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "FECHA",
+    "asunto": "Matemáticas — TEMA"
+  },
+
+  "resumen": "Descripción breve de qué contiene la guía, cómo está organizada y qué progresión sigue.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Párrafo introductorio con las condiciones de trabajo."},
+        {"vinetas": [
+          "Primera instrucción.",
+          "Segunda instrucción."
+        ]},
+        {"formula": "fórmula o regla central de la guía"},
+        {"p": "Cierre de las instrucciones."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "etiqueta_enunciado": "Enunciado",
+      "columnas": ["Respuesta"],
+      "bloques": [
+        {
+          "titulo": "Nombre del primer bloque",
+          "glosa": "Qué entrena este bloque y qué variable nueva agrega.",
+          "items": [
+            {"e": "primer ejercicio", "sol": ["respuesta"], "verif": "comprobación"},
+            {"e": "segundo ejercicio", "sol": ["respuesta"], "verif": "comprobación"}
+          ]
+        },
+        {
+          "titulo": "Nombre del segundo bloque",
+          "glosa": "Qué cambia respecto del bloque anterior.",
+          "nota": "<b>Estrategia sugerida.</b> Texto opcional con una indicación de método.",
+          "auto": "division",
+          "items": ["156 : 12", "322 : 14"]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Errores frecuentes",
+      "cuerpo": [
+        {"p": "Introducción al listado de errores."},
+        {"vinetas": [
+          "<b>Nombre del error.</b> En qué consiste y cómo se corrige.",
+          "<b>Otro error.</b> En qué consiste y cómo se corrige."
+        ]}
+      ]
+    },
+
+    {
+      "tipo": "solucionario",
+      "titulo": "Apéndice A. Solucionario",
+      "salto_antes": true,
+      "intro": "Texto breve que explique cómo leer la tabla de respuestas.",
+      "leyenda": "Tabla A.1. Soluciones de los ejercicios."
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Nota didáctica",
+      "cuerpo": [
+        {"p": "Observación pedagógica para quien dicta la clase: con qué otro contenido conecta esta guía y cómo aprovecharla."}
+      ]
+    }
+  ]
+}
