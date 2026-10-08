@@ -120,5 +120,6 @@ escribir una función en `generador_guias.py` y registrarla en el diccionario `R
 | `guia-algebra-productos-notables-factorizacion.pdf` | Salida generada |
 | `guias/teorema-pitagoras-8b-01.json` | Guía de 40 ejercicios del teorema de Pitágoras para 8.º básico, todos con figura (sin solucionario, con ayuda memoria) |
 | `guia-teorema-pitagoras-8b.pdf` | Salida generada |
+| `landing-page/` | Landing con Vite que publica las guías (ver `landing-page/README.md`) |
 | `paes-regular-matematica1-p2025.md` | Folleto PAES Forma 113 transcrito |
 | `planificacion-paes-m1.md` | Planificación de 12 clases (reprogramada el 8 oct tras perder 3 clases) |

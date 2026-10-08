@@ -1,0 +1,5 @@
+node_modules
+dist
+# Generados por scripts/sync-docs.mjs a partir de la raíz del repo
+public/docs
+src/documentos.json
