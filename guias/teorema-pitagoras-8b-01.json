@@ -1,0 +1,2443 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: teorema de Pitágoras",
+    "subtitulo": "Cuarenta ejercicios graduados con figuras, desde reconocer los catetos hasta las preguntas de alternativas",
+    "encabezado": "Guía de ejercicios: teorema de Pitágoras — 8.º básico",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "8 de octubre de 2026",
+    "asunto": "Matemáticas 8.º básico — eje Geometría: teorema de Pitágoras"
+  },
+  "resumen": "El presente material reúne cuarenta ejercicios sobre el teorema de Pitágoras, organizados en ocho bloques de dificultad creciente. Todos los ejercicios vienen acompañados de una figura, para que los catetos y la hipotenusa se puedan ver y no solo imaginar. La secuencia parte de reconocer los lados de un triángulo rectángulo dibujado en distintas posiciones, sigue con el cálculo de la hipotenusa y de un cateto, incorpora los resultados que no son exactos y el teorema recíproco, y luego lleva el teorema a otras figuras —rectángulos, cuadrados, triángulos isósceles, rombos y trapecios—. Los dos últimos bloques trasladan todo a situaciones de la vida real y a preguntas de alternativas con el formato de la PAES, que es donde el teorema aparece realmente en la prueba. La guía no incluye solucionario: incluye un ayuda memoria en el Apéndice A con las fórmulas, las ternas pitagóricas y la tabla de cuadrados, y un apartado de errores frecuentes.",
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {
+          "p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Cada bloque agrega una sola dificultad nueva, de modo que, si algo sale mal, se puede saber exactamente qué fue."
+        },
+        {
+          "vinetas": [
+            "Desarrolle cada ejercicio en el cuaderno, dejando escritos <b>todos</b> los pasos. En la tabla escriba solo el resultado final, <b>con su unidad</b> (cm, m, km).",
+            "Antes de calcular, <b>marque la hipotenusa</b> en la figura: es el lado que está al frente del cuadradito del ángulo recto, y siempre es el lado más largo.",
+            "Las figuras son una ayuda para ver el problema; en algunas, las medidas no están exactamente a escala.",
+            "En el Apéndice A está la tabla de cuadrados del 1 al 25. Úsela: es la que permite trabajar sin calculadora."
+          ]
+        },
+        {
+          "p": "Toda la guía se apoya en una sola idea: en un triángulo rectángulo, <b>el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos</b>:"
+        },
+        {
+          "formula": "c<super>2</super> = a<super>2</super> + b<super>2</super>"
+        },
+        {
+          "figura": {
+            "p": {
+              "R": [
+                0.0,
+                0.0
+              ],
+              "P": [
+                4.0,
+                0.0
+              ],
+              "Q": [
+                0.0,
+                3.0
+              ]
+            },
+            "seg": [
+              [
+                "R",
+                "P",
+                "a (cateto)"
+              ],
+              [
+                "R",
+                "Q",
+                "b (cateto)"
+              ],
+              [
+                "P",
+                "Q",
+                "c (hipotenusa)"
+              ]
+            ],
+            "recto": [
+              [
+                "P",
+                "R",
+                "Q"
+              ]
+            ],
+            "vertices": false,
+            "ancho": 6.5,
+            "alto": 4.0,
+            "leyenda": "Figura 1. Los catetos forman el ángulo recto; la hipotenusa está al frente de él."
+          }
+        },
+        {
+          "nota": "Esta guía no incluye solucionario. Para comprobar un resultado, revise dos cosas: que la hipotenusa le haya quedado más larga que cada cateto, y que al reemplazar las tres medidas en c<super>2</super> = a<super>2</super> + b<super>2</super> la igualdad se cumpla."
+        }
+      ]
+    },
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Ejercicio",
+      "columnas": [
+        "Respuesta"
+      ],
+      "bloques": [
+        {
+          "titulo": "Reconocer los catetos y la hipotenusa",
+          "glosa": "Calentamiento. Antes de calcular hay que saber qué lado es cuál. Los triángulos están girados a propósito: la hipotenusa no siempre es el lado de abajo ni el inclinado.",
+          "nota": "<b>Estrategia sugerida.</b> Busque el cuadradito del ángulo recto. Los dos lados que lo forman son los catetos; el lado que queda al frente es la hipotenusa.",
+          "ancho_enunciado": 0.68,
+          "alineacion": "izquierda",
+          "items": [
+            {
+              "e": "Observe el triángulo rectángulo. ¿Cuál de los lados p, q o r es la <b>hipotenusa</b>? ¿Cuáles son los <b>catetos</b>?",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    4.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    3.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "q"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "p"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "r"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Mismo pedido: indique la hipotenusa y los catetos. Fíjese en dónde está el ángulo recto, no en la posición del dibujo.",
+              "fig": {
+                "p": {
+                  "R": [
+                    -0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -4.0,
+                    0.0
+                  ],
+                  "Q": [
+                    -0.0,
+                    -3.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "m"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "n"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "t"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Indique la hipotenusa y los catetos. El triángulo está girado: busque primero el cuadradito del ángulo recto.",
+              "fig": {
+                "p": {
+                  "R": [
+                    -0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -2.868,
+                    4.096
+                  ],
+                  "Q": [
+                    -2.048,
+                    -1.434
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "u"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "v"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "w"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Escriba el teorema de Pitágoras para este triángulo usando las letras de sus lados (x, y, z).",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -2.457,
+                    1.721
+                  ],
+                  "Q": [
+                    2.581,
+                    3.686
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "x"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "z"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "y"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "titulo": "Calcular la hipotenusa",
+          "glosa": "Se conocen los dos catetos. Se elevan al cuadrado, se suman, y al final se saca la raíz cuadrada.",
+          "nota": "<b>Estrategia sugerida.</b> Escriba siempre los tres pasos por separado: x<super>2</super> = 3<super>2</super> + 4<super>2</super> → x<super>2</super> = 25 → x = 5. El error más común es olvidar el último paso.",
+          "ancho_enunciado": 0.68,
+          "alineacion": "izquierda",
+          "items": [
+            {
+              "e": "Calcule la medida de la hipotenusa x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    3.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    4.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "3 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "4 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida de la hipotenusa x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    0.0,
+                    6.0
+                  ],
+                  "Q": [
+                    -8.0,
+                    0.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "6 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "8 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida de la hipotenusa x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -5.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    12.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "5 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "12 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida de la hipotenusa x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    -0.0
+                  ],
+                  "P": [
+                    -7.518,
+                    -2.736
+                  ],
+                  "Q": [
+                    5.13,
+                    -14.095
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "8 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "15 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida de la hipotenusa x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    7.794,
+                    4.5
+                  ],
+                  "Q": [
+                    -6.0,
+                    10.392
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "9 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "12 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida de la hipotenusa x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    -0.0
+                  ],
+                  "P": [
+                    0.0,
+                    7.0
+                  ],
+                  "Q": [
+                    24.0,
+                    -0.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "7 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "24 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "titulo": "Calcular un cateto",
+          "glosa": "Ahora se conoce la hipotenusa y un cateto. La única diferencia es que se <b>resta</b>: al cuadrado de la hipotenusa se le quita el cuadrado del cateto conocido.",
+          "nota": "<b>Estrategia sugerida.</b> Antes de calcular, pregúntese: ¿la x es la hipotenusa o un cateto? Si es un cateto, se resta. Si al restar le da un número negativo, puso los números al revés.",
+          "ancho_enunciado": 0.68,
+          "alineacion": "izquierda",
+          "items": [
+            {
+              "e": "Calcule la medida del cateto x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    6.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    8.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "6 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "x"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "10 cm"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida del cateto x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -0.0,
+                    -5.0
+                  ],
+                  "Q": [
+                    -12.0,
+                    0.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "5 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "x"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "13 cm"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida del cateto x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    -0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -8.0,
+                    0.0
+                  ],
+                  "Q": [
+                    -0.0,
+                    -15.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "8 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "x"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "17 cm"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida del cateto x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -7.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    24.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "7 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "x"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "25 cm"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida del cateto x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    6.0,
+                    -10.392
+                  ],
+                  "Q": [
+                    13.856,
+                    8.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "12 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "x"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "20 cm"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule la medida del cateto x. Las medidas están en centímetros.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    7.071,
+                    7.071
+                  ],
+                  "Q": [
+                    -16.971,
+                    16.971
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "10 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "x"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "26 cm"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "titulo": "Cuando el resultado no es exacto",
+          "glosa": "No todos los triángulos tienen lados enteros. Cuando la suma no es un cuadrado perfecto, el resultado se deja como raíz y se estima.",
+          "nota": "<b>Estrategia sugerida.</b> Para estimar √13, busque en la tabla de cuadrados entre qué dos cuadrados está 13: 9 &lt; 13 &lt; 16, así que √13 está entre 3 y 4.",
+          "ancho_enunciado": 0.68,
+          "alineacion": "izquierda",
+          "items": [
+            {
+              "e": "Calcule x. Exprese el resultado como raíz cuadrada y estime entre qué dos números enteros consecutivos está.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    1.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "1 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "1 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule x. Exprese el resultado como raíz cuadrada y estime entre qué dos números enteros consecutivos está.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -0.0,
+                    -3.0
+                  ],
+                  "Q": [
+                    -2.0,
+                    0.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "3 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "2 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule el cateto x. Exprese el resultado como raíz cuadrada y estime entre qué dos números enteros consecutivos está.",
+              "fig": {
+                "p": {
+                  "R": [
+                    -0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -4.0,
+                    0.0
+                  ],
+                  "Q": [
+                    -0.0,
+                    -4.472
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "4 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "x"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "6 cm"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Calcule x. Exprese el resultado como raíz cuadrada y estime entre qué dos números enteros consecutivos está.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    2.828,
+                    2.828
+                  ],
+                  "Q": [
+                    -2.828,
+                    2.828
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "4 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "4 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "x"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "titulo": "¿Es o no es un triángulo rectángulo?",
+          "glosa": "El teorema también funciona al revés: si los lados cumplen c<super>2</super> = a<super>2</super> + b<super>2</super>, el triángulo es rectángulo. Si no la cumplen, no lo es. En estas figuras no se marcó el ángulo recto a propósito.",
+          "nota": "<b>Estrategia sugerida.</b> Eleve al cuadrado el lado más largo y compárelo con la suma de los cuadrados de los otros dos. Si dan lo mismo, es rectángulo.",
+          "ancho_enunciado": 0.68,
+          "alineacion": "izquierda",
+          "items": [
+            {
+              "e": "Un triángulo tiene lados de 6 cm, 8 cm y 10 cm. ¿Es un triángulo rectángulo? Justifique con un cálculo.",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    10,
+                    0
+                  ],
+                  "C": [
+                    3.6,
+                    4.8
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "10 cm"
+                  ],
+                  [
+                    "A",
+                    "C",
+                    "6 cm"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "8 cm"
+                  ]
+                ],
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Un triángulo tiene lados de 5 cm, 6 cm y 7 cm. ¿Es un triángulo rectángulo? Justifique con un cálculo.",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    7,
+                    0
+                  ],
+                  "C": [
+                    2.714,
+                    4.199
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "7 cm"
+                  ],
+                  [
+                    "A",
+                    "C",
+                    "5 cm"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "6 cm"
+                  ]
+                ],
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Un triángulo tiene lados de 9 cm, 40 cm y 41 cm. ¿Es un triángulo rectángulo? Justifique con un cálculo.",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    41,
+                    0
+                  ],
+                  "C": [
+                    1.976,
+                    8.78
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "41 cm"
+                  ],
+                  [
+                    "A",
+                    "C",
+                    "9 cm"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "40 cm"
+                  ]
+                ],
+                "ancho": 4.6,
+                "alto": 2.2
+              }
+            },
+            {
+              "e": "Un triángulo tiene lados de 7 cm, 8 cm y 12 cm. ¿Es un triángulo rectángulo? Justifique con un cálculo.",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    12,
+                    0
+                  ],
+                  "C": [
+                    5.375,
+                    4.484
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "12 cm"
+                  ],
+                  [
+                    "A",
+                    "C",
+                    "7 cm"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "8 cm"
+                  ]
+                ],
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "titulo": "Pitágoras escondido en otras figuras",
+          "glosa": "En rectángulos, cuadrados, rombos, triángulos isósceles y trapecios hay triángulos rectángulos escondidos. El trabajo es encontrarlos.",
+          "nota": "<b>Estrategia sugerida.</b> Repase con lápiz el triángulo rectángulo que va a usar y anote sobre él solo sus tres lados. Olvídese del resto de la figura mientras calcula.",
+          "ancho_enunciado": 0.68,
+          "alineacion": "izquierda",
+          "items": [
+            {
+              "e": "Calcule la medida de la diagonal x de un rectángulo de 8 cm de largo y 6 cm de ancho.",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    8,
+                    0
+                  ],
+                  "C": [
+                    8,
+                    6
+                  ],
+                  "D": [
+                    0,
+                    6
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "8 cm"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "6 cm"
+                  ],
+                  [
+                    "C",
+                    "D"
+                  ],
+                  [
+                    "D",
+                    "A"
+                  ],
+                  {
+                    "de": "A",
+                    "a": "C",
+                    "t": "x",
+                    "lado": 1
+                  }
+                ],
+                "recto": [
+                  [
+                    "A",
+                    "B",
+                    "C"
+                  ]
+                ],
+                "ancho": 4.4,
+                "alto": 3.4
+              }
+            },
+            {
+              "e": "Calcule la diagonal x de un cuadrado de lado 5 cm. Exprese el resultado como raíz.",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    5,
+                    0
+                  ],
+                  "C": [
+                    5,
+                    5
+                  ],
+                  "D": [
+                    0,
+                    5
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "5 cm"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "5 cm"
+                  ],
+                  [
+                    "C",
+                    "D"
+                  ],
+                  [
+                    "D",
+                    "A"
+                  ],
+                  {
+                    "de": "A",
+                    "a": "C",
+                    "t": "x",
+                    "lado": 1
+                  }
+                ],
+                "recto": [
+                  [
+                    "A",
+                    "B",
+                    "C"
+                  ]
+                ],
+                "ancho": 3.8,
+                "alto": 3.4
+              }
+            },
+            {
+              "e": "Un triángulo isósceles tiene base de 10 cm y sus lados iguales miden 13 cm. Calcule su altura h. (La altura cae justo en la mitad de la base.)",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    10,
+                    0
+                  ],
+                  "C": [
+                    5,
+                    12
+                  ],
+                  "M": [
+                    5,
+                    0
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B"
+                  ],
+                  [
+                    "A",
+                    "C",
+                    "13 cm"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "13 cm"
+                  ],
+                  {
+                    "de": "M",
+                    "a": "C",
+                    "t": "h",
+                    "punteado": true,
+                    "lado": 1
+                  },
+                  {
+                    "de": "A",
+                    "a": "M",
+                    "t": "5 cm",
+                    "lado": -1
+                  },
+                  {
+                    "de": "M",
+                    "a": "B",
+                    "t": "5 cm",
+                    "lado": -1
+                  }
+                ],
+                "recto": [
+                  [
+                    "C",
+                    "M",
+                    "B"
+                  ]
+                ],
+                "ancho": 4.0,
+                "alto": 3.8
+              }
+            },
+            {
+              "e": "Las diagonales de un rombo miden 16 cm y 12 cm, y se cortan en ángulo recto en su punto medio. Calcule la medida x del lado del rombo. (Ayuda: cada diagonal queda partida en dos mitades iguales.)",
+              "fig": {
+                "p": {
+                  "A": [
+                    -8,
+                    0
+                  ],
+                  "B": [
+                    0,
+                    6
+                  ],
+                  "C": [
+                    8,
+                    0
+                  ],
+                  "D": [
+                    0,
+                    -6
+                  ],
+                  "O": [
+                    0,
+                    0
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "x"
+                  ],
+                  [
+                    "B",
+                    "C"
+                  ],
+                  [
+                    "C",
+                    "D"
+                  ],
+                  [
+                    "D",
+                    "A"
+                  ],
+                  {
+                    "de": "A",
+                    "a": "O",
+                    "punteado": true
+                  },
+                  {
+                    "de": "O",
+                    "a": "C",
+                    "punteado": true
+                  },
+                  {
+                    "de": "O",
+                    "a": "B",
+                    "punteado": true
+                  },
+                  {
+                    "de": "O",
+                    "a": "D",
+                    "punteado": true
+                  }
+                ],
+                "recto": [
+                  [
+                    "A",
+                    "O",
+                    "B"
+                  ]
+                ],
+                "ancho": 5.6,
+                "alto": 4.4
+              }
+            },
+            {
+              "e": "En el trapecio rectángulo, las bases miden 10 cm y 4 cm, y la altura mide 8 cm. Calcule el lado inclinado x. (Ayuda: trace la altura punteada y mire el triángulo que se forma.)",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    10,
+                    0
+                  ],
+                  "C": [
+                    4,
+                    8
+                  ],
+                  "D": [
+                    0,
+                    8
+                  ],
+                  "H": [
+                    4,
+                    0
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "10 cm"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "x"
+                  ],
+                  [
+                    "C",
+                    "D",
+                    "4 cm"
+                  ],
+                  [
+                    "D",
+                    "A",
+                    "8 cm"
+                  ],
+                  {
+                    "de": "C",
+                    "a": "H",
+                    "punteado": true
+                  }
+                ],
+                "recto": [
+                  [
+                    "B",
+                    "A",
+                    "D"
+                  ],
+                  [
+                    "A",
+                    "D",
+                    "C"
+                  ],
+                  [
+                    "B",
+                    "H",
+                    "C"
+                  ]
+                ],
+                "ancho": 4.4,
+                "alto": 3.6
+              }
+            },
+            {
+              "e": "Los catetos de un triángulo rectángulo miden 9 cm y 12 cm. Calcule su <b>perímetro</b>.",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -12.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    9.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "12 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "9 cm"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    ""
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "titulo": "Problemas de la vida real",
+          "glosa": "Escaleras, cables, plazas, barcos y pantallas: el teorema aparece cada vez que hay algo vertical y algo horizontal.",
+          "nota": "<b>Estrategia sugerida.</b> Lea el enunciado y responda primero: ¿qué es lo que forma el ángulo recto? (la pared y el suelo, el norte y el este…). Eso le dice cuáles son los catetos.",
+          "ancho_enunciado": 0.68,
+          "alineacion": "izquierda",
+          "items": [
+            {
+              "e": "Una escalera de 5 m está apoyada en una pared. Su pie está a 3 m de la pared. ¿A qué altura h de la pared llega la escalera?",
+              "fig": {
+                "p": {
+                  "P": [
+                    0,
+                    0
+                  ],
+                  "T": [
+                    0,
+                    4
+                  ],
+                  "S": [
+                    3,
+                    0
+                  ],
+                  "W": [
+                    0,
+                    4.6
+                  ],
+                  "G": [
+                    3.8,
+                    0
+                  ]
+                },
+                "seg": [
+                  [
+                    "P",
+                    "W"
+                  ],
+                  [
+                    "P",
+                    "G"
+                  ],
+                  [
+                    "P",
+                    "S",
+                    "3 m"
+                  ],
+                  {
+                    "de": "S",
+                    "a": "T",
+                    "t": "5 m",
+                    "lado": -1
+                  },
+                  {
+                    "de": "P",
+                    "a": "T",
+                    "t": "h",
+                    "lado": 1
+                  }
+                ],
+                "recto": [
+                  [
+                    "S",
+                    "P",
+                    "T"
+                  ]
+                ],
+                "ancho": 4.6,
+                "alto": 3.8
+              }
+            },
+            {
+              "e": "Un poste vertical se sujeta con un cable de 15 m que va desde su punta hasta el suelo. El cable queda amarrado a 9 m de la base del poste. ¿Cuánto mide el poste?",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    -9.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    12.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "9 m"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "poste"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "15 m"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "Una plaza rectangular mide 80 m de largo y 60 m de ancho. Ana va de una esquina a la opuesta caminando por el borde; Tomás cruza en línea recta por la diagonal. ¿Cuántos metros menos camina Tomás?",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    8,
+                    0
+                  ],
+                  "C": [
+                    8,
+                    6
+                  ],
+                  "D": [
+                    0,
+                    6
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "80 m"
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "60 m"
+                  ],
+                  [
+                    "C",
+                    "D"
+                  ],
+                  [
+                    "D",
+                    "A"
+                  ],
+                  {
+                    "de": "A",
+                    "a": "C",
+                    "punteado": true
+                  }
+                ],
+                "recto": [
+                  [
+                    "A",
+                    "B",
+                    "C"
+                  ]
+                ],
+                "ancho": 4.4,
+                "alto": 3.4
+              }
+            },
+            {
+              "e": "Un barco sale del puerto y navega 12 km hacia el norte y luego 5 km hacia el este. ¿A qué distancia en línea recta está del puerto?",
+              "fig": {
+                "p": {
+                  "Puerto": [
+                    0,
+                    0
+                  ],
+                  "N": [
+                    0,
+                    12
+                  ],
+                  "Barco": [
+                    5,
+                    12
+                  ]
+                },
+                "seg": [
+                  [
+                    "Puerto",
+                    "N",
+                    "12 km"
+                  ],
+                  [
+                    "N",
+                    "Barco",
+                    "5 km"
+                  ],
+                  {
+                    "de": "Puerto",
+                    "a": "Barco",
+                    "t": "d",
+                    "punteado": true
+                  }
+                ],
+                "recto": [
+                  [
+                    "Puerto",
+                    "N",
+                    "Barco"
+                  ]
+                ],
+                "vertices": [
+                  "Puerto",
+                  "Barco"
+                ],
+                "ancho": 4.6,
+                "alto": 4.0
+              }
+            },
+            {
+              "e": "Un volantín está sujeto con un hilo tenso de 25 m. La distancia horizontal entre la mano de Sofía y el punto justo debajo del volantín es 20 m. ¿A qué altura h, sobre la mano de Sofía, vuela el volantín?",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    20.0,
+                    0.0
+                  ],
+                  "Q": [
+                    0.0,
+                    15.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "20 m"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    "h"
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "25 m"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "El tamaño de un televisor se mide por la diagonal de su pantalla. Si la pantalla mide 32 pulgadas de ancho y 24 pulgadas de alto, ¿de cuántas pulgadas es el televisor?",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    32,
+                    0
+                  ],
+                  "C": [
+                    32,
+                    24
+                  ],
+                  "D": [
+                    0,
+                    24
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "32 pulg."
+                  ],
+                  [
+                    "B",
+                    "C",
+                    "24 pulg."
+                  ],
+                  [
+                    "C",
+                    "D"
+                  ],
+                  [
+                    "D",
+                    "A"
+                  ],
+                  {
+                    "de": "A",
+                    "a": "C",
+                    "t": "d",
+                    "punteado": true,
+                    "lado": 1
+                  }
+                ],
+                "recto": [
+                  [
+                    "A",
+                    "B",
+                    "C"
+                  ]
+                ],
+                "ancho": 4.4,
+                "alto": 3.4
+              }
+            }
+          ]
+        },
+        {
+          "titulo": "Nivel PAES: preguntas de alternativas",
+          "glosa": "El destino de toda la guía. Son preguntas como las de la prueba: el teorema es solo un paso, y después hay que calcular otra cosa (un área, un perímetro, una diferencia). Tiempo de referencia: <b>3 minutos por pregunta</b>.",
+          "nota": "<b>Estrategia sugerida.</b> Lea dos veces <b>qué</b> pide la pregunta. Muchas alternativas incorrectas son el resultado de un paso intermedio: la hipotenusa cuando pedían el área, o el cateto cuando pedían el perímetro.",
+          "ancho_enunciado": 0.68,
+          "alineacion": "izquierda",
+          "items": [
+            {
+              "e": "En el plano cartesiano, ¿cuál es la distancia entre los puntos A(1, 1) y B(4, 5)?<br/>A) 5&nbsp;&nbsp;&nbsp;&nbsp;B) 7&nbsp;&nbsp;&nbsp;&nbsp;C) 25&nbsp;&nbsp;&nbsp;&nbsp;D) √7",
+              "fig": {
+                "p": {
+                  "A(1, 1)": [
+                    1,
+                    1
+                  ],
+                  "B(4, 5)": [
+                    4,
+                    5
+                  ],
+                  "C": [
+                    4,
+                    1
+                  ]
+                },
+                "seg": [
+                  {
+                    "de": "A(1, 1)",
+                    "a": "B(4, 5)",
+                    "lado": 1
+                  },
+                  {
+                    "de": "A(1, 1)",
+                    "a": "C",
+                    "punteado": true
+                  },
+                  {
+                    "de": "C",
+                    "a": "B(4, 5)",
+                    "punteado": true
+                  }
+                ],
+                "recto": [
+                  [
+                    "A(1, 1)",
+                    "C",
+                    "B(4, 5)"
+                  ]
+                ],
+                "vertices": true,
+                "ancho": 4.4,
+                "alto": 3.6
+              }
+            },
+            {
+              "e": "La hipotenusa de un triángulo rectángulo mide 10 cm y uno de sus catetos mide 6 cm. ¿Cuál es el <b>área</b> del triángulo?<br/>A) 30 cm<super>2</super>&nbsp;&nbsp;&nbsp;&nbsp;B) 48 cm<super>2</super>&nbsp;&nbsp;&nbsp;&nbsp;C) 24 cm<super>2</super>&nbsp;&nbsp;&nbsp;&nbsp;D) 60 cm<super>2</super>",
+              "fig": {
+                "p": {
+                  "R": [
+                    0.0,
+                    0.0
+                  ],
+                  "P": [
+                    0.0,
+                    6.0
+                  ],
+                  "Q": [
+                    -8.0,
+                    0.0
+                  ]
+                },
+                "seg": [
+                  [
+                    "R",
+                    "P",
+                    "6 cm"
+                  ],
+                  [
+                    "R",
+                    "Q",
+                    ""
+                  ],
+                  [
+                    "P",
+                    "Q",
+                    "10 cm"
+                  ]
+                ],
+                "recto": [
+                  [
+                    "P",
+                    "R",
+                    "Q"
+                  ]
+                ],
+                "vertices": false,
+                "ancho": 4.2,
+                "alto": 3.0
+              }
+            },
+            {
+              "e": "La diagonal de un rectángulo mide 13 cm y su largo mide 12 cm. ¿Cuál es el <b>perímetro</b> del rectángulo?<br/>A) 30 cm&nbsp;&nbsp;&nbsp;&nbsp;B) 34 cm&nbsp;&nbsp;&nbsp;&nbsp;C) 60 cm&nbsp;&nbsp;&nbsp;&nbsp;D) 25 cm",
+              "fig": {
+                "p": {
+                  "A": [
+                    0,
+                    0
+                  ],
+                  "B": [
+                    12,
+                    0
+                  ],
+                  "C": [
+                    12,
+                    5
+                  ],
+                  "D": [
+                    0,
+                    5
+                  ]
+                },
+                "seg": [
+                  [
+                    "A",
+                    "B",
+                    "12 cm"
+                  ],
+                  [
+                    "B",
+                    "C"
+                  ],
+                  [
+                    "C",
+                    "D"
+                  ],
+                  [
+                    "D",
+                    "A"
+                  ],
+                  {
+                    "de": "A",
+                    "a": "C",
+                    "t": "13 cm",
+                    "lado": -1
+                  }
+                ],
+                "recto": [
+                  [
+                    "A",
+                    "B",
+                    "C"
+                  ]
+                ],
+                "ancho": 5.6,
+                "alto": 3.4
+              }
+            },
+            {
+              "e": "Una escalera de 10 m está apoyada en una pared, con su pie a 6 m de ella. Si el pie se aleja hasta quedar a 8 m de la pared, ¿cuántos metros baja la parte superior de la escalera?<br/>A) 1 m&nbsp;&nbsp;&nbsp;&nbsp;B) 2 m&nbsp;&nbsp;&nbsp;&nbsp;C) 4 m&nbsp;&nbsp;&nbsp;&nbsp;D) No baja",
+              "fig": {
+                "p": {
+                  "P": [
+                    0,
+                    0
+                  ],
+                  "T1": [
+                    0,
+                    8
+                  ],
+                  "T2": [
+                    0,
+                    6
+                  ],
+                  "S1": [
+                    6,
+                    0
+                  ],
+                  "S2": [
+                    8,
+                    0
+                  ],
+                  "W": [
+                    0,
+                    9
+                  ],
+                  "G": [
+                    9,
+                    0
+                  ]
+                },
+                "seg": [
+                  [
+                    "P",
+                    "W"
+                  ],
+                  [
+                    "P",
+                    "G"
+                  ],
+                  {
+                    "de": "S1",
+                    "a": "T1",
+                    "t": "10 m",
+                    "lado": -1
+                  },
+                  {
+                    "de": "S2",
+                    "a": "T2",
+                    "punteado": true
+                  },
+                  {
+                    "de": "P",
+                    "a": "S1",
+                    "t": "6 m",
+                    "lado": 1
+                  }
+                ],
+                "recto": [
+                  [
+                    "G",
+                    "P",
+                    "W"
+                  ]
+                ],
+                "ancho": 4.6,
+                "alto": 4.0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Errores frecuentes",
+      "salto_antes": true,
+      "cuerpo": [
+        {
+          "p": "Casi todos los errores con el teorema de Pitágoras caen en alguno de estos seis. Conviene leerlos antes de empezar y volver a ellos al corregir."
+        },
+        {
+          "tabla": {
+            "cabecera": [
+              "Error",
+              "Ejemplo del error",
+              "Lo correcto"
+            ],
+            "filas": [
+              [
+                "Olvidar sacar la raíz al final",
+                "3<super>2</super> + 4<super>2</super> = 25, entonces x = 25",
+                "x<super>2</super> = 25, entonces x = 5"
+              ],
+              [
+                "Sumar los lados sin elevarlos al cuadrado",
+                "x = 3 + 4 = 7",
+                "x<super>2</super> = 9 + 16 = 25 → x = 5"
+              ],
+              [
+                "Sumar cuando se busca un cateto",
+                "x<super>2</super> = 10<super>2</super> + 6<super>2</super> = 136",
+                "x<super>2</super> = 10<super>2</super> - 6<super>2</super> = 64 → x = 8"
+              ],
+              [
+                "Confundir la hipotenusa con el lado de abajo",
+                "Usar la base del dibujo como hipotenusa",
+                "La hipotenusa está frente al ángulo recto"
+              ],
+              [
+                "Elevar al cuadrado multiplicando por 2",
+                "6<super>2</super> = 12",
+                "6<super>2</super> = 6 · 6 = 36"
+              ],
+              [
+                "Sacar la raíz de cada término por separado",
+                "√(9 + 16) = 3 + 4 = 7",
+                "√(9 + 16) = √25 = 5"
+              ]
+            ],
+            "leyenda": "Tabla 1. Errores frecuentes con el teorema de Pitágoras."
+          }
+        },
+        {
+          "p": "<b>Control rápido.</b> La hipotenusa siempre es <b>más larga</b> que cada cateto, pero <b>más corta</b> que la suma de los dos catetos. Si su resultado no cumple esto, hay un error."
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria",
+      "salto_antes": true,
+      "cuerpo": [
+        {
+          "p": "Esta página reúne todo lo necesario para resolver la guía. Está pensada para tenerla a la vista mientras se trabaja."
+        },
+        {
+          "p": "<b>A.1. El triángulo rectángulo.</b> Es el que tiene un ángulo de 90°, que se marca con un cuadradito. Sus lados tienen nombre:"
+        },
+        {
+          "vinetas": [
+            "<b>Catetos (a y b):</b> los dos lados que forman el ángulo recto.",
+            "<b>Hipotenusa (c):</b> el lado que está al frente del ángulo recto. Es siempre el lado más largo."
+          ]
+        },
+        {
+          "figura": {
+            "p": {
+              "R": [
+                0.0,
+                0.0
+              ],
+              "P": [
+                4.0,
+                0.0
+              ],
+              "Q": [
+                0.0,
+                3.0
+              ]
+            },
+            "seg": [
+              [
+                "R",
+                "P",
+                "a"
+              ],
+              [
+                "R",
+                "Q",
+                "b"
+              ],
+              [
+                "P",
+                "Q",
+                "c"
+              ]
+            ],
+            "recto": [
+              [
+                "P",
+                "R",
+                "Q"
+              ]
+            ],
+            "vertices": false,
+            "ancho": 4.5,
+            "alto": 3.2,
+            "leyenda": "Figura A.1. Catetos a y b; hipotenusa c."
+          }
+        },
+        {
+          "p": "<b>A.2. El teorema y sus tres formas.</b> Según qué lado falte, se usa una de estas tres:"
+        },
+        {
+          "tabla": {
+            "cabecera": [
+              "Lo que falta",
+              "Fórmula",
+              "Ejemplo"
+            ],
+            "filas": [
+              [
+                "La hipotenusa c",
+                "c<super>2</super> = a<super>2</super> + b<super>2</super> → c = √(a<super>2</super> + b<super>2</super>)",
+                "a = 6, b = 8: c = √(36 + 64) = √100 = 10"
+              ],
+              [
+                "El cateto a",
+                "a<super>2</super> = c<super>2</super> - b<super>2</super> → a = √(c<super>2</super> - b<super>2</super>)",
+                "c = 13, b = 5: a = √(169 - 25) = √144 = 12"
+              ],
+              [
+                "El cateto b",
+                "b<super>2</super> = c<super>2</super> - a<super>2</super> → b = √(c<super>2</super> - a<super>2</super>)",
+                "c = 10, a = 6: b = √(100 - 36) = √64 = 8"
+              ]
+            ],
+            "leyenda": "Tabla A.1. Para la hipotenusa se suma; para un cateto se resta."
+          }
+        },
+        {
+          "p": "<b>A.3. Los pasos, siempre en este orden.</b>"
+        },
+        {
+          "vinetas": [
+            "<b>Paso 1.</b> Busque el ángulo recto y marque la hipotenusa.",
+            "<b>Paso 2.</b> Decida si busca la hipotenusa (se suma) o un cateto (se resta).",
+            "<b>Paso 3.</b> Escriba la fórmula con los números, eleve al cuadrado y opere.",
+            "<b>Paso 4.</b> Saque la raíz cuadrada y agregue la unidad.",
+            "<b>Paso 5.</b> Revise que la hipotenusa haya quedado como el lado más largo."
+          ]
+        },
+        {
+          "p": "<b>A.4. El teorema recíproco.</b> Si en un triángulo el cuadrado del lado mayor es igual a la suma de los cuadrados de los otros dos, el triángulo <b>es</b> rectángulo. Si no, <b>no</b> lo es:"
+        },
+        {
+          "formula": "6, 8, 10:&nbsp;&nbsp;&nbsp;10<super>2</super> = 100 y 6<super>2</super> + 8<super>2</super> = 100&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;es rectángulo"
+        },
+        {
+          "p": "<b>A.5. Ternas pitagóricas.</b> Son tríos de números enteros que cumplen el teorema. Conviene reconocerlas: en la prueba aparecen una y otra vez, y ahorran el cálculo."
+        },
+        {
+          "tabla": {
+            "cabecera": [
+              "Terna básica",
+              "Algunos múltiplos"
+            ],
+            "filas": [
+              [
+                "3, 4, 5",
+                "6, 8, 10 · 9, 12, 15 · 12, 16, 20 · 15, 20, 25"
+              ],
+              [
+                "5, 12, 13",
+                "10, 24, 26"
+              ],
+              [
+                "8, 15, 17",
+                "16, 30, 34"
+              ],
+              [
+                "7, 24, 25",
+                "14, 48, 50"
+              ]
+            ],
+            "leyenda": "Tabla A.2. Si se multiplican los tres números de una terna por el mismo número, se obtiene otra terna."
+          }
+        },
+        {
+          "p": "<b>A.6. Tabla de cuadrados.</b> Sirve en las dos direcciones: para elevar al cuadrado y para sacar raíces exactas (si 13<super>2</super> = 169, entonces √169 = 13)."
+        },
+        {
+          "tabla": {
+            "cabecera": [
+              "n",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13"
+            ],
+            "filas": [
+              [
+                "n<super>2</super>",
+                "1",
+                "4",
+                "9",
+                "16",
+                "25",
+                "36",
+                "49",
+                "64",
+                "81",
+                "100",
+                "121",
+                "144",
+                "169"
+              ],
+              [
+                "n",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                ""
+              ],
+              [
+                "n<super>2</super>",
+                "196",
+                "225",
+                "256",
+                "289",
+                "324",
+                "361",
+                "400",
+                "441",
+                "484",
+                "529",
+                "576",
+                "625",
+                ""
+              ]
+            ],
+            "leyenda": "Tabla A.3. Cuadrados de los números del 1 al 25."
+          }
+        },
+        {
+          "p": "<b>A.7. Estimar una raíz que no es exacta.</b> Se busca entre qué dos cuadrados de la tabla está el número:"
+        },
+        {
+          "formula": "16 &lt; 20 &lt; 25&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;4 &lt; √20 &lt; 5"
+        },
+        {
+          "nota": "Como 20 está más cerca de 16 que de 25, √20 está más cerca de 4 que de 5 (vale aproximadamente 4,5)."
+        },
+        {
+          "p": "<b>A.8. Diagonales que conviene recordar.</b> La diagonal de un rectángulo de lados a y b es √(a<super>2</super> + b<super>2</super>). En un cuadrado de lado a, la diagonal es a√2. La distancia entre dos puntos del plano cartesiano se calcula igual: se dibuja el triángulo rectángulo con las diferencias horizontal y vertical como catetos."
+        }
+      ]
+    }
+  ]
+}

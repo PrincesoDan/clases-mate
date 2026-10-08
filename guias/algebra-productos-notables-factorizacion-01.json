@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: álgebra",
+    "subtitulo": "Cincuenta ejercicios graduados, desde el lenguaje algebraico hasta las preguntas de alternativas en formato PAES",
+    "encabezado": "Guía de ejercicios: álgebra",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "8 de octubre de 2026",
+    "asunto": "PAES M1 — eje Álgebra: expresiones, productos notables y factorización"
+  },
+
+  "resumen": "El presente material corresponde a la quinta clase de la preparación PAES M1 y reúne cincuenta ejercicios de álgebra, organizados en ocho bloques de dificultad creciente. La secuencia parte del lenguaje algebraico —traducir un enunciado a una expresión— y avanza por la reducción de términos semejantes, la valorización, los dos productos notables del programa y los tres casos de factorización que pregunta la prueba: factor común, diferencia de cuadrados y trinomio de la forma x<super>2</super> + bx + c. El último bloque es el destino de toda la guía: preguntas de alternativas al nivel de la PAES, donde los contenidos anteriores aparecen mezclados y sin aviso. El orden no es decorativo: factorizar es deshacer un producto notable, y por eso los productos vienen inmediatamente antes; y sin factorizar no hay ecuación cuadrática, que es hacia donde apunta todo este bloque del curso. La guía no incluye solucionario: incluye, en cambio, un ayuda memoria en el Apéndice A y un repertorio de errores frecuentes en el Apéndice B.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Cada bloque agrega una dificultad nueva respecto del anterior, de modo que un error, cuando se produce, resulta atribuible a una causa identificable."},
+        {"vinetas": [
+          "Desarrolle cada ejercicio en el cuaderno, dejando registro escrito de <b>todos</b> los pasos intermedios. En la tabla escriba únicamente el resultado final.",
+          "Toda expresión debe entregarse <b>reducida</b>: sin paréntesis pendientes, sin términos semejantes repetidos y ordenada de mayor a menor exponente (3x<super>2</super> - 5x + 2).",
+          "Toda factorización debe entregarse <b>completa</b>: si uno de los factores todavía se puede factorizar, el ejercicio no está terminado.",
+          "En el bloque de alternativas (bloque 2.8) anote en la tabla solo la letra, pero deje en el cuaderno el desarrollo que la justifica. Una alternativa acertada sin desarrollo no cuenta como aprendida."
+        ]},
+        {"p": "Hay una idea que atraviesa toda la guía y conviene fijar desde el primer ejercicio: <b>multiplicar y factorizar son el mismo camino recorrido en sentidos opuestos</b>. Un producto notable transforma una multiplicación en una suma; la factorización transforma esa suma de vuelta en una multiplicación:"},
+        {"formula": "(x + 3)(x - 3)&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;x<super>2</super> - 9&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;(x + 3)(x - 3)"},
+        {"p": "En el <b>Apéndice A</b> está el ayuda memoria con todas las reglas y un procedimiento para decidir qué caso de factorización usar; en el <b>Apéndice B</b>, los errores característicos del tema. Conviene tener ambos a la vista mientras se trabaja."},
+        {"nota": "Esta guía no incluye solucionario. Para verificar un resultado algebraico, reemplace la letra por un número sencillo (x = 2, por ejemplo) en la expresión original y en su respuesta: si ambas dan el mismo número, la respuesta es casi con seguridad correcta. Para verificar una factorización, basta con multiplicar los factores obtenidos y comprobar que se recupera la expresión del enunciado."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Expresión",
+      "columnas": ["Respuesta"],
+      "bloques": [
+        {
+          "titulo": "Del lenguaje común al lenguaje algebraico",
+          "glosa": "Calentamiento. Antes de operar con letras hay que saber escribirlas: la PAES rara vez entrega la expresión hecha, casi siempre la esconde en un enunciado.",
+          "nota": "<b>Estrategia sugerida.</b> Use la letra x para «un número», salvo que el enunciado diga otra cosa. Fíjese en <b>qué se hace primero</b>: «el doble de un número, disminuido en 5» no es lo mismo que «el doble de la diferencia entre un número y 5».",
+          "ancho_enunciado": 0.6,
+          "alineacion": "izquierda",
+          "items": [
+            "El doble de un número, disminuido en 5.",
+            "El doble de la diferencia entre un número y 5.",
+            "El número x excede en 7 al número y. (Escriba la igualdad.)",
+            "El cuadrado de la suma de dos números a y b.",
+            "La suma de los cuadrados de dos números a y b.",
+            "El precio final de un producto de precio p, si se le agrega un 40 % de su valor. (Escríbalo como un solo término.)"
+          ]
+        },
+        {
+          "titulo": "Reducción de términos semejantes y paréntesis",
+          "glosa": "Solo se suman y restan términos <b>semejantes</b>: los que tienen exactamente la misma parte literal. La dificultad nueva es el paréntesis con signo negativo delante, que cambia el signo de <b>todo</b> lo que hay adentro.",
+          "nota": "<b>Estrategia sugerida.</b> Elimine primero todos los paréntesis, de adentro hacia afuera, y recién después agrupe. Subraye con un mismo color los términos semejantes antes de sumarlos.",
+          "ancho_enunciado": 0.46,
+          "items": [
+            "4a<super>2</super> - 3a + a<super>2</super> + 7a - 2",
+            "(2/3)x + (1/2)x - x",
+            "5m - (2m - 3)",
+            "7x - (3x - 4y) - (2y + x)",
+            "-2(3a - 5) + 4(a - 1)",
+            "3x - [2x - (x - 5)]",
+            "x(x + 3) - 2x(x - 1)"
+          ]
+        },
+        {
+          "titulo": "Valorización de expresiones",
+          "glosa": "Valorizar es reemplazar cada letra por un número y calcular. La dificultad está en los negativos y las fracciones, que deben entrar <b>siempre entre paréntesis</b>.",
+          "nota": "<b>Estrategia sugerida.</b> Escriba primero la expresión con paréntesis vacíos en lugar de cada letra y solo después rellénelos: 3( )<super>2</super> - 2( ) + 1. Así el signo negativo nunca queda fuera de la potencia.",
+          "ancho_enunciado": 0.5,
+          "items": [
+            "3x<super>2</super> - 2x + 1, para x = -2",
+            "a<super>2</super> - b<super>2</super>, para a = -3 y b = 2",
+            "(a - b)<super>2</super>, para a = -3 y b = 2",
+            "2x<super>2</super> + x, para x = -1/2"
+          ]
+        },
+        {
+          "titulo": "Cuadrado de un binomio",
+          "glosa": "Primer producto notable. Elevar al cuadrado una suma <b>no</b> es elevar cada término: aparece siempre un término central, el doble producto.",
+          "nota": "<b>Estrategia sugerida.</b> Escriba los tres términos por separado antes de juntarlos: cuadrado del primero, doble del primero por el segundo, cuadrado del segundo. El signo del término central es el signo del binomio.",
+          "ancho_enunciado": 0.4,
+          "items": [
+            "(x + 3)<super>2</super>",
+            "(a - 5)<super>2</super>",
+            "(2x + 1)<super>2</super>",
+            "(3m - 2n)<super>2</super>",
+            "(x/2 + 4)<super>2</super>",
+            "(-x - 3)<super>2</super>"
+          ]
+        },
+        {
+          "titulo": "Suma por su diferencia",
+          "glosa": "Segundo producto notable. Al multiplicar una suma por la diferencia de los mismos dos términos, los términos centrales se anulan y queda una resta de cuadrados.",
+          "nota": "<b>Estrategia sugerida.</b> Para el último ejercicio, escriba 101 = 100 + 1 y 99 = 100 - 1. Es el mismo producto notable, ahora usado como atajo de cálculo mental.",
+          "ancho_enunciado": 0.46,
+          "items": [
+            "(x + 4)(x - 4)",
+            "(3a - 1)(3a + 1)",
+            "(x + 2)<super>2</super> - (x + 2)(x - 2)",
+            "101 · 99, sin calculadora"
+          ]
+        },
+        {
+          "titulo": "Factorización: factor común y diferencia de cuadrados",
+          "glosa": "Aquí se invierte el sentido: dada una suma, se busca la multiplicación que la produjo. Siempre se mira primero si hay un factor común.",
+          "nota": "<b>Estrategia sugerida.</b> En el factor común, saque el máximo común divisor de los coeficientes y la letra con el <b>menor</b> exponente. Si después queda una resta de dos cuadrados, siga factorizando.",
+          "ancho_enunciado": 0.4,
+          "items": [
+            "4a<super>2</super> - 10a",
+            "3x<super>2</super>y - 6xy<super>2</super>",
+            "x<super>2</super> - 49",
+            "9a<super>2</super> - 25",
+            "2x<super>2</super> - 18",
+            "x(a + b) - 3(a + b)"
+          ]
+        },
+        {
+          "titulo": "Factorización: trinomio de la forma x<super>2</super> + bx + c",
+          "glosa": "El caso que se usará para resolver ecuaciones cuadráticas. Se buscan dos números que <b>multiplicados</b> den c y <b>sumados</b> den b.",
+          "nota": "<b>Estrategia sugerida.</b> Empiece por el producto: liste los pares de números que multiplicados dan c, con sus signos, y solo después revise cuál de esos pares suma b. Si c es negativo, los dos números tienen signos distintos.",
+          "ancho_enunciado": 0.4,
+          "items": [
+            "x<super>2</super> + 7x + 12",
+            "x<super>2</super> - 9x + 20",
+            "x<super>2</super> + 2x - 15",
+            "x<super>2</super> - x - 30",
+            "x<super>2</super> - 10x + 25",
+            "2x<super>2</super> + 10x + 12"
+          ]
+        },
+        {
+          "titulo": "Nivel PAES: preguntas de alternativas",
+          "glosa": "El destino de toda la guía. Las preguntas mezclan los bloques anteriores sin decir cuál se necesita. Tiempo de referencia: <b>2 minutos por pregunta</b>; cronometre el bloque completo.",
+          "nota": "<b>Estrategia sugerida.</b> Cuando las alternativas son expresiones, reemplace x por un número sencillo en el enunciado y en cada alternativa: la que dé el mismo resultado es la correcta. Es más rápido que manipular el álgebra y no se equivoca con los signos.",
+          "ancho_enunciado": 0.7,
+          "alineacion": "izquierda",
+          "items": [
+            "Si a un número n se le resta el doble de su antecesor, se obtiene:<br/>A) -n - 2&nbsp;&nbsp;&nbsp;&nbsp;B) -n + 2&nbsp;&nbsp;&nbsp;&nbsp;C) n - 2&nbsp;&nbsp;&nbsp;&nbsp;D) 2 - 2n",
+            "¿Cuál de las siguientes expresiones es equivalente a 4x - (2x - 3(x - 1))?<br/>A) 5x - 3&nbsp;&nbsp;&nbsp;&nbsp;B) 5x + 3&nbsp;&nbsp;&nbsp;&nbsp;C) 3x - 3&nbsp;&nbsp;&nbsp;&nbsp;D) -x + 3",
+            "Si (x - 4) · Q = x<super>2</super> + 2x - 24, entonces Q es igual a:<br/>A) x - 6&nbsp;&nbsp;&nbsp;&nbsp;B) x + 4&nbsp;&nbsp;&nbsp;&nbsp;C) x - 2&nbsp;&nbsp;&nbsp;&nbsp;D) x + 6",
+            "El área de un cuadrado cuyo lado mide (2a + 3) cm es:<br/>A) (4a<super>2</super> + 9) cm<super>2</super><br/>B) (4a<super>2</super> + 6a + 9) cm<super>2</super><br/>C) (4a<super>2</super> + 12a + 9) cm<super>2</super><br/>D) (2a<super>2</super> + 12a + 9) cm<super>2</super>",
+            "¿Cuál es el valor de 53<super>2</super> - 47<super>2</super>?<br/>A) 600&nbsp;&nbsp;&nbsp;&nbsp;B) 60&nbsp;&nbsp;&nbsp;&nbsp;C) 36&nbsp;&nbsp;&nbsp;&nbsp;D) 6.000",
+            "Un artículo cuesta p pesos. Si su precio sube un 20 % y luego se le descuentan $500, ¿qué expresión representa el precio final?<br/>A) p + 20 - 500&nbsp;&nbsp;&nbsp;&nbsp;B) 1,2p - 500&nbsp;&nbsp;&nbsp;&nbsp;C) 1,2(p - 500)&nbsp;&nbsp;&nbsp;&nbsp;D) 0,2p - 500",
+            "Si x + y = 7 y x - y = 3, ¿cuál es el valor de x<super>2</super> - y<super>2</super>?<br/>A) 10&nbsp;&nbsp;&nbsp;&nbsp;B) 40&nbsp;&nbsp;&nbsp;&nbsp;C) 21&nbsp;&nbsp;&nbsp;&nbsp;D) 58",
+            "Si a<super>2</super> + b<super>2</super> = 20 y a · b = 8, ¿cuál es el valor de (a + b)<super>2</super>?<br/>A) 28&nbsp;&nbsp;&nbsp;&nbsp;B) 4&nbsp;&nbsp;&nbsp;&nbsp;C) 400&nbsp;&nbsp;&nbsp;&nbsp;D) 36",
+            "¿Cuál de las siguientes expresiones es un factor de 3x<super>2</super> - 12?<br/>A) x - 4&nbsp;&nbsp;&nbsp;&nbsp;B) 3x - 4&nbsp;&nbsp;&nbsp;&nbsp;C) x + 2&nbsp;&nbsp;&nbsp;&nbsp;D) x - 3",
+            "El largo de un rectángulo mide 3 cm más que su ancho x. Si el ancho aumenta en 2 cm y el largo disminuye en 2 cm, ¿qué ocurre con el área?<br/>A) No cambia<br/>B) Aumenta en 2 cm<super>2</super><br/>C) Disminuye en 2 cm<super>2</super><br/>D) Depende del valor de x",
+            "Si n es un número entero, ¿cuál de las siguientes expresiones representa <b>siempre</b> un número par?<br/>A) n + 1&nbsp;&nbsp;&nbsp;&nbsp;B) 2n + 1&nbsp;&nbsp;&nbsp;&nbsp;C) n<super>2</super> + n&nbsp;&nbsp;&nbsp;&nbsp;D) n<super>2</super> + 1"
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "<b>A.1. Términos semejantes.</b> Dos términos son semejantes cuando tienen <b>la misma parte literal</b>: las mismas letras con los mismos exponentes. Solo ellos se suman o restan, y lo que se suma es el coeficiente; la parte literal no cambia:"},
+        {"formula": "5x<super>2</super> - 2x<super>2</super> = 3x<super>2</super>&nbsp;&nbsp;&nbsp;pero&nbsp;&nbsp;&nbsp;5x<super>2</super> - 2x no se puede reducir"},
+        {"p": "<b>A.2. Eliminación de paréntesis.</b> El signo que está delante del paréntesis decide qué pasa con lo de adentro:"},
+        {"tabla": {
+          "cabecera": ["Delante del paréntesis", "Qué se hace", "Ejemplo"],
+          "filas": [
+            ["Signo +", "Se quita el paréntesis y todo queda igual", "3 + (x - 2) = 3 + x - 2"],
+            ["Signo -", "Se quita el paréntesis y <b>cambian todos</b> los signos de adentro", "3 - (x - 2) = 3 - x + 2"],
+            ["Un número o término", "Se multiplica por <b>cada</b> término de adentro, con su signo", "-2(3a - 5) = -6a + 10"],
+            ["Paréntesis dentro de corchetes", "Se eliminan de adentro hacia afuera", "3x - [2x - (x - 5)] → 3x - [2x - x + 5]"]
+          ],
+          "leyenda": "Tabla A.1. El signo menos delante de un paréntesis afecta a todos los términos, no solo al primero. Es el error más frecuente del eje."
+        }},
+        {"p": "<b>A.3. Valorización.</b> Se reemplaza cada letra por su valor <b>entre paréntesis</b> y se respeta el orden de operaciones (paréntesis → potencias → · y : → + y -):"},
+        {"formula": "3x<super>2</super> con x = -2&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;3 · (-2)<super>2</super> = 3 · 4 = 12"},
+        {"p": "<b>A.4. Productos notables.</b> Son multiplicaciones que aparecen tanto que conviene reconocerlas sin desarrollarlas término a término:"},
+        {"tabla": {
+          "cabecera": ["Nombre", "Regla", "Ejemplo"],
+          "filas": [
+            ["Cuadrado de binomio (suma)", "(a + b)<super>2</super> = a<super>2</super> + 2ab + b<super>2</super>", "(x + 3)<super>2</super> = x<super>2</super> + 6x + 9"],
+            ["Cuadrado de binomio (resta)", "(a - b)<super>2</super> = a<super>2</super> - 2ab + b<super>2</super>", "(x - 4)<super>2</super> = x<super>2</super> - 8x + 16"],
+            ["Suma por diferencia", "(a + b)(a - b) = a<super>2</super> - b<super>2</super>", "(x + 5)(x - 5) = x<super>2</super> - 25"],
+            ["Binomios con término común", "(x + p)(x + q) = x<super>2</super> + (p + q)x + pq", "(x + 2)(x - 7) = x<super>2</super> - 5x - 14"]
+          ],
+          "leyenda": "Tabla A.2. Los productos notables del programa. En el cuadrado de binomio el último término es siempre positivo, aunque el binomio sea una resta."
+        }},
+        {"nota": "(a + b)<super>2</super> ≠ a<super>2</super> + b<super>2</super>. Compruébelo con números: (2 + 3)<super>2</super> = 25, pero 2<super>2</super> + 3<super>2</super> = 13. La diferencia, 12, es justamente el doble producto 2 · 2 · 3."},
+        {"p": "<b>A.5. Factorización.</b> Factorizar es escribir una expresión como una multiplicación. Los tres casos de la prueba:"},
+        {"tabla": {
+          "cabecera": ["Caso", "Cómo se reconoce", "Ejemplo"],
+          "filas": [
+            ["Factor común", "Todos los términos comparten un número o una letra", "6x<super>2</super> - 9x = 3x(2x - 3)"],
+            ["Diferencia de cuadrados", "Dos términos, una resta, ambos son cuadrados", "x<super>2</super> - 49 = (x + 7)(x - 7)"],
+            ["Trinomio x<super>2</super> + bx + c", "Tres términos, el primero es x<super>2</super>", "x<super>2</super> - x - 30 = (x - 6)(x + 5)"],
+            ["Trinomio cuadrado perfecto", "Primero y último son cuadrados; el central es su doble producto", "x<super>2</super> + 6x + 9 = (x + 3)<super>2</super>"]
+          ],
+          "leyenda": "Tabla A.3. Una suma de cuadrados, como x<super>2</super> + 49, no se puede factorizar con estos casos."
+        }},
+        {"p": "<b>A.6. Cómo decidir qué caso usar.</b> Siga este orden, siempre:"},
+        {"vinetas": [
+          "<b>Paso 1.</b> ¿Hay factor común? Si lo hay, sáquelo primero: 2x<super>2</super> - 18 = 2(x<super>2</super> - 9).",
+          "<b>Paso 2.</b> Cuente los términos de lo que quedó. Si son <b>dos</b> y es una resta de cuadrados, use diferencia de cuadrados. Si son <b>tres</b>, use el trinomio.",
+          "<b>Paso 3.</b> Mire cada factor obtenido: si todavía se puede factorizar, siga. 2(x<super>2</super> - 9) = 2(x + 3)(x - 3).",
+          "<b>Paso 4.</b> Verifique multiplicando los factores: tiene que volver la expresión original."
+        ]},
+        {"p": "<b>A.7. Trinomio x<super>2</super> + bx + c: la regla de los signos.</b> Se buscan dos números que multiplicados den c y sumados den b. Los signos de b y c dicen de antemano cómo son esos números:"},
+        {"tabla": {
+          "cabecera": ["Signo de c", "Signo de b", "Los dos números son", "Ejemplo"],
+          "filas": [
+            ["+", "+", "ambos positivos", "x<super>2</super> + 5x + 6 = (x + 2)(x + 3)"],
+            ["+", "-", "ambos negativos", "x<super>2</super> - 5x + 6 = (x - 2)(x - 3)"],
+            ["-", "+", "signos distintos; el mayor es positivo", "x<super>2</super> + x - 6 = (x + 3)(x - 2)"],
+            ["-", "-", "signos distintos; el mayor es negativo", "x<super>2</super> - x - 6 = (x - 3)(x + 2)"]
+          ],
+          "leyenda": "Tabla A.4. Leer los signos antes de buscar los números reduce la búsqueda a la mitad."
+        }},
+        {"p": "<b>A.8. Atajos de cálculo mental.</b> Los productos notables también sirven con números, y la PAES los usa así:"},
+        {"vinetas": [
+          "53<super>2</super> - 47<super>2</super> = (53 + 47)(53 - 47): diferencia de cuadrados.",
+          "101 · 99 = (100 + 1)(100 - 1): suma por diferencia.",
+          "Si conoce a + b y a - b, conoce también a<super>2</super> - b<super>2</super> sin calcular a ni b."
+        ]}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Errores frecuentes",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "Los errores que siguen son los que efectivamente aparecen al resolver esta guía. Conviene leerlos <i>antes</i> de empezar y volver a ellos al corregir: casi todo resultado equivocado en este tema cae en alguno de los ocho."},
+        {"tabla": {
+          "cabecera": ["Error", "Ejemplo del error", "Lo correcto"],
+          "filas": [
+            ["Cambiar el signo solo al primer término del paréntesis", "5m - (2m - 3) = 3m - 3", "Cambian todos: 5m - 2m + 3 = 3m + 3"],
+            ["Sumar términos que no son semejantes", "3x + 2x<super>2</super> = 5x<super>3</super>", "No se reduce: queda 2x<super>2</super> + 3x"],
+            ["Valorizar sin paréntesis", "x<super>2</super> con x = -3 da -9", "(-3)<super>2</super> = 9"],
+            ["Olvidar el doble producto", "(x + 3)<super>2</super> = x<super>2</super> + 9", "x<super>2</super> + 6x + 9"],
+            ["Poner negativo el último término del cuadrado de una resta", "(a - 5)<super>2</super> = a<super>2</super> - 10a - 25", "a<super>2</super> - 10a + 25"],
+            ["Elevar solo la letra y no el coeficiente", "(2x + 1)<super>2</super> = 2x<super>2</super> + 4x + 1", "(2x)<super>2</super> = 4x<super>2</super>: 4x<super>2</super> + 4x + 1"],
+            ["Dejar la factorización incompleta", "2x<super>2</super> - 18 = 2(x<super>2</super> - 9)", "Seguir: 2(x + 3)(x - 3)"],
+            ["Elegir los números del trinomio por la suma y no por el producto", "x<super>2</super> + 2x - 15 = (x + 15)(x - 13)", "Producto -15 y suma 2: (x + 5)(x - 3)"]
+          ],
+          "leyenda": "Tabla B.1. Errores frecuentes en álgebra. Los tres primeros son de signo y de reducción; los cinco últimos, de productos notables y factorización."
+        }},
+        {"p": "<b>Cómo verificar sin solucionario.</b> Tres controles rápidos permiten detectar casi cualquier error de los anteriores:"},
+        {"vinetas": [
+          "<b>Control por reemplazo.</b> Elija un valor sencillo para la letra (x = 2, nunca x = 0 ni x = 1, que esconden errores) y calcule la expresión original y su respuesta. Si los números no coinciden, hay un error.",
+          "<b>Control por multiplicación.</b> Toda factorización se comprueba multiplicando los factores. Si no vuelve exactamente la expresión del enunciado, la factorización está mal.",
+          "<b>Control de alternativas.</b> En el bloque 2.8, si dos alternativas le parecen correctas, reemplace un número en ambas: solo una coincidirá con el enunciado."
+        ]},
+        {"nota": "Los pares de ejercicios que se diferencian en un detalle —«el doble de un número, disminuido en 5» contra «el doble de la diferencia», o a<super>2</super> - b<super>2</super> contra (a - b)<super>2</super>— son los que más informan al corregir. Quien los resuelve distinto entendió la diferencia; quien los resuelve igual todavía no."}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice C. Nota didáctica",
+      "cuerpo": [
+        {"p": "Esta guía corresponde a la Clase 5, la primera después de tres clases perdidas, y abre el eje Álgebra. El bloque 2.1 sirve también de diagnóstico: si aparecen errores al traducir enunciados, conviene reforzarlo antes de la Clase 6, porque la modelación de ecuaciones depende directamente de esa habilidad."},
+        {"p": "El material conecta hacia atrás con las <b>potencias</b> de la Clase 4 —la falsa propiedad (a + b)<super>2</super> = a<super>2</super> + b<super>2</super> se resuelve aquí de una vez— y con las <b>fracciones</b> de las Clases 2 y 3, que reaparecen en los ejercicios con coeficientes fraccionarios. Conecta hacia adelante con la <b>ecuación cuadrática</b> de la Clase 9, que se resuelve factorizando con los mismos trinomios del bloque 2.7, y con el <b>porcentaje</b> de la tarea asincrónica, que vuelve en la pregunta 6 del bloque 2.8 como factor multiplicativo."},
+        {"nota": "Esta guía se entrega junto con la tarea asincrónica de porcentaje y el Mini-ensayo 1. Si el tiempo no alcanza, la prioridad es: bloques 2.2, 2.4, 2.6 y 2.7 completos, y al menos seis preguntas del bloque 2.8. Los bloques 2.1, 2.3 y 2.5 pueden reducirse a la mitad."}
+      ]
+    }
+  ]
+}

@@ -53,6 +53,25 @@ Opciones comunes a cualquier sección:
 
 Dentro de cualquier texto se pueden usar `<b>negrita</b>` e `<i>cursiva</i>`.
 
+## Figuras
+
+Un item de ejercicio puede llevar `"fig"` y una sección de texto puede llevar
+`{"figura": {...}}` para dibujar triángulos u otros polígonos (vectoriales, sin
+imágenes externas). Las coordenadas son libres y se escalan solas:
+
+```json
+{"e": "Calcule la hipotenusa x.",
+ "fig": {"p": {"R": [0, 0], "P": [4, 0], "Q": [0, 3]},
+         "seg": [["R", "P", "4 cm"], ["R", "Q", "3 cm"], ["P", "Q", "x"]],
+         "recto": [["P", "R", "Q"]],
+         "ancho": 4.2, "alto": 3.0}}
+```
+
+- `recto`: tríos `[P, V, Q]` que marcan el ángulo recto en `V`.
+- Un segmento puede ser `{"de", "a", "t", "punteado": true, "lado": 1 | -1}`;
+  `lado` fuerza de qué lado va la etiqueta.
+- `"vertices": true` (o una lista de nombres) rotula los puntos.
+
 ## Respuestas automáticas
 
 En un bloque de ejercicios, `"auto": "division"` calcula **solo** el cociente, el resto y
@@ -91,5 +110,15 @@ escribir una función en `generador_guias.py` y registrarla en el diccionario `R
 | `guia-fracciones-combinadas.pdf` | Salida generada |
 | `guias/ecuaciones-primer-grado-01.json` | Guía de 30 ecuaciones de primer grado de dificultad progresiva (sin solucionario, con ayuda memoria) |
 | `guia-ecuaciones-primer-grado.pdf` | Salida generada |
+| `guias/potencias-01.json` | Guía de 78 ejercicios de potencias de dificultad progresiva, con expresiones combinadas de potencias y fracciones (sin solucionario, con ayuda memoria) |
+| `guia-potencias.pdf` | Salida generada |
+| `guias/raices-notacion-cientifica-01.json` | Guía de 80 ejercicios de raíces, notación científica y crecimiento exponencial (segunda parte de la clase de potencias) |
+| `guia-raices-notacion-cientifica.pdf` | Salida generada |
+| `guias/numeros-enteros-8b-01.json` | Guía de 30 ejercicios de multiplicación, división y operaciones combinadas con enteros para 8.º básico (sin solucionario, con ayuda memoria) |
+| `guia-numeros-enteros-8b.pdf` | Salida generada |
+| `guias/algebra-productos-notables-factorizacion-01.json` | Guía de 50 ejercicios de lenguaje algebraico, reducción, productos notables y factorización, cerrando con 11 preguntas de alternativas nivel PAES (tarea de la Clase 5, sin solucionario, con ayuda memoria) |
+| `guia-algebra-productos-notables-factorizacion.pdf` | Salida generada |
+| `guias/teorema-pitagoras-8b-01.json` | Guía de 40 ejercicios del teorema de Pitágoras para 8.º básico, todos con figura (sin solucionario, con ayuda memoria) |
+| `guia-teorema-pitagoras-8b.pdf` | Salida generada |
 | `paes-regular-matematica1-p2025.md` | Folleto PAES Forma 113 transcrito |
-| `planificacion-paes-m1.md` | Planificación de 15 clases |
+| `planificacion-paes-m1.md` | Planificación de 12 clases (reprogramada el 8 oct tras perder 3 clases) |

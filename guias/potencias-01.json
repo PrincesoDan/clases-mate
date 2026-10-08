@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: potencias",
+    "subtitulo": "Setenta y ocho ejercicios graduados, desde la definición hasta las expresiones con fracciones negativas",
+    "encabezado": "Guía de ejercicios: potencias",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "10 de septiembre de 2026",
+    "asunto": "PAES M1 — eje Números: potencias y sus propiedades"
+  },
+
+  "resumen": "El presente material corresponde a la cuarta clase de la preparación PAES M1 y reúne setenta y ocho ejercicios sobre potencias, organizados en diez bloques de dificultad creciente. La secuencia parte de la definición con base entera positiva y avanza incorporando una sola dificultad nueva por bloque: el signo de la base negativa, los exponentes 0 y 1, las propiedades de producto y cociente, la potencia de una potencia, el exponente negativo y la base fraccionaria. Los dos últimos bloques son el destino de toda la guía: expresiones combinadas donde conviven potencias, fracciones positivas y fracciones negativas, y un bloque final de decisión rápida, pensado para el formato de la prueba. El orden no es decorativo: el exponente negativo y la base fraccionaria dependen por completo de la operatoria con fracciones vista en la clase anterior, y por eso vienen inmediatamente después. La guía no incluye solucionario: incluye, en cambio, un ayuda memoria en el Apéndice A y un repertorio de errores frecuentes en el Apéndice B.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Cada bloque agrega exactamente una dificultad nueva respecto del anterior, de modo que un error, cuando se produce, resulta atribuible a una causa identificable."},
+        {"vinetas": [
+          "Desarrolle cada ejercicio en el cuaderno, dejando registro escrito de <b>todos</b> los pasos intermedios. En la tabla escriba únicamente el resultado final.",
+          "Cuando el resultado sea un número manejable, entréguelo <b>calculado</b> (2<super>3</super> · 2<super>2</super> = 2<super>5</super> = 32). Cuando el número se dispare, basta con dejarlo <b>como una sola potencia</b> (5<super>2</super> · 5<super>6</super> = 5<super>8</super>).",
+          "Toda respuesta fraccionaria debe entregarse <b>simplificada</b>, y toda respuesta negativa debe llevar su signo escrito de manera inequívoca.",
+          "El símbolo <b>:</b> indica división y el símbolo <b>·</b> indica multiplicación. El exponente va escrito en alto: 3<super>4</super> significa 3 · 3 · 3 · 3, y <b>no</b> 3 · 4."
+        ]},
+        {"p": "Hay una distinción que atraviesa toda la guía y conviene fijar desde el primer ejercicio: <b>el paréntesis decide qué está elevado</b>. En (-2)<super>4</super> se eleva el número negativo completo; en -2<super>4</super> se eleva solo el 2 y el signo menos queda afuera, esperando al final:"},
+        {"formula": "(-2)<super>4</super> = 16&nbsp;&nbsp;&nbsp;≠&nbsp;&nbsp;&nbsp;-2<super>4</super> = -16"},
+        {"p": "En el <b>Apéndice A</b> está el ayuda memoria con todas las propiedades y una tabla de potencias de uso frecuente; en el <b>Apéndice B</b>, los errores característicos del tema. Conviene tener ambos a la vista mientras se trabaja."},
+        {"nota": "Esta guía no incluye solucionario. Para verificar un resultado, rehaga el ejercicio por un camino distinto —desarrollando la potencia factor por factor en lugar de aplicar la propiedad, o al revés— y compare: si ambos caminos coinciden, el resultado es correcto. Ese contraste, además, es lo que termina de explicar por qué la propiedad funciona."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Expresión",
+      "columnas": ["Respuesta"],
+      "bloques": [
+        {
+          "titulo": "Qué significa una potencia",
+          "glosa": "Calentamiento. Una potencia es una multiplicación repetida: la <b>base</b> es el número que se repite y el <b>exponente</b> dice cuántas veces aparece como factor.",
+          "nota": "<b>Estrategia sugerida.</b> Escriba la multiplicación completa antes de calcular: 3<super>4</super> = 3 · 3 · 3 · 3. Es el paso que evita el error más común del tema, que consiste en multiplicar la base por el exponente.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "2<super>3</super>",
+            "3<super>4</super>",
+            "5<super>3</super>",
+            "10<super>5</super>",
+            "2<super>8</super>",
+            "1<super>25</super>"
+          ]
+        },
+        {
+          "titulo": "El signo: base negativa y paréntesis",
+          "glosa": "Aquí entra la primera dificultad real. Con base negativa, el <b>exponente par</b> devuelve un resultado positivo y el <b>exponente impar</b>, uno negativo. Y el paréntesis decide si el signo entra o no en la potencia.",
+          "nota": "<b>Advertencia.</b> Compare (-3)<super>2</super> con -3<super>2</super>: se diferencian en un paréntesis y en nada más, y sin embargo dan resultados distintos. Si le dan lo mismo, el error está en haber elevado el signo cuando no correspondía.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "(-2)<super>3</super>",
+            "(-2)<super>4</super>",
+            "(-3)<super>2</super>",
+            "-3<super>2</super>",
+            "(-1)<super>7</super>",
+            "(-1)<super>100</super>",
+            "-(-2)<super>3</super>",
+            "(-5)<super>2</super> - 5<super>2</super>",
+            "(-2)<super>3</super> + (-2)<super>2</super>"
+          ]
+        },
+        {
+          "titulo": "Los exponentes 0 y 1",
+          "glosa": "Dos casos especiales que la prueba pregunta con frecuencia, casi siempre escondidos dentro de una expresión más larga: <b>toda base distinta de cero elevada a 0 da 1</b>, y elevada a 1 se queda como está.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "9<super>0</super>",
+            "(-4)<super>0</super>",
+            "-4<super>0</super>",
+            "(2/3)<super>0</super>",
+            "0<super>4</super>",
+            "(3<super>0</super> + 5<super>0</super>)<super>3</super>"
+          ]
+        },
+        {
+          "titulo": "Producto y cociente de potencias de igual base",
+          "glosa": "Primera propiedad. Cuando la <b>base es la misma</b>, multiplicar potencias equivale a sumar los exponentes y dividirlas, a restarlos. La base no cambia nunca.",
+          "nota": "<b>Estrategia sugerida.</b> Un número sin exponente visible tiene exponente 1: 7 = 7<super>1</super>. Escribirlo así antes de aplicar la propiedad ahorra la mitad de los errores de este bloque.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "2<super>3</super> · 2<super>4</super>",
+            "5<super>6</super> : 5<super>2</super>",
+            "10<super>8</super> : 10<super>3</super>",
+            "7<super>5</super> · 7",
+            "3<super>2</super> · 3<super>5</super> : 3<super>4</super>",
+            "(-2)<super>3</super> · (-2)<super>2</super>",
+            "4<super>7</super> : 4<super>7</super>",
+            "x<super>4</super> · x<super>3</super> : x<super>5</super>"
+          ]
+        },
+        {
+          "titulo": "Potencia de una potencia, de un producto y de un cociente",
+          "glosa": "Segunda propiedad. Elevar una potencia a otro exponente <b>multiplica</b> los exponentes; y un producto o un cociente elevado reparte el exponente entre todos sus factores.",
+          "nota": "<b>Advertencia.</b> No confunda 2<super>3</super> · 2<super>2</super> = 2<super>5</super> con (2<super>3</super>)<super>2</super> = 2<super>6</super>. En el primer caso los exponentes se suman; en el segundo, se multiplican. Desarrolle ambos factor por factor una vez y la diferencia queda clara para siempre.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "(2<super>3</super>)<super>2</super>",
+            "(5<super>2</super>)<super>3</super>",
+            "(3 · 4)<super>2</super>",
+            "(2 · 5)<super>3</super>",
+            "((-2)<super>2</super>)<super>3</super>",
+            "(2<super>5</super>)<super>0</super>",
+            "(3<super>2</super> · 3)<super>2</super>",
+            "(x<super>3</super>)<super>4</super> · x<super>2</super>"
+          ]
+        },
+        {
+          "titulo": "Exponente negativo",
+          "glosa": "<b>Aquí empieza la parte que se apoya en fracciones.</b> Un exponente negativo no vuelve negativo el resultado: <b>da vuelta la base</b>. Es decir, a<super>-n</super> es el recíproco de a<super>n</super>.",
+          "nota": "<b>Advertencia.</b> 2<super>-3</super> es 1/8, un número <i>positivo</i>. El signo del exponente y el signo del resultado son cosas distintas: quien decide el signo del resultado es la base, no el exponente.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "2<super>-3</super>",
+            "5<super>-2</super>",
+            "10<super>-3</super>",
+            "3<super>-1</super>",
+            "(-2)<super>-3</super>",
+            "2<super>4</super> · 2<super>-6</super>",
+            "7<super>-3</super> : 7<super>-5</super>",
+            "(2<super>-2</super>)<super>-3</super>"
+          ]
+        },
+        {
+          "titulo": "Base fraccionaria positiva",
+          "glosa": "El exponente se reparte entre numerador y denominador: se eleva arriba y se eleva abajo. Con exponente negativo, la fracción se da vuelta y el exponente queda positivo.",
+          "nota": "<b>Estrategia sugerida.</b> Para (3/5)<super>-2</super> conviene invertir <i>primero</i> —queda (5/3)<super>2</super>— y elevar después. Elevar primero y dar vuelta al final lleva al mismo resultado, pero con números más grandes y más ocasiones de equivocarse.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "(2/3)<super>2</super>",
+            "(3/4)<super>3</super>",
+            "(1/2)<super>5</super>",
+            "(5/2)<super>2</super>",
+            "(2/3)<super>-1</super>",
+            "(3/5)<super>-2</super>",
+            "(1/2)<super>-4</super>",
+            "(2/3)<super>2</super> · (2/3)<super>3</super>"
+          ]
+        },
+        {
+          "titulo": "Base fraccionaria negativa",
+          "glosa": "Se juntan las dos dificultades anteriores: el signo de la base y la fracción. Vuelve a regir la regla del paréntesis, ahora con fracciones.",
+          "nota": "<b>Advertencia.</b> Compare (-2/3)<super>2</super> con -(2/3)<super>2</super>. En (-2/3)<super>2</super> se eleva la fracción negativa completa y el resultado es positivo; en -(2/3)<super>2</super> el signo menos está afuera y sobrevive hasta el final.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "(-1/2)<super>3</super>",
+            "(-2/3)<super>2</super>",
+            "-(2/3)<super>2</super>",
+            "(-3/2)<super>3</super>",
+            "(-3/4)<super>-1</super>",
+            "(-1/2)<super>-3</super>",
+            "(-1/3)<super>-2</super>",
+            "(-2/5)<super>2</super> · (-2/5)<super>-1</super>"
+          ]
+        },
+        {
+          "titulo": "Expresiones combinadas: potencias y fracciones",
+          "glosa": "<b>Este es el bloque al que apunta toda la guía.</b> Conviven potencias, fracciones positivas y negativas, exponentes negativos y paréntesis. Rige el orden habitual: primero los paréntesis, después las potencias, en seguida multiplicación y división de izquierda a derecha, y al final suma y resta.",
+          "nota": "<b>Estrategia sugerida.</b> Resuelva cada potencia por separado, anótela ya calculada como fracción, y recién entonces sume, reste, multiplique o divida. Intentar aplicar propiedades y operar fracciones en el mismo renglón es la vía rápida al error.",
+          "ancho_enunciado": 0.42,
+          "items": [
+            "(1/2)<super>2</super> + (1/3)<super>2</super>",
+            "((1/2) + (1/3))<super>2</super>",
+            "(-2/3)<super>2</super> - (2/3)<super>2</super>",
+            "(1/2)<super>-2</super> - (1/3)<super>-1</super>",
+            "(2/3)<super>2</super> · (3/2)<super>2</super>",
+            "(-1/2)<super>3</super> : (1/2)<super>2</super>",
+            "(3/4)<super>2</super> : (-3/2)<super>3</super>",
+            "(-2)<super>-2</super> + (1/2)<super>-2</super>",
+            "(1 - (1/2)<super>2</super>)<super>-1</super>",
+            "((-3/2)<super>2</super> - (1/2)<super>2</super>) : (1/2)<super>-1</super>"
+          ]
+        },
+        {
+          "titulo": "Decidir sin calcular",
+          "glosa": "Entrenamiento específico para el formato de la prueba: responder por razonamiento, sin desarrollar el cálculo completo. En estos ejercicios se pide una <b>decisión justificada</b>, no un desarrollo.",
+          "ancho_enunciado": 0.66,
+          "alineacion": "izquierda",
+          "items": [
+            "Sin calcular su valor, decida si (-2)<super>10</super> es positivo o negativo, y explique en qué se fijó.",
+            "¿Cuál es mayor, (1/2)<super>3</super> o (1/2)<super>5</super>? Justifique sin calcular ambos valores.",
+            "¿Cuál es mayor, (1/2)<super>-3</super> o (1/2)<super>3</super>? Justifique.",
+            "Ordene de menor a mayor: (1/2)<super>3</super>, (1/2)<super>0</super>, (1/2)<super>2</super>, (1/2)<super>-2</super>.",
+            "Verdadero o falso: 2<super>3</super> + 2<super>4</super> = 2<super>7</super>. Si es falso, calcule el valor correcto y explique por qué la propiedad no se aplica aquí.",
+            "Verdadero o falso: ((1/2) + (1/3))<super>2</super> = (1/2)<super>2</super> + (1/3)<super>2</super>. Compare con (1/2)<super>2</super> + (1/3)<super>2</super> y ((1/2) + (1/3))<super>2</super>, ya resueltos en el bloque anterior, antes de responder.",
+            "Un estudiante escribió (-3)<super>2</super> = -9 y, en el mismo ejercicio, -3<super>2</super> = 9. Corrija ambos resultados y explique en una línea de qué se confundió."
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "<b>A.1. Definición.</b> Una potencia es una multiplicación repetida. La <b>base</b> es el factor que se repite; el <b>exponente</b>, la cantidad de veces que aparece:"},
+        {"formula": "a<super>n</super> = a · a · a · … · a&nbsp;&nbsp;&nbsp;(n factores)"},
+        {"nota": "El exponente no multiplica a la base: 3<super>4</super> = 81, no 12. Ante cualquier duda, desarrolle la multiplicación completa."},
+
+        {"p": "<b>A.2. El signo de la base y el paréntesis.</b> Con base negativa, la paridad del exponente decide el signo del resultado. Y el paréntesis decide qué es lo que está elevado:"},
+        {"tabla": {
+          "cabecera": ["Expresión", "Qué se eleva", "Resultado"],
+          "filas": [
+            ["(-2)<super>3</super>", "el número -2 completo, tres veces", "-8"],
+            ["(-2)<super>4</super>", "el número -2 completo, cuatro veces", "16"],
+            ["-2<super>4</super>", "solo el 2; el signo queda afuera", "-16"],
+            ["-(-2)<super>3</super>", "primero (-2)<super>3</super> = -8, después el signo", "8"]
+          ],
+          "leyenda": "Tabla A.1. Base negativa: exponente par da positivo, exponente impar da negativo. Sin paréntesis, el signo menos no forma parte de la base."
+        }},
+
+        {"p": "<b>A.3. Las cinco propiedades.</b> Todas exigen que la <b>base sea la misma</b> (salvo las dos últimas, que exigen el mismo exponente):"},
+        {"tabla": {
+          "cabecera": ["Propiedad", "Regla", "Ejemplo"],
+          "filas": [
+            ["Producto de igual base", "a<super>m</super> · a<super>n</super> = a<super>m+n</super>", "2<super>3</super> · 2<super>4</super> = 2<super>7</super>"],
+            ["Cociente de igual base", "a<super>m</super> : a<super>n</super> = a<super>m-n</super>", "5<super>6</super> : 5<super>2</super> = 5<super>4</super>"],
+            ["Potencia de una potencia", "(a<super>m</super>)<super>n</super> = a<super>m·n</super>", "(2<super>3</super>)<super>2</super> = 2<super>6</super>"],
+            ["Potencia de un producto", "(a · b)<super>n</super> = a<super>n</super> · b<super>n</super>", "(3 · 4)<super>2</super> = 9 · 16 = 144"],
+            ["Potencia de un cociente", "(a/b)<super>n</super> = a<super>n</super>/b<super>n</super>", "(2/3)<super>2</super> = 4/9"]
+          ],
+          "leyenda": "Tabla A.2. Las propiedades que la prueba pregunta. Se suman los exponentes al multiplicar y se multiplican al elevar: esa es la confusión más frecuente."
+        }},
+
+        {"p": "<b>A.4. Exponentes 0 y 1.</b> Casos especiales que conviene reconocer de inmediato dentro de una expresión larga:"},
+        {"formula": "a<super>0</super> = 1&nbsp;&nbsp;(con a ≠ 0)&nbsp;&nbsp;&nbsp;y&nbsp;&nbsp;&nbsp;a<super>1</super> = a"},
+        {"nota": "El exponente 0 sale de la propiedad del cociente: 4<super>7</super> : 4<super>7</super> es 1 por un lado y 4<super>0</super> por el otro. Ojo con el paréntesis también aquí: (-4)<super>0</super> = 1, pero -4<super>0</super> = -1."},
+
+        {"p": "<b>A.5. Exponente negativo.</b> Un exponente negativo <b>no</b> vuelve negativo el resultado: invierte la base. Es la propiedad que más se apoya en el manejo de fracciones:"},
+        {"formula": "a<super>-n</super> = 1/a<super>n</super>&nbsp;&nbsp;&nbsp;y&nbsp;&nbsp;&nbsp;(a/b)<super>-n</super> = (b/a)<super>n</super>"},
+        {"vinetas": [
+          "2<super>-3</super> = 1/2<super>3</super> = 1/8. Positivo, porque la base es positiva.",
+          "(-2)<super>-3</super> = 1/(-2)<super>3</super> = -1/8. Negativo, porque la base lo es.",
+          "(2/3)<super>-2</super> = (3/2)<super>2</super> = 9/4. Con base fraccionaria, conviene <b>invertir primero y elevar después</b>.",
+          "Las propiedades de la Tabla A.2 siguen valiendo con exponentes negativos: 2<super>4</super> · 2<super>-6</super> = 2<super>-2</super> = 1/4."
+        ]},
+
+        {"p": "<b>A.6. Lo que <i>no</i> es una propiedad.</b> No existe ninguna regla para la suma o la resta de potencias. Estas tres igualdades son falsas y aparecen como alternativa incorrecta en la prueba:"},
+        {"tabla": {
+          "cabecera": ["Igualdad falsa", "Por qué es falsa", "Lo correcto"],
+          "filas": [
+            ["a<super>m</super> + a<super>n</super> = a<super>m+n</super>", "2<super>3</super> + 2<super>4</super> = 8 + 16 = 24, y 2<super>7</super> = 128", "Se calcula cada potencia y se suma"],
+            ["(a + b)<super>n</super> = a<super>n</super> + b<super>n</super>", "(1/2 + 1/3)<super>2</super> = 25/36, y (1/2)<super>2</super> + (1/3)<super>2</super> = 13/36", "Primero el paréntesis, después la potencia"],
+            ["a<super>-n</super> = -a<super>n</super>", "2<super>-3</super> = 1/8, y -2<super>3</super> = -8", "El exponente negativo invierte, no cambia el signo"]
+          ],
+          "leyenda": "Tabla A.3. Las tres falsas propiedades del tema. La segunda reaparece en la Semana 6 como producto notable."
+        }},
+
+        {"p": "<b>A.7. Orden de operaciones.</b> En una expresión combinada, las potencias se resuelven <i>antes</i> que la multiplicación y la división, y <i>después</i> que los paréntesis:"},
+        {"formula": "paréntesis&nbsp;&nbsp;→&nbsp;&nbsp;potencias&nbsp;&nbsp;→&nbsp;&nbsp;· y :&nbsp;&nbsp;→&nbsp;&nbsp;+ y -"},
+        {"nota": "Recomendación de método para el bloque 2.9: calcule cada potencia por separado, escríbala ya reducida como fracción, y solo entonces opere. Un renglón por potencia, un renglón por operación."},
+
+        {"p": "<b>A.8. Cómo cambia el tamaño del resultado.</b> Anticiparlo permite descartar alternativas sin terminar el cálculo:"},
+        {"tabla": {
+          "cabecera": ["Situación", "Efecto al crecer el exponente", "Ejemplo"],
+          "filas": [
+            ["Base mayor que 1", "El resultado crece", "2<super>3</super> = 8 &lt; 2<super>5</super> = 32"],
+            ["Base entre 0 y 1", "El resultado achica", "(1/2)<super>3</super> = 1/8 &gt; (1/2)<super>5</super> = 1/32"],
+            ["Exponente negativo, base entre 0 y 1", "El resultado es mayor que 1", "(1/2)<super>-3</super> = 8"],
+            ["Base negativa", "El signo alterna: par positivo, impar negativo", "(-2)<super>2</super> = 4, (-2)<super>3</super> = -8"]
+          ],
+          "leyenda": "Tabla A.4. Una fracción menor que 1 se hace más chica al elevarla, no más grande: es el resultado que más sorprende al empezar."
+        }},
+
+        {"p": "<b>A.9. Potencias de uso frecuente.</b> Conviene tenerlas memorizadas: aparecen una y otra vez, y reconocerlas ahorra minutos en la prueba:"},
+        {"tabla": {
+          "cabecera": ["Base", "Potencias"],
+          "filas": [
+            ["2", "2, 4, 8, 16, 32, 64, 128, 256, 512, 1 024"],
+            ["3", "3, 9, 27, 81, 243, 729"],
+            ["4", "4, 16, 64, 256"],
+            ["5", "5, 25, 125, 625"],
+            ["10", "10, 100, 1 000, 10 000, 100 000"]
+          ],
+          "leyenda": "Tabla A.5. Potencias sucesivas desde el exponente 1. Reconocer un número como potencia —que 64 es 2<super>6</super> y también 4<super>3</super> y 8<super>2</super>— es la mitad del trabajo en muchas preguntas."
+        }}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Errores frecuentes",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "Los errores que siguen son los que efectivamente aparecen al resolver esta guía. Conviene leerlos <i>antes</i> de empezar y volver a ellos al corregir: casi todo resultado equivocado en este tema cae en alguno de los siete."},
+        {"tabla": {
+          "cabecera": ["Error", "Ejemplo del error", "Lo correcto"],
+          "filas": [
+            ["Multiplicar la base por el exponente", "3<super>4</super> = 12", "3 · 3 · 3 · 3 = 81"],
+            ["Elevar el signo sin paréntesis", "-3<super>2</super> = 9", "Se eleva solo el 3: -9"],
+            ["Creer que el exponente negativo da un resultado negativo", "2<super>-3</super> = -8", "Invierte la base: 1/2<super>3</super> = 1/8"],
+            ["Sumar los exponentes al elevar una potencia", "(2<super>3</super>)<super>2</super> = 2<super>5</super>", "Se multiplican: 2<super>6</super> = 64"],
+            ["Multiplicar los exponentes al multiplicar potencias", "2<super>3</super> · 2<super>4</super> = 2<super>12</super>", "Se suman: 2<super>7</super> = 128"],
+            ["Aplicar una propiedad a una suma de potencias", "2<super>3</super> + 2<super>4</super> = 2<super>7</super>", "Se calcula cada una y se suma: 24"],
+            ["Elevar solo el numerador de la fracción", "(2/3)<super>2</super> = 4/3", "Se eleva arriba y abajo: 4/9"]
+          ],
+          "leyenda": "Tabla B.1. Errores frecuentes en potencias. Los cuatro primeros son de signo o de definición; los tres últimos, de propiedades mal aplicadas."
+        }},
+        {"p": "<b>Cómo verificar sin solucionario.</b> Tres controles rápidos permiten detectar casi cualquier error de los anteriores:"},
+        {"vinetas": [
+          "<b>Control por desarrollo.</b> Cuando aplicó una propiedad, rehaga el ejercicio escribiendo las multiplicaciones completas. 2<super>3</super> · 2<super>2</super> desarrollado es 8 · 4 = 32, que es 2<super>5</super>: la propiedad queda comprobada, no solo recordada.",
+          "<b>Control de signo.</b> Antes de calcular, decida por separado si el resultado será positivo o negativo mirando únicamente la base y la paridad del exponente. Si al terminar el signo no coincide con lo anticipado, hay un error en alguna parte.",
+          "<b>Control de tamaño.</b> Use la Tabla A.4. Si elevó una fracción menor que 1 a un exponente positivo y el resultado creció, o si un exponente negativo le devolvió un número negativo, el error está localizado."
+        ]},
+        {"nota": "Al corregir en clase, los ejercicios que más informan son los pares que se diferencian en un paréntesis —(-3)<super>2</super> contra -3<super>2</super>, (-2/3)<super>2</super> contra -(2/3)<super>2</super>—. Quien los resuelve distinto entendió la regla; quien los resuelve igual todavía no, aunque haya acertado uno de los dos."
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice C. Nota didáctica",
+      "cuerpo": [
+        {"p": "Esta guía cierra el eje Números junto con la de fracciones de la clase anterior, y no es casual el orden: los bloques 2.6 a 2.9 son, en rigor, ejercicios de fracciones disfrazados de potencias. Si aparecen errores en el bloque 2.9, conviene distinguir si son de potencia o de operatoria con fracciones antes de repetir la explicación, porque el remedio es distinto en cada caso."},
+        {"p": "El material conecta hacia adelante con tres contenidos del programa: la <b>notación científica</b>, que es la aplicación directa de las potencias de 10 del bloque 4; el <b>producto notable</b> de la Semana 6, que resuelve de una vez la falsa propiedad (a + b)<super>2</super> = a<super>2</super> + b<super>2</super> de la Tabla A.3; y el <b>cambio de escala</b> en área y volumen de la Semana 12, donde duplicar el lado cuadruplica el área precisamente por el exponente 2."},
+        {"nota": "Los siete ejercicios del bloque 2.10 están pensados para trabajarse en voz alta, no por escrito. Piden justificar una decisión, y esa justificación oral es el mejor diagnóstico disponible de si la regla se comprendió o solo se memorizó."}
+      ]
+    }
+  ]
+}

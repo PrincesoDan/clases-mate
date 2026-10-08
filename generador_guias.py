@@ -22,7 +22,8 @@ Estructura del JSON (ver guias/divisiones-01.json como ejemplo):
         {"p": "párrafo"},
         {"nota": "párrafo en cursiva"},
         {"vinetas": ["item", "item"]},
-        {"formula": "expresión centrada"}
+        {"formula": "expresión centrada"},
+        {"figura": {...}}          # ver _figura()
     ]},
     {"tipo": "ejercicios", "titulo": "...", "columnas": ["Cociente", "Resto"],
      "bloques": [
@@ -43,6 +44,8 @@ Notas:
     {"e": "enunciado", "sol": ["resp1", "resp2"], "verif": "comprobación"}.
   - La sección "solucionario" recoge automáticamente todos los ejercicios
     definidos antes en el documento.
+  - Un item puede llevar "fig": {...} (ver _figura) para dibujar un triángulo
+    u otra figura poligonal a la derecha del enunciado.
   - Cualquier sección acepta "salto_antes": true para empezar en página nueva.
 """
 
@@ -61,6 +64,8 @@ from reportlab.pdfgen import canvas as rl_canvas
 from reportlab.platypus import (BaseDocTemplate, Frame, HRFlowable, KeepTogether,
                                 PageBreak, PageTemplate, Paragraph, Spacer,
                                 Table, TableStyle)
+from reportlab.graphics.shapes import Drawing, Line, Polygon, String
+from reportlab.pdfbase.pdfmetrics import stringWidth
 
 # ---------------------------------------------------------------------------
 # Estilo de casa
@@ -166,6 +171,127 @@ def _normalizar_item(item, auto):
     return item
 
 
+
+# ---------------------------------------------------------------------------
+# Figuras geométricas
+# ---------------------------------------------------------------------------
+# Una figura se describe con coordenadas libres (se escalan solas al tamaño
+# pedido), los segmentos que se dibujan y los ángulos rectos que se marcan:
+#
+#   {"p": {"A": [0, 0], "B": [4, 0], "C": [0, 3]},
+#    "seg": [["A", "B", "4 cm"], ["B", "C", "x"], ["C", "A", "3 cm"]],
+#    "recto": [["B", "A", "C"]],          # ángulo recto en A, entre AB y AC
+#    "vertices": true,                    # escribe A, B, C (o una lista: solo esos)
+#    "ancho": 4.2, "alto": 3.2}           # tamaño máximo, en cm
+#
+# Un segmento también puede ser un dict con "punteado": true (alturas,
+# diagonales auxiliares) y "lado": 1 o -1 para elegir de qué lado va la
+# etiqueta cuando la regla automática (alejarse del centro) no sirve.
+def _figura(fig):
+    import math
+    pts = {k: (float(v[0]), float(v[1])) for k, v in fig["p"].items()}
+    xs = [x for x, _ in pts.values()]
+    ys = [y for _, y in pts.values()]
+    fs = 9.5
+    # El margen lateral se ajusta a la etiqueta más ancha, para que ninguna
+    # quede fuera del dibujo (y se monte sobre la columna de respuesta).
+    textos = [sg.get("t", "") if isinstance(sg, dict) else (sg[2] if len(sg) > 2 else "")
+              for sg in fig.get("seg", [])]
+    if fig.get("vertices"):
+        textos += list(_vertices_visibles(fig, pts))
+    ancho_txt = max([stringWidth(t, "Times-Roman", fs) for t in textos] + [0])
+    mx_, my_ = 10.0 + ancho_txt, 16.0
+    w_max = fig.get("ancho", 4.2) * cm - 2 * mx_
+    h_max = fig.get("alto", 3.2) * cm - 2 * my_
+    dx = (max(xs) - min(xs)) or 1.0
+    dy = (max(ys) - min(ys)) or 1.0
+    esc = min(w_max / dx, h_max / dy)
+    W = dx * esc + 2 * mx_
+    H = dy * esc + 2 * my_
+
+    def T(k):
+        x, y = pts[k]
+        return (mx_ + (x - min(xs)) * esc, my_ + (y - min(ys)) * esc)
+
+    cx = sum(T(k)[0] for k in pts) / len(pts)
+    cy = sum(T(k)[1] for k in pts) / len(pts)
+    d = Drawing(W, H)
+
+    def etiqueta(txt, x, y, fuente="Times-Roman"):
+        d.add(String(x, y - fs / 3.0, txt, fontName=fuente, fontSize=fs,
+                     fillColor=INK, textAnchor="middle"))
+
+    for seg in fig.get("seg", []):
+        if isinstance(seg, dict):
+            a, b, txt = seg["de"], seg["a"], seg.get("t", "")
+            punteado, lado = seg.get("punteado", False), seg.get("lado")
+        else:
+            a, b = seg[0], seg[1]
+            txt = seg[2] if len(seg) > 2 else ""
+            punteado, lado = False, None
+        (x1, y1), (x2, y2) = T(a), T(b)
+        ln = Line(x1, y1, x2, y2, strokeColor=INK, strokeWidth=0.9)
+        if punteado:
+            ln.strokeDashArray = [3, 2]
+            ln.strokeWidth = 0.7
+        d.add(ln)
+        if txt:
+            mx, my = (x1 + x2) / 2.0, (y1 + y2) / 2.0
+            L = math.hypot(x2 - x1, y2 - y1) or 1.0
+            nx, ny = -(y2 - y1) / L, (x2 - x1) / L
+            if lado is None:
+                lado = 1 if (mx - cx) * nx + (my - cy) * ny >= 0 else -1
+            off = 5 + stringWidth(txt, "Times-Roman", fs) / 2.0 * abs(nx) + fs / 2.0 * abs(ny)
+            etiqueta(txt, mx + lado * nx * off, my + lado * ny * off)
+
+    for p, v, q in fig.get("recto", []):
+        (vx, vy), (px, py), (qx, qy) = T(v), T(p), T(q)
+        lp = math.hypot(px - vx, py - vy)
+        lq = math.hypot(qx - vx, qy - vy)
+        s = min(7.0, 0.22 * min(lp, lq))
+        ux, uy = (px - vx) / lp * s, (py - vy) / lp * s
+        wx, wy = (qx - vx) / lq * s, (qy - vy) / lq * s
+        d.add(Polygon([vx, vy, vx + ux, vy + uy, vx + ux + wx, vy + uy + wy,
+                       vx + wx, vy + wy], strokeColor=INK, strokeWidth=0.6,
+                      fillColor=None))
+
+    for k in _vertices_visibles(fig, pts):
+        x, y = T(k)
+        L = math.hypot(x - cx, y - cy) or 1.0
+        ux, uy = (x - cx) / L, (y - cy) / L
+        off = 6 + stringWidth(k, "Times-Italic", fs) / 2.0 * abs(ux) + fs / 2.0 * abs(uy)
+        etiqueta(k, x + ux * off, y + uy * off, "Times-Italic")
+    return d
+
+
+def _vertices_visibles(fig, pts):
+    """'vertices': true nombra todos los puntos; una lista nombra solo esos."""
+    v = fig.get("vertices")
+    if v is True:
+        return list(pts)
+    return list(v or [])
+
+
+def _celda_con_figura(texto, fig, ancho, estilo):
+    """Enunciado a la izquierda y figura a la derecha, dentro de una celda."""
+    dib = _figura(fig)
+    w_fig = max(dib.width, ancho * 0.40)
+    w_txt = ancho - w_fig
+    if not texto:
+        t = Table([[dib]], colWidths=[ancho])
+    else:
+        t = Table([[Paragraph(texto, estilo), dib]], colWidths=[w_txt, w_fig])
+    t.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("ALIGN", (-1, 0), (-1, 0), "CENTER"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+        ("TOPPADDING", (0, 0), (-1, -1), 0),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+    ]))
+    return t
+
+
 # ---------------------------------------------------------------------------
 # Tablas
 # ---------------------------------------------------------------------------
@@ -183,12 +309,16 @@ def _tabla_ejercicios(items, cols_resp, ancho, etiqueta_enunciado,
     cab = [Paragraph("N.º", S["th"]), Paragraph(etiqueta_enunciado, S["th"])]
     cab += [Paragraph(c, S["th"]) for c in cols_resp]
     data = [cab]
-    for it in items:
-        data.append([Paragraph(str(it["n"]), S["td"]),
-                     Paragraph(it["e"], est)] + [""] * len(cols_resp))
-
     w_num = 1.5 * cm
     w_enun = ancho * frac_enunciado
+    for it in items:
+        if it.get("fig"):
+            enun = _celda_con_figura(it["e"], it["fig"], w_enun - 12, est)
+        else:
+            enun = Paragraph(it["e"], est)
+        data.append([Paragraph(str(it["n"]), S["td"]), enun] + [""] * len(cols_resp))
+    if any(it.get("fig") for it in items):
+        alineacion = "izquierda"   # las filas con figura crecen solas
     w_resp = (ancho - w_num - w_enun) / max(1, len(cols_resp))
     anchos = [w_num, w_enun] + [w_resp] * len(cols_resp)
 
@@ -338,7 +468,9 @@ class _Numerado(rl_canvas.Canvas):
 # fuera de ese repertorio (flechas dobles, símbolos matemáticos poco comunes)
 # no falla: se dibuja como un cuadrado negro, que pasa inadvertido hasta que la
 # guía ya está impresa. Por eso se avisa antes de generar.
-_PERMITIDOS_EXTRA = set("\u2192\u00b7\u2264\u2265\u2260\u00a0")
+# \u221a (raiz) no esta en cp1252, pero reportlab la dibuja con la fuente Symbol,
+# asi que no produce cuadrado negro y se admite.
+_PERMITIDOS_EXTRA = set("\u2192\u00b7\u2264\u2265\u2260\u00a0\u221a")
 
 
 def revisar_glifos(spec):
@@ -387,6 +519,13 @@ def _cuerpo(bloques_cuerpo, flow, ancho=None):
             if b["tabla"].get("leyenda"):
                 flow.append(Paragraph(b["tabla"]["leyenda"], S["cap"]))
             flow.append(Spacer(1, 0.12 * cm))
+        elif "figura" in b:
+            fig = dict(b["figura"])
+            t = Table([[_figura(fig)]])
+            t.hAlign = "CENTER"
+            flow.append(t)
+            if fig.get("leyenda"):
+                flow.append(Paragraph(fig["leyenda"], S["cap"]))
         elif "espacio" in b:
             flow.append(Spacer(1, float(b["espacio"]) * cm))
 

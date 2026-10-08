@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: números enteros",
+    "subtitulo": "Treinta ejercicios graduados de multiplicación, división y operaciones combinadas",
+    "encabezado": "Guía de ejercicios: números enteros — 8.º básico",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "26 de septiembre de 2026",
+    "asunto": "Matemáticas 8.º básico — eje Números: multiplicación y división de números enteros"
+  },
+
+  "resumen": "El presente material reúne treinta ejercicios sobre multiplicación y división de números enteros, organizados en seis bloques de dificultad creciente. La secuencia parte de la regla de los signos aplicada a un solo producto, sigue con la división, combina ambas operaciones en cadena, incorpora la prioridad de las operaciones y los paréntesis, y termina con cinco problemas en contexto —temperaturas, profundidades y balances de dinero—, que es donde el número negativo deja de ser una regla y pasa a tener significado. Cada bloque agrega una sola dificultad nueva, de modo que el error, cuando aparece, es atribuible a una causa concreta. La guía no incluye solucionario: incluye un ayuda memoria en el Apéndice A con las reglas necesarias y un apartado de errores frecuentes.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Cada bloque prepara el siguiente."},
+        {"vinetas": [
+          "Desarrolle cada ejercicio en el cuaderno, dejando registro escrito de <b>todos</b> los pasos. En la tabla escriba únicamente el resultado final.",
+          "Todo resultado debe llevar su signo. Un resultado positivo puede escribirse con o sin el signo +: 12 y +12 son el mismo número.",
+          "El símbolo <b>·</b> indica multiplicación y el símbolo <b>:</b> indica división. Los números negativos se escriben entre paréntesis cuando van después de un signo de operación: 5 · (-3), no 5 · -3.",
+          "En el <b>Apéndice A</b> se encuentra el ayuda memoria. Conviene tenerlo a la vista mientras se trabaja: está pensado para consultarse, no para memorizarse de antemano."
+        ]},
+        {"p": "Toda la guía descansa en una sola regla, que vale igual para la multiplicación y para la división:"},
+        {"formula": "signos iguales → resultado positivo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;signos distintos → resultado negativo"},
+        {"nota": "Primero se decide el signo, después se opera con los números sin signo. Separar las dos decisiones es la mejor manera de no equivocarse."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Ejercicio",
+      "columnas": ["Resultado"],
+      "bloques": [
+        {
+          "titulo": "Multiplicación de números enteros",
+          "glosa": "Calentamiento. Aplique la regla de los signos a cada producto. En los dos últimos hay más de dos factores: cuente cuántos son negativos.",
+          "ancho_enunciado": 0.45,
+          "items": [
+            "(-6) · 7",
+            "(-9) · (-4)",
+            "12 · (-5)",
+            "(-2) · (-3) · (-5)",
+            "(-1) · 4 · (-8) · (-2)"
+          ]
+        },
+        {
+          "titulo": "División de números enteros",
+          "glosa": "La regla de los signos es exactamente la misma que en la multiplicación. Todas las divisiones de este bloque son exactas.",
+          "ancho_enunciado": 0.45,
+          "items": [
+            "(-48) : 6",
+            "(-72) : (-9)",
+            "63 : (-7)",
+            "(-100) : (-25)",
+            "0 : (-13)"
+          ]
+        },
+        {
+          "titulo": "Multiplicaciones y divisiones en cadena",
+          "glosa": "La multiplicación y la división tienen la <b>misma prioridad</b>: se resuelven de <b>izquierda a derecha</b>, en el orden en que aparecen.",
+          "nota": "<b>Estrategia sugerida.</b> Vaya de a una operación por vez y reescriba la expresión después de cada paso. En (-36) : 4 · (-2), primero (-36) : 4 = -9, y recién después (-9) · (-2).",
+          "ancho_enunciado": 0.45,
+          "items": [
+            "(-36) : 4 · (-2)",
+            "5 · (-6) : (-10)",
+            "(-60) : (-5) : (-3)",
+            "(-8) · 9 : (-12) · (-1)",
+            "120 : (-4) : (-6) · (-2)"
+          ]
+        },
+        {
+          "titulo": "Operaciones combinadas",
+          "glosa": "Aparecen sumas y restas junto a multiplicaciones y divisiones. Primero se resuelven <b>todas</b> las multiplicaciones y divisiones; solo al final se suma y se resta.",
+          "nota": "<b>Advertencia.</b> En -15 + 24 : (-6) no se suma primero -15 + 24. La división va antes: 24 : (-6) = -4, y después -15 + (-4).",
+          "ancho_enunciado": 0.50,
+          "items": [
+            "3 · (-4) + 10",
+            "-15 + 24 : (-6)",
+            "(-7) · (-3) - 5 · 4",
+            "18 : (-3) - (-2) · 6",
+            "-40 : (-8) + (-3) · (-3) - 12"
+          ]
+        },
+        {
+          "titulo": "Operaciones con paréntesis y corchetes",
+          "glosa": "Nivel final de operatoria. Se resuelve primero lo que está dentro de los paréntesis, luego lo que está dentro de los corchetes, y al final lo de afuera, respetando siempre la prioridad del bloque anterior.",
+          "nota": "<b>Estrategia sugerida.</b> Trabaje de adentro hacia afuera y copie la expresión completa en cada paso, reemplazando solo lo que ya resolvió.",
+          "ancho_enunciado": 0.50,
+          "items": [
+            "(-3) · (5 - 9)",
+            "[(-12) + 4] : (-2)",
+            "-2 · [6 - (-4)] + 15",
+            "[(-5) · 3 + 9] : (-3) - 4",
+            "4 - 3 · [(-18) : 6 + 2 · (-5)]"
+          ]
+        },
+        {
+          "titulo": "Problemas en contexto",
+          "glosa": "Plantee primero la expresión con números enteros y después resuélvala. Escriba en la tabla la respuesta con su signo y, si corresponde, con su unidad.",
+          "ancho_enunciado": 0.62,
+          "alineacion": "izquierda",
+          "items": [
+            "Durante una noche en el altiplano la temperatura bajó 3 °C cada hora durante 6 horas seguidas. ¿Cuál fue la variación total de la temperatura?",
+            "Un buzo descendió hasta -45 m en 5 tramos iguales. ¿Cuántos metros descendió en cada tramo? Exprese la respuesta como número entero.",
+            "Al multiplicar un número por -7 se obtiene 84. ¿Cuál es ese número?",
+            "Un almacén perdió $4.500 cada mes durante 4 meses y luego ganó $7.000 cada mes durante 3 meses. ¿Cuál fue el balance al cabo de los 7 meses?",
+            "Un submarino se encuentra a -120 m. Sube 25 m tres veces seguidas y luego desciende 18 m dos veces. ¿A qué profundidad queda?"
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Errores frecuentes",
+      "cuerpo": [
+        {"p": "Los errores que se enumeran a continuación concentran la mayor parte de las respuestas incorrectas en este tipo de ejercicios. Conviene revisarlos cada vez que un resultado parezca sospechoso."},
+        {"vinetas": [
+          "<b>Usar la regla de la multiplicación en una suma.</b> «Menos por menos da más» vale para multiplicar y dividir, no para sumar: (-3) + (-5) = -8, no +8.",
+          "<b>Contar mal los signos negativos.</b> Con varios factores, el resultado es positivo si la cantidad de negativos es <b>par</b> y negativo si es <b>impar</b>. (-2) · (-3) · (-5) tiene tres negativos: el resultado es negativo.",
+          "<b>Resolver de derecha a izquierda.</b> En 5 · (-6) : (-10) se multiplica primero porque está a la izquierda. Cambiar el orden en una cadena de divisiones cambia el resultado.",
+          "<b>Sumar antes de multiplicar.</b> En 3 · (-4) + 10 no se calcula (-4) + 10 primero. La multiplicación tiene prioridad sobre la suma.",
+          "<b>Perder el signo al restar un negativo.</b> Restar un negativo equivale a sumar su opuesto: 6 - (-4) = 6 + 4 = 10.",
+          "<b>Dividir por cero o confundirlo con dividir cero.</b> 0 : (-13) = 0, porque 0 · (-13) = 0. En cambio, la división por cero no está definida."
+        ]}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "Esta página reúne todo lo necesario para resolver la guía. Está pensada para tenerla a la vista mientras se trabaja."},
+
+        {"p": "<b>A.1. Los números enteros.</b> Son los naturales, sus opuestos y el cero: ..., -3, -2, -1, 0, 1, 2, 3, ... El <b>valor absoluto</b> de un número es su distancia al cero, sin importar el lado: |-7| = 7 y |7| = 7. Dos números son <b>opuestos</b> si tienen el mismo valor absoluto y distinto signo, como 5 y -5."},
+
+        {"p": "<b>A.2. Regla de los signos.</b> Vale igual para la multiplicación y para la división:"},
+        {"tabla": {
+          "cabecera": ["Signos", "Resultado", "Multiplicación", "División"],
+          "filas": [
+            ["( + ) y ( + )", "positivo", "4 · 3 = 12", "12 : 3 = 4"],
+            ["( - ) y ( - )", "positivo", "(-4) · (-3) = 12", "(-12) : (-3) = 4"],
+            ["( + ) y ( - )", "negativo", "4 · (-3) = -12", "12 : (-3) = -4"],
+            ["( - ) y ( + )", "negativo", "(-4) · 3 = -12", "(-12) : 3 = -4"]
+          ],
+          "leyenda": "Tabla A.1. Signos iguales dan positivo; signos distintos dan negativo."
+        }},
+
+        {"p": "<b>A.3. Más de dos factores.</b> No es necesario ir de a pares: basta contar los factores negativos."},
+        {"vinetas": [
+          "Cantidad <b>par</b> de negativos → resultado positivo: (-1) · (-2) · 3 · (-4) · (-5) = 120.",
+          "Cantidad <b>impar</b> de negativos → resultado negativo: (-2) · (-3) · (-5) = -30.",
+          "Si uno de los factores es cero, el producto es cero."
+        ]},
+
+        {"p": "<b>A.4. Repaso de la adición y la sustracción.</b> Se necesita en los bloques 4, 5 y 6:"},
+        {"vinetas": [
+          "Mismo signo: se suman los valores absolutos y se conserva el signo. (-8) + (-5) = -13.",
+          "Distinto signo: se restan los valores absolutos y se conserva el signo del de mayor valor absoluto. (-8) + 5 = -3.",
+          "Restar es sumar el opuesto: 7 - (-3) = 7 + 3 = 10&nbsp;&nbsp;&nbsp;y&nbsp;&nbsp;&nbsp;-4 - 9 = -4 + (-9) = -13."
+        ]},
+
+        {"p": "<b>A.5. Prioridad de las operaciones.</b> Toda expresión se resuelve en este orden:"},
+        {"tabla": {
+          "cabecera": ["Orden", "Qué se resuelve", "Ejemplo"],
+          "filas": [
+            ["1.º", "Paréntesis ( ), luego corchetes [ ], de adentro hacia afuera", "2 · [3 - (-1)] = 2 · 4"],
+            ["2.º", "Multiplicaciones y divisiones, de izquierda a derecha", "(-20) : 5 · 2 = (-4) · 2 = -8"],
+            ["3.º", "Sumas y restas, de izquierda a derecha", "-6 + 10 - 3 = 4 - 3 = 1"]
+          ],
+          "leyenda": "Tabla A.2. Multiplicación y división tienen igual prioridad entre sí; lo mismo ocurre con suma y resta."
+        }},
+        {"p": "Ejemplo completo:"},
+        {"formula": "-10 + 3 · [8 : (-2) + 1]&nbsp;&nbsp;=&nbsp;&nbsp;-10 + 3 · [-4 + 1]&nbsp;&nbsp;=&nbsp;&nbsp;-10 + 3 · (-3)&nbsp;&nbsp;=&nbsp;&nbsp;-10 + (-9)&nbsp;&nbsp;=&nbsp;&nbsp;-19"},
+
+        {"p": "<b>A.6. Números enteros en contexto.</b> Los signos tienen significado:"},
+        {"vinetas": [
+          "Temperatura: sobre cero es positivo; bajo cero, negativo. Una baja de temperatura es una variación negativa.",
+          "Altura: sobre el nivel del mar es positivo; bajo el nivel del mar, negativo. Subir suma, bajar resta.",
+          "Dinero: ganancia o abono es positivo; pérdida, deuda o cargo es negativo."
+        ]},
+        {"nota": "Una variación que se repite varias veces es una multiplicación: bajar 3 °C durante 6 horas es 6 · (-3). Repartir una cantidad negativa en partes iguales es una división: -45 en 5 tramos es (-45) : 5."},
+
+        {"p": "<b>A.7. Cómo comprobar una división.</b> La división se verifica con la multiplicación: si a : b = c, entonces c · b = a."},
+        {"formula": "(-72) : (-9) = 8&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;8 · (-9) = -72&nbsp;&nbsp;&nbsp;(correcto)"}
+      ]
+    }
+  ]
+}

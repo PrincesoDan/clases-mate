@@ -1,0 +1,353 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: raíces y notación científica",
+    "subtitulo": "Ochenta ejercicios graduados — de la raíz exacta al crecimiento exponencial",
+    "encabezado": "Guía de ejercicios: raíces y notación científica",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "10 de septiembre de 2026",
+    "asunto": "PAES M1 — eje Números: raíces, notación científica y crecimiento exponencial"
+  },
+
+  "resumen": "El presente material complementa la guía de potencias de la misma clase reúne ochenta ejercicios sobre los tres contenidos restantes del tema: raíces cuadradas, notación científica y crecimiento exponencial en contexto. La secuencia parte de las raíces exactas hasta 15<super>2</super>, incorpora la lectura de la raíz como potencia de exponente 1/2 —que es la que permite aplicarle todas las propiedades ya conocidas—, sigue con la simplificación de raíces no exactas, la estimación entre enteros consecutivos y la racionalización de denominadores simples. La segunda parte traslada las potencias de 10 a la notación científica y a la comparación de magnitudes, y la tercera cierra con situaciones de crecimiento y decrecimiento exponencial, que es la forma en que la prueba pregunta el tema. Tres de los ejercicios finales reproducen la estructura de las preguntas 21, 23 y 9 del folleto de la Forma 113. La guía no incluye solucionario: incluye un ayuda memoria en el Apéndice A y un repertorio de errores frecuentes en el Apéndice B.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Esta guía supone resuelta la de potencias: las propiedades que allí se practicaron son las mismas que aquí se aplican, primero a las raíces y después a las potencias de 10."},
+        {"vinetas": [
+          "Desarrolle cada ejercicio en el cuaderno, dejando registro escrito de <b>todos</b> los pasos intermedios. En la tabla escriba únicamente el resultado final.",
+          "Cuando la raíz no sea exacta, la respuesta correcta <b>no</b> es un decimal aproximado: es la raíz <b>simplificada</b>. Se espera 5√2, no 7,07.",
+          "En notación científica, toda respuesta debe quedar en la forma correcta: un número entre 1 y 10 multiplicado por una potencia de 10. Un resultado como 30 · 10<super>7</super> está <b>incompleto</b>.",
+          "El símbolo <b>:</b> indica división y el símbolo <b>·</b> indica multiplicación. Se usa la coma decimal: 3,5 · 10<super>4</super>."
+        ]},
+        {"p": "La idea que ordena toda la primera parte es una sola: <b>una raíz es una potencia de exponente fraccionario</b>. Escribirla así no es un adorno, es lo que permite aplicarle sin cambio alguno las propiedades del producto, del cociente y de la potencia de una potencia:"},
+        {"formula": "√a = a<super>1/2</super>&nbsp;&nbsp;&nbsp;y por eso&nbsp;&nbsp;&nbsp;(√a)<super>2</super> = (a<super>1/2</super>)<super>2</super> = a<super>1</super> = a"},
+        {"p": "En el <b>Apéndice A</b> están el ayuda memoria, la tabla de cuadrados perfectos hasta 15<super>2</super> y el procedimiento de racionalización; en el <b>Apéndice B</b>, los errores característicos del tema."},
+        {"nota": "Esta guía no incluye solucionario. En las raíces, la verificación es directa: eleve al cuadrado el resultado y debe reaparecer el número original. En notación científica, escriba el número completo con todos sus ceros y cuéntelos: si coincide con el de partida, la respuesta es correcta."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Primera parte: raíces",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Expresión",
+      "columnas": ["Respuesta"],
+      "bloques": [
+        {
+          "titulo": "Raíces exactas",
+          "glosa": "Calentamiento. La raíz cuadrada de un número es aquel número <b>positivo</b> que, elevado al cuadrado, lo devuelve. Conviene reconocer de memoria los cuadrados perfectos hasta 15<super>2</super> = 225.",
+          "nota": "<b>Estrategia sugerida.</b> No busque la raíz: busque el cuadrado. Ante √196, pregúntese qué número multiplicado por sí mismo da 196, y recorra 10, 11, 12, 13, 14 hasta encontrarlo. La Tabla A.1 del apéndice tiene la lista completa.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "√36",
+            "√64",
+            "√100",
+            "√121",
+            "√144",
+            "√169",
+            "√196",
+            "√225"
+          ]
+        },
+        {
+          "titulo": "Raíces de fracciones y decimales",
+          "glosa": "La raíz se reparte entre numerador y denominador, igual que el exponente en una potencia. Con decimales conviene pasar antes a fracción.",
+          "nota": "<b>Estrategia sugerida.</b> Para √0,04, escriba 0,04 = 4/100; la raíz es entonces 2/10 = 0,2. Note que la raíz de un número menor que 1 es <i>mayor</i> que ese número: 0,2 es mayor que 0,04.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "√(4/9)",
+            "√(25/16)",
+            "√(9/49)",
+            "√(1/100)",
+            "√0,04",
+            "√1,44"
+          ]
+        },
+        {
+          "titulo": "La raíz como potencia de exponente 1/2",
+          "glosa": "<b>La idea central de la guía.</b> Escrita como potencia, la raíz deja de ser un símbolo aparte y pasa a obedecer las propiedades ya practicadas.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "9<super>1/2</super>",
+            "16<super>1/2</super>",
+            "(1/4)<super>1/2</super>",
+            "25<super>1/2</super> · 4<super>1/2</super>",
+            "(√5)<super>2</super>",
+            "36<super>1/2</super> : 9<super>1/2</super>"
+          ]
+        },
+        {
+          "titulo": "Producto, cociente y simplificación de raíces",
+          "glosa": "La raíz de un producto es el producto de las raíces, y lo mismo vale para el cociente. De ahí sale el procedimiento para <b>simplificar</b> una raíz no exacta: extraer el mayor cuadrado perfecto que la divida.",
+          "nota": "<b>Estrategia sugerida.</b> Para √50, busque un cuadrado perfecto que lo divida: 50 = 25 · 2, luego √50 = √25 · √2 = 5√2. Si se equivoca de cuadrado y toma uno menor, no se pierde nada: √72 = √4 · √18 = 2√18 todavía se puede seguir simplificando hasta 6√2.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "√4 · √9",
+            "√2 · √8",
+            "√12",
+            "√18",
+            "√50",
+            "√75",
+            "√72",
+            "√200"
+          ]
+        },
+        {
+          "titulo": "Suma y resta de raíces",
+          "glosa": "Aquí aparece la trampa del tema. Las raíces solo se suman o se restan cuando son <b>semejantes</b>, es decir, cuando tienen exactamente la misma raíz: 3√2 y 5√2 se suman como si √2 fuera una unidad de medida. Cuando no lo son, hay que simplificar primero.",
+          "nota": "<b>Advertencia.</b> No existe ninguna propiedad para la raíz de una suma: √9 + √16 = 3 + 4 = 7, mientras que √(9 + 16) = √25 = 5. El ejercicio que pide calcular √9 + √16 y √(9 + 16) por separado está puesto para que compruebe esa diferencia con números propios.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "3√2 + 5√2",
+            "√8 + √2",
+            "√18 - √2",
+            "√9 + √16&nbsp;&nbsp;y&nbsp;&nbsp;√(9 + 16)",
+            "√12 + √27",
+            "2√3 · 3√3",
+            "(2√5)<super>2</super>"
+          ]
+        },
+        {
+          "titulo": "Estimar raíces no exactas",
+          "glosa": "En la prueba casi nunca se pide el valor exacto de una raíz no exacta: se pide <b>ubicarla</b> entre dos enteros o compararla con otro número. Se resuelve con los cuadrados perfectos vecinos.",
+          "ancho_enunciado": 0.62,
+          "alineacion": "izquierda",
+          "items": [
+            "¿Entre qué dos enteros consecutivos se encuentra √50? Indique además a cuál de los dos está más cerca.",
+            "¿Entre qué dos enteros consecutivos se encuentra √30?",
+            "¿Entre qué dos enteros consecutivos se encuentra √150?",
+            "¿Es √2 mayor o menor que 1,5? Decida elevando al cuadrado ambos números, sin calcular la raíz.",
+            "Ordene de menor a mayor: √70, 8 y √90.",
+            "Un cuadrado tiene área 40 cm<super>2</super>. ¿Entre qué dos enteros está la medida de su lado?"
+          ]
+        },
+        {
+          "titulo": "Racionalizar el denominador",
+          "glosa": "Cuando queda una raíz en el denominador, se multiplica arriba y abajo por esa misma raíz. Como √a · √a = a, el denominador se vuelve entero y la fracción no cambia de valor, porque se multiplicó por 1.",
+          "nota": "<b>Nota.</b> El ejercicio 2/√2 es exactamente la pregunta 21 del folleto de la Forma 113. El resultado sorprende la primera vez: una expresión con la raíz abajo termina siendo la raíz sola.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "2/√2",
+            "6/√3",
+            "3/√3",
+            "1/√5",
+            "10/√2",
+            "5/(2√5)"
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Segunda parte: notación científica y crecimiento exponencial",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Expresión",
+      "columnas": ["Respuesta"],
+      "bloques": [
+        {
+          "titulo": "Escribir en notación científica",
+          "glosa": "Un número está en notación científica cuando se escribe como un número <b>entre 1 y 10</b> multiplicado por una potencia de 10. El exponente cuenta cuántos lugares se movió la coma: positivo si el número era grande, negativo si era menor que 1.",
+          "nota": "<b>Estrategia sugerida.</b> Ponga la coma justo después de la primera cifra distinta de cero y cuente los lugares que la separan de su posición original. En 45 000 la coma pasa de estar al final a estar tras el 4: son cuatro lugares, y el número es grande, así que el exponente es 4.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "45 000",
+            "3 200 000",
+            "186 000",
+            "1 250 000 000",
+            "0,004",
+            "0,000 27",
+            "0,5",
+            "7"
+          ]
+        },
+        {
+          "titulo": "Volver a la escritura decimal",
+          "glosa": "El camino inverso: el exponente indica hacia dónde y cuántos lugares se mueve la coma. Exponente positivo, el número crece; exponente negativo, el número achica.",
+          "ancho_enunciado": 0.34,
+          "items": [
+            "3,5 · 10<super>4</super>",
+            "9,1 · 10<super>6</super>",
+            "2 · 10<super>-3</super>",
+            "7,08 · 10<super>-5</super>",
+            "6,4 · 10<super>-1</super>",
+            "1,2 · 10<super>0</super>"
+          ]
+        },
+        {
+          "titulo": "Operar en notación científica",
+          "glosa": "Se operan por separado los números y las potencias de 10, aplicando las propiedades ya conocidas: al multiplicar se suman los exponentes, al dividir se restan. Si el resultado queda fuera del rango de 1 a 10, hay que <b>reajustarlo</b>.",
+          "nota": "<b>Advertencia.</b> El producto (5 · 10<super>3</super>) · (6 · 10<super>4</super>) da 30 · 10<super>7</super>, que todavía no es notación científica. Como 30 = 3 · 10, el resultado correcto es 3 · 10<super>8</super>. Ese reajuste final es lo que la prueba pregunta con más frecuencia.",
+          "ancho_enunciado": 0.42,
+          "items": [
+            "(2 · 10<super>3</super>) · (4 · 10<super>5</super>)",
+            "(6 · 10<super>8</super>) : (3 · 10<super>2</super>)",
+            "(3 · 10<super>-4</super>) · (2 · 10<super>7</super>)",
+            "(1,5 · 10<super>6</super>) · (4 · 10<super>-2</super>)",
+            "(8 · 10<super>5</super>) : (2 · 10<super>-3</super>)",
+            "(2 · 10<super>3</super>)<super>2</super>",
+            "(5 · 10<super>3</super>) · (6 · 10<super>4</super>)",
+            "3 · 10<super>4</super> + 5 · 10<super>4</super>"
+          ]
+        },
+        {
+          "titulo": "Comparar magnitudes en contexto",
+          "glosa": "Para lo que sirve realmente la notación científica: comparar cantidades muy grandes o muy chicas sin contar ceros. La pregunta «cuántas veces» se responde con una <b>división</b>.",
+          "ancho_enunciado": 0.66,
+          "alineacion": "izquierda",
+          "items": [
+            "¿Cuántas veces mayor es 6 · 10<super>8</super> que 2 · 10<super>5</super>?",
+            "Una bacteria mide 2 · 10<super>-6</super> m y un virus, 1 · 10<super>-7</super> m. ¿Cuántas veces más grande es la bacteria?",
+            "La distancia media de la Tierra al Sol es de 1,5 · 10<super>8</super> km. Exprésela en metros, en notación científica.",
+            "Una ciudad tiene 1,9 · 10<super>7</super> habitantes y otra, 3,8 · 10<super>6</super>. ¿Cuántas veces más poblada es la primera?",
+            "Una milla equivale a 160 934 cm. Escriba esa cantidad en notación científica y divídala por 10<super>5</super> para obtener su equivalente en kilómetros."
+          ]
+        },
+        {
+          "titulo": "Crecimiento y decrecimiento exponencial",
+          "glosa": "<b>El bloque de cierre.</b> Cuando una cantidad se multiplica repetidamente por un mismo factor, el número de repeticiones es un <b>exponente</b>. Si el factor es mayor que 1, la cantidad crece; si está entre 0 y 1, decrece.",
+          "nota": "<b>Advertencia.</b> Un decrecimiento del que «queda 2/5 cada semana» no se calcula restando 2/5 cada vez, sino multiplicando repetidamente por 2/5. Escriba la cantidad semana por semana en una lista antes de intentar cualquier fórmula: el patrón aparece solo.",
+          "ancho_enunciado": 0.66,
+          "alineacion": "izquierda",
+          "items": [
+            "Un cultivo de 200 bacterias duplica su población cada hora. ¿Cuántas bacterias hay al cabo de 5 horas? Escriba además la expresión que da la cantidad al cabo de n horas.",
+            "Una hoja de papel de 0,1 mm de espesor se dobla 10 veces sobre sí misma. ¿Qué espesor alcanza?",
+            "Un medicamento se elimina de modo que cada 6 horas queda la mitad de la dosis presente. Si se administran 400 mg, ¿cuánto queda a las 24 horas?",
+            "Un automóvil de $8.000.000 pierde cada año 1/4 de su valor. ¿Cuánto vale al cabo de 2 años?",
+            "Un insecticida reduce cada semana la plaga a 2/5 de los individuos que había al comenzar esa semana. Partiendo de 1 000 insectos, ¿cuántas semanas se necesitan para que queden 64 o menos?",
+            "En la situación anterior, si al llegar a 64 individuos o menos se requiere un día más para terminar con la plaga, ¿cuántos días se necesitan en total?"
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "<b>A.1. Qué es una raíz cuadrada.</b> √a es el número <b>positivo</b> que elevado al cuadrado da a. Es la operación que deshace el cuadrado:"},
+        {"formula": "√a = b&nbsp;&nbsp;&nbsp;significa&nbsp;&nbsp;&nbsp;b<super>2</super> = a&nbsp;&nbsp;(con b ≥ 0)"},
+        {"nota": "Distinción importante: la <i>ecuación</i> x<super>2</super> = 9 tiene dos soluciones, x = 3 y x = -3; pero el <i>símbolo</i> √9 designa una sola, la positiva: √9 = 3. Confundir ambas cosas es el error más fino del tema y la prueba lo aprovecha."},
+
+        {"p": "<b>A.2. Cuadrados perfectos.</b> Conviene reconocerlos de inmediato en ambas direcciones, del cuadrado a la raíz y de la raíz al cuadrado:"},
+        {"tabla": {
+          "cabecera": ["n", "1", "2", "3", "4", "5", "6", "7", "8"],
+          "filas": [
+            ["n<super>2</super>", "1", "4", "9", "16", "25", "36", "49", "64"]
+          ],
+          "leyenda": ""
+        }},
+        {"tabla": {
+          "cabecera": ["n", "9", "10", "11", "12", "13", "14", "15", "20"],
+          "filas": [
+            ["n<super>2</super>", "81", "100", "121", "144", "169", "196", "225", "400"]
+          ],
+          "leyenda": "Tabla A.1. Cuadrados perfectos de uso frecuente. Todo el trabajo con raíces —exactas, simplificadas o estimadas— se apoya en esta lista."
+        }},
+
+        {"p": "<b>A.3. La raíz como potencia.</b> Una raíz es una potencia de exponente 1/2. Escrita así, hereda todas las propiedades de las potencias:"},
+        {"formula": "√a = a<super>1/2</super>&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;(√a)<super>2</super> = a<super>1/2 · 2</super> = a"},
+
+        {"p": "<b>A.4. Propiedades de la raíz.</b> Solo hay dos, y ambas se refieren a productos y cocientes, nunca a sumas:"},
+        {"tabla": {
+          "cabecera": ["Regla", "Ejemplo", "Vale para"],
+          "filas": [
+            ["√(a · b) = √a · √b", "√(4 · 9) = 2 · 3 = 6", "producto"],
+            ["√(a/b) = √a / √b", "√(25/16) = 5/4", "cociente"],
+            ["√(a + b) ≠ √a + √b", "√25 = 5, pero √9 + √16 = 7", "no existe regla para la suma"]
+          ],
+          "leyenda": "Tabla A.2. Las dos propiedades verdaderas y la falsa. La tercera fila es la que más veces aparece como alternativa incorrecta."
+        }},
+
+        {"p": "<b>A.5. Simplificar una raíz no exacta.</b> Se descompone el número usando el mayor cuadrado perfecto que lo divida, y ese cuadrado sale de la raíz:"},
+        {"formula": "√72 = √(36 · 2) = √36 · √2 = 6√2"},
+        {"nota": "Si se elige un cuadrado más chico, el procedimiento igual funciona: solo hay que repetirlo. √72 = 2√18 = 2 · 3√2 = 6√2."},
+
+        {"p": "<b>A.6. Sumar y restar raíces.</b> Se suman únicamente las raíces <b>semejantes</b>, tratando la raíz como si fuera una letra:"},
+        {"formula": "3√2 + 5√2 = 8√2&nbsp;&nbsp;&nbsp;(igual que 3x + 5x = 8x)"},
+        {"nota": "Si no son semejantes, primero se simplifican y recién ahí suele aparecer la semejanza: √12 + √27 = 2√3 + 3√3 = 5√3."},
+
+        {"p": "<b>A.7. Estimar una raíz.</b> Se ubica el número entre los dos cuadrados perfectos vecinos y la raíz queda entre sus raíces:"},
+        {"formula": "49 &lt; 50 &lt; 64&nbsp;&nbsp;→&nbsp;&nbsp;7 &lt; √50 &lt; 8"},
+        {"nota": "Como 50 está mucho más cerca de 49 que de 64, √50 está apenas por encima de 7. Para comparar una raíz con un decimal, eleve ambos al cuadrado: 1,5<super>2</super> = 2,25 es mayor que 2, luego √2 es menor que 1,5."},
+
+        {"p": "<b>A.8. Racionalizar el denominador.</b> Se multiplican numerador y denominador por la raíz del denominador. Como se multiplica por 1, el valor no cambia:"},
+        {"formula": "2/√2 = (2 · √2)/(√2 · √2) = 2√2/2 = √2"},
+
+        {"p": "<b>A.9. Notación científica.</b> Todo número se escribe como un número entre 1 y 10 por una potencia de 10:"},
+        {"formula": "N = a · 10<super>n</super>&nbsp;&nbsp;&nbsp;con&nbsp;&nbsp;1 ≤ a &lt; 10"},
+        {"tabla": {
+          "cabecera": ["Situación", "Regla", "Ejemplo"],
+          "filas": [
+            ["Número grande", "Exponente positivo", "45 000 = 4,5 · 10<super>4</super>"],
+            ["Número menor que 1", "Exponente negativo", "0,004 = 4 · 10<super>-3</super>"],
+            ["Multiplicar", "Se multiplican los números y se suman los exponentes", "(2·10<super>3</super>)(4·10<super>5</super>) = 8·10<super>8</super>"],
+            ["Dividir", "Se dividen los números y se restan los exponentes", "(6·10<super>8</super>):(3·10<super>2</super>) = 2·10<super>6</super>"],
+            ["Sumar", "Solo con el mismo exponente; se suman los números", "3·10<super>4</super> + 5·10<super>4</super> = 8·10<super>4</super>"],
+            ["Reajustar", "Si el número queda fuera de 1 a 10, se corrige", "30 · 10<super>7</super> = 3 · 10<super>8</super>"]
+          ],
+          "leyenda": "Tabla A.3. Operatoria en notación científica. El reajuste de la última fila es el paso que más veces se olvida."
+        }},
+
+        {"p": "<b>A.10. Crecimiento y decrecimiento exponencial.</b> Cuando una cantidad se multiplica repetidamente por un mismo factor r, el número de repeticiones es el exponente:"},
+        {"formula": "cantidad después de n periodos = C · r<super>n</super>"},
+        {"tabla": {
+          "cabecera": ["Factor r", "Qué ocurre", "Ejemplo"],
+          "filas": [
+            ["r mayor que 1", "La cantidad crece", "Se duplica cada hora: r = 2"],
+            ["r entre 0 y 1", "La cantidad decrece", "Queda 2/5 cada semana: r = 2/5"],
+            ["Pierde una fracción f", "Queda el complemento", "Pierde 1/4 al año: r = 1 - 1/4 = 3/4"]
+          ],
+          "leyenda": "Tabla A.4. Lo decisivo es identificar r: es lo que <i>queda</i> en cada periodo, no lo que se pierde."
+        }},
+        {"nota": "Con números chicos, escribir la lista periodo por periodo es más rápido y más seguro que la fórmula: 1 000, 400, 160, 64. Tres semanas, es decir 21 días."}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Errores frecuentes",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "Los errores que siguen son los que efectivamente aparecen al resolver esta guía. Los cuatro primeros corresponden a raíces; los cuatro últimos, a notación científica y crecimiento exponencial."},
+        {"tabla": {
+          "cabecera": ["Error", "Ejemplo del error", "Lo correcto"],
+          "filas": [
+            ["Repartir la raíz en una suma", "√(9 + 16) = 3 + 4 = 7", "Primero la suma: √25 = 5"],
+            ["Sumar raíces no semejantes", "√8 + √2 = √10", "Simplificar primero: 2√2 + √2 = 3√2"],
+            ["Dividir el número por 2 en vez de sacar raíz", "√36 = 18", "Se busca el número cuyo cuadrado es 36: 6"],
+            ["Dar la raíz como decimal aproximado", "√50 = 7,07", "Se simplifica: 5√2"],
+            ["Dejar el resultado fuera de la forma correcta", "30 · 10<super>7</super>", "Se reajusta: 3 · 10<super>8</super>"],
+            ["Multiplicar los exponentes al multiplicar", "(2·10<super>3</super>)(4·10<super>5</super>) = 8·10<super>15</super>", "Se suman: 8 · 10<super>8</super>"],
+            ["Mover la coma en la dirección equivocada", "0,004 = 4 · 10<super>3</super>", "El número es chico: 4 · 10<super>-3</super>"],
+            ["Restar la fracción en vez de multiplicarla", "1 000 - 2/5 cada semana", "Se multiplica: 1 000 · (2/5)<super>n</super>"]
+          ],
+          "leyenda": "Tabla B.1. Errores frecuentes en raíces, notación científica y crecimiento exponencial."
+        }},
+        {"p": "<b>Cómo verificar sin solucionario.</b> Cada parte de la guía tiene su propio control:"},
+        {"vinetas": [
+          "<b>Raíces exactas.</b> Eleve el resultado al cuadrado: debe reaparecer el número de partida. Si √196 le dio 14, compruebe que 14 · 14 = 196.",
+          "<b>Raíces simplificadas.</b> Vuelva a entrar el factor a la raíz: 5√2 = √(25 · 2) = √50. Si no reaparece el número original, la simplificación está mal.",
+          "<b>Notación científica.</b> Escriba el número completo con todos sus ceros y compárelo con el enunciado. Y revise siempre que el primer factor esté entre 1 y 10.",
+          "<b>Crecimiento exponencial.</b> Escriba la lista periodo por periodo. Es lento, pero no falla, y sirve para comprobar cualquier respuesta obtenida con la fórmula."
+        ]},
+        {"nota": "Al corregir en clase, el ejercicio más informativo es el de √9 + √16 en el bloque 2.5: quien escribe √9 + √16 = √25 no cometió un error de cálculo, sino que aplicó una propiedad que no existe. Es el mismo error que en la guía de potencias aparecía como (a + b)<super>2</super> = a<super>2</super> + b<super>2</super>, y conviene mostrarlos juntos."}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice C. Nota didáctica",
+      "cuerpo": [
+        {"p": "Esta guía es la segunda mitad de la clase de potencias y no debería trabajarse antes que la primera: la raíz se presenta aquí como potencia de exponente 1/2, y la notación científica es simplemente la propiedad del producto de potencias aplicada a la base 10. Quien no tenga afirmadas esas propiedades verá dos temas nuevos donde en realidad hay uno solo aplicado dos veces."},
+        {"p": "Tres ejercicios reproducen deliberadamente preguntas del folleto de la Forma 113: el de 2/√2, en el bloque de racionalización, es la <b>pregunta 21</b>; los dos últimos del bloque de crecimiento exponencial son la <b>pregunta 23</b>, desarmada en sus dos etapas para separar el cálculo del insecticida de la lectura final del enunciado —que es donde la pregunta realmente discrimina—; y el último de comparación de magnitudes recoge la conversión de la <b>pregunta 9</b>."},
+        {"nota": "El bloque de estimación conecta hacia adelante con la Semana 12: cuando se pida el lado de un cuadrado de área conocida o la arista de un cubo, lo que se estará pidiendo es exactamente una raíz. Vale la pena anunciarlo al cerrar la clase."}
+      ]
+    }
+  ]
+}
