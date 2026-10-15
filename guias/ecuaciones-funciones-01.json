@@ -8,7 +8,7 @@
     "fecha": "15 de octubre de 2026",
     "asunto": "Matemáticas — álgebra y funciones: ecuaciones de primer grado y funciones"
   },
-  "resumen": "El presente material reúne cuarenta ejercicios organizados en dos partes. La primera contiene quince ecuaciones de primer grado de dificultad media: paréntesis, coeficientes fraccionarios, productos notables cuyo término cuadrático se cancela, incógnita en el denominador y casos especiales sin solución o con infinitas soluciones. La segunda contiene veinticinco ejercicios de funciones. Parte por lo más básico, reemplazar valores de x en una fórmula, y avanza hacia operaciones con imágenes, cálculo de preimágenes (donde vuelven las ecuaciones de la primera parte), elementos de la función afín, valores que no se pueden reemplazar y problemas de modelación en contexto. La guía no incluye solucionario. Incluye, en cambio, un ayuda memoria de ecuaciones (Apéndice A), un ayuda memoria conceptual de funciones (Apéndice B) y un ayuda memoria práctico con el procedimiento de cada tipo de ejercicio (Apéndice C).",
+  "resumen": "El presente material reúne cuarenta ejercicios organizados en dos partes. La primera contiene quince ecuaciones de primer grado de dificultad media: ecuaciones con paréntesis y con fracciones, primero con la incógnita en un solo lado y después con la incógnita a ambos lados del igual. La segunda contiene veinticinco ejercicios de funciones. Parte por lo más básico, reemplazar valores de x en una fórmula, y avanza hacia operaciones con imágenes, cálculo de preimágenes (donde vuelven las ecuaciones de la primera parte), elementos de la función afín, valores que no se pueden reemplazar y problemas de modelación en contexto. La guía no incluye solucionario. Incluye, en cambio, un ayuda memoria de ecuaciones (Apéndice A), un ayuda memoria conceptual de funciones (Apéndice B) y un ayuda memoria práctico con el procedimiento de cada tipo de ejercicio (Apéndice C).",
   "secciones": [
     {
       "tipo": "texto",
@@ -20,7 +20,7 @@
         {
           "vinetas": [
             "Desarrolle cada ejercicio en el cuaderno, dejando registro de <b>todos</b> los pasos. En la tabla escriba solo el resultado.",
-            "En la primera parte la respuesta es el valor de <b>x</b>. Puede ser un entero, una fracción, el cero, o bien la conclusión de que la ecuación <b>no tiene solución</b> o de que <b>todo número real</b> la cumple.",
+            "En la primera parte la respuesta es el valor de <b>x</b>. Puede ser un número positivo, negativo o el cero: ninguno de los tres indica que el ejercicio esté mal hecho.",
             "En la segunda parte cada ejercicio indica qué se pide: un número, una fórmula f(x), un conjunto o la respuesta a una pregunta. Si un ejercicio pide varias cosas, responda todas en la misma casilla.",
             "Al reemplazar un valor en una función, escríbalo <b>siempre entre paréntesis</b>. Es el hábito que más errores evita en la segunda parte.",
             "Los <b>Apéndices A, B y C</b> contienen los ayuda memoria. Conviene tenerlos a la vista mientras se trabaja."
@@ -109,59 +109,59 @@
           ]
         },
         {
-          "titulo": "Ecuaciones con productos notables",
-          "glosa": "Aparecen cuadrados de binomio y sumas por diferencia. Al desarrollarlos surge x², pero en estas ecuaciones <b>siempre se cancela</b>: si al final le queda x², revise el desarrollo.",
-          "nota": "<b>Estrategia sugerida.</b> Desarrolle el producto notable en un paso aparte y escríbalo entre paréntesis antes de seguir: (x + 1)² = (x² + 2x + 1). Después las x² de ambos lados se restan y desaparecen.",
+          "titulo": "Paréntesis a ambos lados del igual",
+          "glosa": "Los mismos pasos del bloque 2.1, pero ahora puede haber paréntesis en los dos lados. Se eliminan <b>todos</b> los paréntesis primero y después se reúnen las x a un lado y los números al otro.",
+          "nota": "<b>Estrategia sugerida.</b> Lleve las x al lado donde el coeficiente sea mayor: así se evita terminar con un coeficiente negativo. En 3x + 5 = 7x - 3 conviene pasar el 3x a la derecha.",
           "ancho_enunciado": 0.5,
           "items": [
             {
-              "e": "(x + 2)² = x² + 12",
-              "sol": [
-                "2"
-              ]
-            },
-            {
-              "e": "(x - 3)² = x² + 3",
-              "sol": [
-                "1"
-              ]
-            },
-            {
-              "e": "(x + 5)(x - 5) = x² + 2x - 15",
-              "sol": [
-                "-5"
-              ]
-            },
-            {
-              "e": "x(x + 3) = (x + 1)² + 4",
+              "e": "2(x + 3) = 4(x - 1)",
               "sol": [
                 "5"
               ]
-            }
-          ]
-        },
-        {
-          "titulo": "Incógnita en el denominador y casos especiales",
-          "glosa": "Nivel final. Cuando la x está en un denominador, hay que anotar primero qué valores lo <b>anulan</b>: esos valores no pueden ser solución. Además aparecen ecuaciones en que la x desaparece: si queda algo falso, no hay solución; si queda algo verdadero, todo número sirve.",
-          "nota": "<b>Estrategia sugerida.</b> En el ejercicio 13 anote x ≠ 0 y x ≠ 2, y luego multiplique en cruz: 6 · (x - 2) = 3 · x. Al terminar, compare el resultado con la restricción.",
-          "ancho_enunciado": 0.5,
-          "items": [
+            },
             {
-              "e": "6/x = 3/(x - 2)",
+              "e": "7 - (x + 1) = 3(x - 2)",
+              "sol": [
+                "3"
+              ]
+            },
+            {
+              "e": "5(x - 2) - 3(x - 4) = 10",
               "sol": [
                 "4"
               ]
             },
             {
-              "e": "2(x + 3) = 2x + 5",
+              "e": "3(2x - 1) = 2(x + 5) + 11",
               "sol": [
-                "sin solución"
+                "6"
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "Fracciones con la x a ambos lados",
+          "glosa": "Nivel final. Como en el bloque 2.2, se multiplica <b>toda</b> la ecuación por el m.c.m. de los denominadores. La diferencia es que ahora hay x en los dos lados.",
+          "nota": "<b>Estrategia sugerida.</b> Al multiplicar por el m.c.m., los términos sin denominador también se multiplican: en (x + 1)/3 = x - 3, multiplicar por 3 da (x + 1) = 3(x - 3), y ese paréntesis de la derecha hay que distribuirlo.",
+          "ancho_enunciado": 0.5,
+          "items": [
+            {
+              "e": "x/4 - 1 = x/6",
+              "sol": [
+                "12"
               ]
             },
             {
-              "e": "3(x - 1) + 2 = 3x - 1",
+              "e": "(x + 3)/2 = x - 1",
               "sol": [
-                "todo número real"
+                "5"
+              ]
+            },
+            {
+              "e": "(x + 1)/3 + (x - 1)/2 = 4",
+              "sol": [
+                "5"
               ]
             }
           ]
@@ -397,9 +397,9 @@
           "vinetas": [
             "<b>No repartir el factor en todo el paréntesis.</b> En 3(x + 4) el 3 multiplica también al 4: da 3x + 12, no 3x + 4.",
             "<b>Multiplicar por el m.c.m. solo los términos con fracción.</b> El m.c.m. multiplica la ecuación completa, incluidos los enteros. En x/4 + 1 = 3, multiplicar por 4 da x + 4 = 12, no x + 1 = 12.",
-            "<b>Escribir (a + b)² = a² + b².</b> Falta el doble producto: (x + 1)² = x² + 2x + 1.",
+            "<b>Cambiar de lado sin cambiar el signo.</b> Un término que suma en un lado, resta en el otro. En x + 7 = 12 el 7 pasa como -7: x = 12 - 7.",
             "<b>No cambiar todos los signos tras un menos.</b> -(x + 2) = -x - 2, no -x + 2.",
-            "<b>Olvidar la restricción del denominador.</b> Si el resultado anula un denominador, no es solución."
+            "<b>Confundir el término que suma con el que multiplica.</b> En 4x = 20 el 4 está multiplicando, así que pasa dividiendo: x = 20 : 4, no 20 - 4."
           ]
         },
         {
@@ -434,78 +434,78 @@
             "filas": [
               [
                 "1.º",
-                "Anotar restricciones si hay x en un denominador",
-                "3/(x - 2) = ...  →  x ≠ 2"
-              ],
-              [
-                "2.º",
                 "Eliminar denominadores multiplicando todo por el m.c.m.",
                 "x/2 + 3 = 5  →  x + 6 = 10"
               ],
               [
+                "2.º",
+                "Eliminar paréntesis con la propiedad distributiva",
+                "3(x - 2) = x + 4  →  3x - 6 = x + 4"
+              ],
+              [
                 "3.º",
-                "Eliminar agrupadores de adentro hacia afuera",
-                "2[x - (3 - x)]  →  2[2x - 3]  →  4x - 6"
+                "Reunir las x a un lado y los números al otro, y reducir",
+                "3x - x = 4 + 6  →  2x = 10"
               ],
               [
                 "4.º",
-                "Desarrollar productos notables entre paréntesis",
-                "-(x - 2)²  →  -(x² - 4x + 4)"
+                "Dividir por el coeficiente de x",
+                "2x = 10  →  x = 5"
               ],
               [
                 "5.º",
-                "Reunir las x a un lado y los números al otro, y reducir",
-                "4x - 6 = x + 9  →  3x = 15"
-              ],
-              [
-                "6.º",
-                "Dividir por el coeficiente de x",
-                "3x = 15  →  x = 5"
-              ],
-              [
-                "7.º",
-                "Verificar en la ecuación original y revisar la restricción",
-                "2[5 - (3 - 5)] = 14 = 5 + 9"
+                "Verificar en la ecuación original",
+                "3(5 - 2) = 9   y   5 + 4 = 9"
               ]
             ],
-            "leyenda": "Tabla A.1. Secuencia general de resolución de una ecuación de primer grado."
+            "leyenda": "Tabla A.1. Secuencia general de resolución. Si la ecuación no tiene fracciones, se parte en el paso 2."
           }
         },
         {
-          "p": "<b>A.2. Productos notables.</b>"
-        },
-        {
-          "formula": "(a + b)² = a² + 2ab + b²&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a - b)² = a² - 2ab + b²&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a + b)(a - b) = a² - b²"
-        },
-        {
-          "p": "<b>A.3. Los tres resultados posibles.</b>"
+          "p": "<b>A.2. Pasar un término al otro lado.</b> Cada término pasa con la operación contraria:"
         },
         {
           "tabla": {
             "cabecera": [
-              "Al reducir queda...",
-              "Conclusión",
+              "Si el término está...",
+              "Pasa al otro lado...",
               "Ejemplo"
             ],
             "filas": [
               [
-                "ax = b, con a ≠ 0",
-                "Una única solución: x = b/a",
-                "5x = 10  →  x = 2"
+                "sumando",
+                "restando",
+                "x + 7 = 12  →  x = 12 - 7"
               ],
               [
-                "0 = b, con b ≠ 0 (falso)",
-                "Sin solución",
-                "0 = 7"
+                "restando",
+                "sumando",
+                "x - 5 = 9  →  x = 9 + 5"
               ],
               [
-                "0 = 0 (verdadero)",
-                "Todo número real es solución",
-                "5x - 6 = 5x - 6"
+                "multiplicando",
+                "dividiendo",
+                "4x = 20  →  x = 20 : 4"
+              ],
+              [
+                "dividiendo",
+                "multiplicando",
+                "x/3 = 6  →  x = 6 · 3"
               ]
             ],
-            "leyenda": "Tabla A.2. Si la única solución anula un denominador, se descarta y la ecuación queda sin solución."
+            "leyenda": "Tabla A.2. Cada operación se deshace con su contraria."
           }
+        },
+        {
+          "p": "<b>A.3. Paréntesis y signos.</b> El factor de afuera multiplica a cada término de adentro:"
+        },
+        {
+          "vinetas": [
+            "3(x + 4) = 3x + 12.",
+            "-2(x + 1) = -2x - 2.",
+            "-3(x - 2) = -3x + 6.",
+            "Un menos solo delante del paréntesis cambia todos los signos: -(x - 5) = -x + 5."
+          ]
         }
       ]
     },
@@ -791,7 +791,7 @@
       "salto_antes": true,
       "cuerpo": [
         {
-          "p": "La primera parte supone el despeje básico ya dominado (guía de ecuaciones de primer grado). Agrega un solo paso por bloque —el paréntesis, el m.c.m., el producto notable, la restricción— para que el error, cuando aparezca, tenga una causa clara."
+          "p": "La primera parte supone el despeje básico ya dominado (guía de ecuaciones de primer grado). Trabaja solo dos dificultades, el paréntesis y el m.c.m., primero con la incógnita en un lado y después a ambos lados del igual, para que el error, cuando aparezca, tenga una causa clara."
         },
         {
           "p": "La segunda parte está ordenada para que cada bloque use el anterior. Los bloques 1 y 2 solo piden reemplazar, y el paréntesis al reemplazar es el hábito que conviene instalar desde el ejercicio 16. El ejercicio 22 muestra que f(2) + f(3) no es f(5): vale la pena comentarlo en voz alta. El bloque 3 es el puente con la primera parte: encontrar una preimagen es resolver una ecuación. El bloque 4 prepara la Clase 7 (ecuación de la recta y función afín) y el ejercicio 40 anticipa la parábola de la Clase 9."
