@@ -1,14 +1,14 @@
 {
   "meta": {
     "titulo": "Guía de ejercicios: ecuaciones y funciones",
-    "subtitulo": "Quince ecuaciones de nivel medio a alto y veinticinco ejercicios de funciones, desde la evaluación hasta la modelación",
+    "subtitulo": "Quince ecuaciones de nivel medio y veinticinco ejercicios de funciones, desde la evaluación hasta la modelación",
     "encabezado": "Guía de ejercicios: ecuaciones y funciones",
     "autor": "Daniel Andrade",
     "cargo": "Profesor de Matemáticas",
     "fecha": "15 de octubre de 2026",
     "asunto": "Matemáticas — álgebra y funciones: ecuaciones de primer grado y funciones"
   },
-  "resumen": "El presente material reúne cuarenta ejercicios organizados en dos partes. La primera contiene quince ecuaciones de primer grado de dificultad media a alta: paréntesis anidados, coeficientes fraccionarios y decimales, productos notables cuyo término cuadrático se cancela, incógnita en el denominador y casos especiales sin solución o con infinitas soluciones. La segunda contiene veinticinco ejercicios de funciones. Parte por lo más básico, reemplazar valores de x en una fórmula, y avanza hacia operaciones entre imágenes, composición, cálculo de preimágenes (donde vuelven las ecuaciones de la primera parte), función afín a partir de dos datos, dominio y recorrido, y problemas de modelación en contexto. La guía no incluye solucionario. Incluye, en cambio, un ayuda memoria de ecuaciones (Apéndice A), un ayuda memoria conceptual de funciones (Apéndice B) y un ayuda memoria práctico con el procedimiento de cada tipo de ejercicio (Apéndice C).",
+  "resumen": "El presente material reúne cuarenta ejercicios organizados en dos partes. La primera contiene quince ecuaciones de primer grado de dificultad media: paréntesis, coeficientes fraccionarios, productos notables cuyo término cuadrático se cancela, incógnita en el denominador y casos especiales sin solución o con infinitas soluciones. La segunda contiene veinticinco ejercicios de funciones. Parte por lo más básico, reemplazar valores de x en una fórmula, y avanza hacia operaciones con imágenes, cálculo de preimágenes (donde vuelven las ecuaciones de la primera parte), elementos de la función afín, valores que no se pueden reemplazar y problemas de modelación en contexto. La guía no incluye solucionario. Incluye, en cambio, un ayuda memoria de ecuaciones (Apéndice A), un ayuda memoria conceptual de funciones (Apéndice B) y un ayuda memoria práctico con el procedimiento de cada tipo de ejercicio (Apéndice C).",
   "secciones": [
     {
       "tipo": "texto",
@@ -45,65 +45,65 @@
       ],
       "bloques": [
         {
-          "titulo": "Paréntesis anidados y signos",
-          "glosa": "Los paréntesis, corchetes y llaves se eliminan <b>de adentro hacia afuera</b>, uno a la vez. Cada signo menos delante de un agrupador cambia el signo de todo lo que encierra.",
-          "nota": "<b>Estrategia sugerida.</b> Antes de seguir, reduzca lo que quedó dentro del corchete. En 3[2x - (x - 4)] primero se obtiene 2x - x + 4 = x + 4, y recién entonces se multiplica por 3. Trabajar con expresiones cortas reduce los errores de signo.",
+          "titulo": "Ecuaciones con paréntesis",
+          "glosa": "Primero se elimina el paréntesis con la propiedad distributiva: el número de afuera multiplica a <b>cada</b> término de adentro. Después se reúnen las x a un lado y los números al otro.",
+          "nota": "<b>Advertencia sobre los signos.</b> Un menos delante del paréntesis cambia el signo de todo lo que hay dentro: -2(x - 3) = -2x + 6, y -(x + 2) = -x - 2.",
           "ancho_enunciado": 0.5,
           "items": [
             {
-              "e": "3[2x - (x - 4)] = 2(x + 9)",
+              "e": "3(x + 4) - 2 = 2x + 15",
               "sol": [
-                "6"
+                "5"
               ]
             },
             {
-              "e": "5 - [3x - 2(x + 1)] = 4(x - 2)",
+              "e": "5 - 2(x - 3) = x + 2",
               "sol": [
                 "3"
               ]
             },
             {
-              "e": "2{x - 3[x - (2 - x)]} = -4(x - 5)",
+              "e": "4(x - 1) - (x + 2) = 2x + 1",
               "sol": [
-                "-4/3"
+                "7"
               ]
             },
             {
-              "e": "-(2x - 5) - 3(1 - x) = 7 - 2[x - (3 - 2x)]",
+              "e": "-3(x - 2) = 2(x + 8)",
               "sol": [
-                "11/7"
+                "-2"
               ]
             }
           ]
         },
         {
-          "titulo": "Coeficientes fraccionarios y decimales",
-          "glosa": "Las fracciones se eliminan multiplicando <b>toda</b> la ecuación por el m.c.m. de los denominadores. Los decimales se transforman en fracción, o se multiplica todo por 10, 100 o lo que haga falta.",
-          "nota": "<b>Estrategia sugerida.</b> Si el numerador tiene más de un término, póngale paréntesis antes de multiplicar. Y no olvide los términos enteros: el -1 del ejercicio 5 también se multiplica por el m.c.m.",
+          "titulo": "Ecuaciones con fracciones",
+          "glosa": "Las fracciones se eliminan multiplicando <b>toda</b> la ecuación por el m.c.m. de los denominadores. Hecho eso, queda una ecuación como las del bloque anterior.",
+          "nota": "<b>Estrategia sugerida.</b> Multiplique todos los términos, también los que no tienen denominador: en x/4 + 1 = 3, multiplicar por 4 da x + 4 = 12. Si el numerador tiene más de un término, póngale paréntesis: (x + 1)/4 por 12 da 3(x + 1).",
           "ancho_enunciado": 0.5,
           "items": [
             {
-              "e": "(x - 2)/3 - (2x + 1)/4 = (x - 5)/6 - 1",
+              "e": "x/3 + 2 = 6",
               "sol": [
-                "11/4"
+                "12"
               ]
             },
             {
-              "e": "x/2 - [x - (x - 1)/3] = (x + 5)/6",
+              "e": "x/2 + x/3 = 5",
               "sol": [
-                "-7/2"
+                "6"
               ]
             },
             {
-              "e": "1,5x - 0,5(x - 4) = 2,5 + 0,25(2x + 6)",
+              "e": "(x + 1)/4 = (x - 2)/3",
               "sol": [
-                "4"
+                "11"
               ]
             },
             {
-              "e": "(1/2) · [(x - 1)/3 - (x + 2)/4] = (x - 3)/8",
+              "e": "(2x - 1)/3 - 1 = x/2",
               "sol": [
-                "-1/2"
+                "8"
               ]
             }
           ]
@@ -111,55 +111,55 @@
         {
           "titulo": "Ecuaciones con productos notables",
           "glosa": "Aparecen cuadrados de binomio y sumas por diferencia. Al desarrollarlos surge x², pero en estas ecuaciones <b>siempre se cancela</b>: si al final le queda x², revise el desarrollo.",
-          "nota": "<b>Advertencia sobre los signos.</b> Cuando un producto notable va precedido de un menos, desarróllelo primero <b>entre paréntesis</b> y solo después cambie los signos: -(x - 2)² = -(x² - 4x + 4) = -x² + 4x - 4.",
+          "nota": "<b>Estrategia sugerida.</b> Desarrolle el producto notable en un paso aparte y escríbalo entre paréntesis antes de seguir: (x + 1)² = (x² + 2x + 1). Después las x² de ambos lados se restan y desaparecen.",
           "ancho_enunciado": 0.5,
           "items": [
             {
-              "e": "(x + 3)² - (x - 2)² = 5x + 10",
+              "e": "(x + 2)² = x² + 12",
+              "sol": [
+                "2"
+              ]
+            },
+            {
+              "e": "(x - 3)² = x² + 3",
               "sol": [
                 "1"
               ]
             },
             {
-              "e": "(2x - 1)(2x + 1) - 4(x - 1)² = 3x + 1",
+              "e": "(x + 5)(x - 5) = x² + 2x - 15",
               "sol": [
-                "6/5"
+                "-5"
               ]
             },
             {
-              "e": "(x + 4)(x - 3) - (x - 1)(x + 2) = 2(x - 5)",
+              "e": "x(x + 3) = (x + 1)² + 4",
               "sol": [
-                "0"
-              ]
-            },
-            {
-              "e": "(3x - 2)² - (3x + 1)(3x - 1) = 2x - 23",
-              "sol": [
-                "2"
+                "5"
               ]
             }
           ]
         },
         {
           "titulo": "Incógnita en el denominador y casos especiales",
-          "glosa": "Nivel final. Cuando la x está en un denominador, hay que anotar primero qué valores la <b>anulan</b>: esos valores no pueden ser solución. Además aparecen ecuaciones que no tienen solución o que tienen infinitas.",
-          "nota": "<b>Estrategia sugerida.</b> Antes de multiplicar en cruz, escriba al lado la restricción, por ejemplo x ≠ 3 y x ≠ -1. Al terminar, compare el resultado con la restricción. Si coinciden, ese valor se descarta y la ecuación queda <b>sin solución</b>.",
+          "glosa": "Nivel final. Cuando la x está en un denominador, hay que anotar primero qué valores lo <b>anulan</b>: esos valores no pueden ser solución. Además aparecen ecuaciones en que la x desaparece: si queda algo falso, no hay solución; si queda algo verdadero, todo número sirve.",
+          "nota": "<b>Estrategia sugerida.</b> En el ejercicio 13 anote x ≠ 0 y x ≠ 2, y luego multiplique en cruz: 6 · (x - 2) = 3 · x. Al terminar, compare el resultado con la restricción.",
           "ancho_enunciado": 0.5,
           "items": [
             {
-              "e": "(x + 1)/(x - 3) = (x - 2)/(x + 1)",
+              "e": "6/x = 3/(x - 2)",
               "sol": [
-                "5/7"
+                "4"
               ]
             },
             {
-              "e": "x/(x - 2) = 2/(x - 2) + 3",
+              "e": "2(x + 3) = 2x + 5",
               "sol": [
-                "sin solución (x = 2 anula el denominador)"
+                "sin solución"
               ]
             },
             {
-              "e": "2(3x - 1) - (x + 4) = 5(x - 1) - 1",
+              "e": "3(x - 1) + 2 = 3x - 1",
               "sol": [
                 "todo número real"
               ]
@@ -212,34 +212,34 @@
           ]
         },
         {
-          "titulo": "Operaciones con imágenes y composición",
+          "titulo": "Operaciones con imágenes",
           "glosa": "Ahora se combinan varias evaluaciones. Primero se calcula <b>cada imagen por separado</b> y recién después se opera con los resultados.",
-          "nota": "<b>Estrategia sugerida.</b> En f(g(2)) se trabaja de adentro hacia afuera: primero g(2), y ese resultado se reemplaza en f. Cuando se reemplaza por una expresión, va completa y entre paréntesis: si p(x) = x², entonces p(a + 2) = (a + 2)².",
+          "nota": "<b>Estrategia sugerida.</b> En f(g(1)) se trabaja de adentro hacia afuera: primero se calcula g(1), y ese resultado se reemplaza en f.",
           "ancho_enunciado": 0.6,
           "alineacion": "izquierda",
           "items": [
             {
-              "e": "f(x) = 3x - 1 y g(x) = x² + 2. Calcule f(2) + g(-3).",
+              "e": "f(x) = 3x - 1 y g(x) = x + 2. Calcule f(2) + g(3).",
               "sol": [
-                "16"
+                "10"
               ]
             },
             {
-              "e": "f(x) = 2x² - x. Calcule [f(3) - f(-1)] / f(1).",
+              "e": "f(x) = 2x + 1. Calcule f(3) - f(1).",
               "sol": [
-                "12"
+                "4"
               ]
             },
             {
-              "e": "f(x) = x² - 1. Calcule f(a + 1) y simplifique.",
+              "e": "f(x) = 2x + 3. Calcule f(2), f(3) y f(5). ¿Es cierto que f(2) + f(3) = f(5)?",
               "sol": [
-                "a² + 2a"
+                "7, 9 y 13; no"
               ]
             },
             {
-              "e": "f(x) = 2x - 3 y g(x) = x² + 1. Calcule f(g(2)) y g(f(2)). ¿Dan lo mismo?",
+              "e": "f(x) = x + 3 y g(x) = 2x. Calcule g(1) y luego f(g(1)).",
               "sol": [
-                "7 y 2; no"
+                "2; 5"
               ]
             }
           ]
@@ -269,7 +269,7 @@
               ]
             },
             {
-              "e": "f(x) = x² - 5. Encuentre <b>todos</b> los valores de x tales que f(x) = 11.",
+              "e": "f(x) = x². Encuentre <b>los dos</b> valores de x tales que f(x) = 16.",
               "sol": [
                 "x = 4 o x = -4"
               ]
@@ -279,58 +279,58 @@
         {
           "titulo": "Función afín",
           "glosa": "Las funciones de la forma f(x) = mx + n. Su gráfico es una recta: m es la <b>pendiente</b> y n es el <b>coeficiente de posición</b>, el punto donde la recta corta al eje y.",
-          "nota": "<b>Estrategia sugerida.</b> Con dos puntos, calcule primero la pendiente: m = (y<sub>2</sub> - y<sub>1</sub>)/(x<sub>2</sub> - x<sub>1</sub>). Después reemplace uno de los puntos en y = mx + n para obtener n. Verifique con el otro punto.",
+          "nota": "<b>Estrategia sugerida.</b> Para saber si un punto (a, b) está en el gráfico, calcule f(a): si da b, el punto pertenece a la recta; si da otro número, no.",
           "ancho_enunciado": 0.6,
           "alineacion": "izquierda",
           "items": [
             {
-              "e": "f(x) = -2x + 6. Indique la pendiente, el coeficiente de posición y el cero de la función, diga si es creciente o decreciente y grafíquela en el cuaderno.",
+              "e": "f(x) = 2x + 1. Indique la pendiente y el coeficiente de posición, y diga si la función es creciente o decreciente.",
               "sol": [
-                "m = -2; n = 6; cero x = 3; decreciente"
+                "m = 2; n = 1; creciente"
               ]
             },
             {
-              "e": "Una función afín tiene pendiente 3 y cumple f(0) = 4. Escriba f(x) y calcule f(-2).",
+              "e": "f(x) = -x + 4. ¿En qué punto corta al eje y? ¿Y al eje x? Grafíquela en el cuaderno.",
               "sol": [
-                "f(x) = 3x + 4; f(-2) = -2"
+                "(0, 4); (4, 0)"
               ]
             },
             {
-              "e": "Una función afín pasa por los puntos (1, 5) y (3, 11). Encuentre f(x).",
+              "e": "Una función afín tiene pendiente 3 y coeficiente de posición -2. Escriba f(x) y calcule f(4).",
               "sol": [
-                "f(x) = 3x + 2"
+                "f(x) = 3x - 2; f(4) = 10"
               ]
             },
             {
-              "e": "Una función afín cumple f(2) = 7 y f(5) = 1. Encuentre f(x) y el valor de x donde la recta corta al eje x.",
+              "e": "¿Cuál de estos puntos pertenece al gráfico de f(x) = 2x - 1: (1, 1), (2, 4) o (0, 1)?",
               "sol": [
-                "f(x) = -2x + 11; x = 11/2"
+                "(1, 1)"
               ]
             }
           ]
         },
         {
-          "titulo": "Dominio y recorrido",
-          "glosa": "El dominio son los valores de x que <b>se pueden</b> reemplazar; el recorrido, los valores que la función <b>efectivamente</b> entrega. En los números reales hay dos operaciones prohibidas: dividir por cero y sacar raíz cuadrada de un negativo.",
+          "titulo": "Valores permitidos: dominio",
+          "glosa": "No todo número se puede reemplazar en una función. En los números reales hay dos operaciones prohibidas: <b>dividir por cero</b> y sacar <b>raíz cuadrada de un negativo</b>.",
           "ancho_enunciado": 0.6,
           "alineacion": "izquierda",
           "items": [
             {
-              "e": "Determine el dominio de f(x) = (x + 2)/(x - 5).",
+              "e": "f(x) = 5/(x - 2). ¿Qué valor de x no se puede reemplazar? ¿Por qué?",
               "sol": [
-                "todos los reales excepto 5"
+                "x = 2; se dividiría por cero"
               ]
             },
             {
-              "e": "Determine el dominio de f(x) = √(x - 3). Calcule además f(3) y f(7).",
+              "e": "f(x) = √x. Calcule f(9) y f(0). ¿Se puede calcular f(-4)?",
               "sol": [
-                "x ≥ 3; f(3) = 0; f(7) = 2"
+                "3; 0; no"
               ]
             },
             {
-              "e": "Determine el dominio y el recorrido de f(x) = x² + 1. ¿Existe algún x tal que f(x) = 0?",
+              "e": "f(x) = x². Calcule f(3) y f(-3). ¿Puede f(x) dar un resultado negativo?",
               "sol": [
-                "dominio: todos los reales; recorrido: y ≥ 1; no"
+                "9 y 9; no"
               ]
             }
           ]
@@ -395,10 +395,10 @@
         },
         {
           "vinetas": [
-            "<b>Quitar los paréntesis de afuera hacia adentro.</b> En 2{x - 3[x - (2 - x)]} se empieza por (2 - x), no por la llave.",
-            "<b>Multiplicar por el m.c.m. solo los términos con fracción.</b> El m.c.m. multiplica la ecuación completa, incluidos los enteros. En (x - 5)/6 - 1, multiplicar por 12 da 2(x - 5) - 12.",
-            "<b>Escribir (a + b)² = a² + b².</b> Falta el doble producto: (x + 3)² = x² + 6x + 9.",
-            "<b>No cambiar todos los signos tras un menos.</b> -(x - 2)² = -x² + 4x - 4.",
+            "<b>No repartir el factor en todo el paréntesis.</b> En 3(x + 4) el 3 multiplica también al 4: da 3x + 12, no 3x + 4.",
+            "<b>Multiplicar por el m.c.m. solo los términos con fracción.</b> El m.c.m. multiplica la ecuación completa, incluidos los enteros. En x/4 + 1 = 3, multiplicar por 4 da x + 4 = 12, no x + 1 = 12.",
+            "<b>Escribir (a + b)² = a² + b².</b> Falta el doble producto: (x + 1)² = x² + 2x + 1.",
+            "<b>No cambiar todos los signos tras un menos.</b> -(x + 2) = -x - 2, no -x + 2.",
             "<b>Olvidar la restricción del denominador.</b> Si el resultado anula un denominador, no es solución."
           ]
         },
@@ -410,7 +410,6 @@
             "<b>Reemplazar sin paréntesis.</b> Si f(x) = x² - 3x, entonces f(-2) = (-2)² - 3(-2) = 4 + 6 = 10. Sin paréntesis se obtiene -4 + 6 = 2, que está mal.",
             "<b>Confundir f(x) con «f por x».</b> f(x) no es una multiplicación: se lee «f de x» y significa «lo que entrega la función cuando se le da x».",
             "<b>Confundir imagen con preimagen.</b> «Calcule f(3)» pide reemplazar x = 3. «Encuentre x tal que f(x) = 3» pide resolver una ecuación. Son preguntas opuestas.",
-            "<b>Calcular p(a + 1) como p(a) + 1.</b> Hay que reemplazar x por (a + 1) completo: si p(x) = x² + 2, entonces p(a + 1) = (a + 1)² + 2, no a² + 2 + 1.",
             "<b>Invertir la fórmula de la pendiente.</b> Arriba van las y y abajo las x: m = (y<sub>2</sub> - y<sub>1</sub>)/(x<sub>2</sub> - x<sub>1</sub>). Y en el mismo orden arriba y abajo.",
             "<b>En modelación, intercambiar m y n.</b> En «$300 fijos más $200 por km», el fijo es n = 300 y lo que cambia por km es m = 200: C(x) = 200x + 300, no 300x + 200."
           ]
@@ -673,11 +672,6 @@
                 "f(x) = 3x, g(x) = x + 1:  g(1) = 2,  f(2) = 6"
               ],
               [
-                "Calcular f(expresión)",
-                "Reemplazar x por la expresión completa entre paréntesis",
-                "f(x) = 3x;  f(a + 2) = 3(a + 2) = 3a + 6"
-              ],
-              [
                 "Encontrar la preimagen de b",
                 "Plantear f(x) = b y resolver la ecuación",
                 "2x + 1 = 9  →  x = 4"
@@ -797,10 +791,10 @@
       "salto_antes": true,
       "cuerpo": [
         {
-          "p": "La primera parte supone el despeje básico ya dominado (guía de ecuaciones de primer grado). Su dificultad no está en el álgebra nueva, sino en la operatoria que la rodea: signos tras agrupadores, m.c.m. y productos notables."
+          "p": "La primera parte supone el despeje básico ya dominado (guía de ecuaciones de primer grado). Agrega un solo paso por bloque —el paréntesis, el m.c.m., el producto notable, la restricción— para que el error, cuando aparezca, tenga una causa clara."
         },
         {
-          "p": "La segunda parte está ordenada para que cada bloque use el anterior. Los bloques 1 y 2 solo piden reemplazar, y el paréntesis al reemplazar es el hábito que conviene instalar desde el ejercicio 16. El bloque 3 es el puente con la primera parte: encontrar una preimagen es resolver una ecuación. El bloque 4 prepara la Clase 7 (ecuación de la recta y función afín) y el ejercicio 40 anticipa la parábola de la Clase 9."
+          "p": "La segunda parte está ordenada para que cada bloque use el anterior. Los bloques 1 y 2 solo piden reemplazar, y el paréntesis al reemplazar es el hábito que conviene instalar desde el ejercicio 16. El ejercicio 22 muestra que f(2) + f(3) no es f(5): vale la pena comentarlo en voz alta. El bloque 3 es el puente con la primera parte: encontrar una preimagen es resolver una ecuación. El bloque 4 prepara la Clase 7 (ecuación de la recta y función afín) y el ejercicio 40 anticipa la parábola de la Clase 9."
         },
         {
           "p": "Los problemas de modelación del último bloque son los más cercanos a la PAES, que suele pedir <b>plantear</b> la función a partir de un enunciado o de una tabla más que operar con ella. Conviene pedir que la estudiante escriba explícitamente qué representa x antes de escribir la fórmula."
