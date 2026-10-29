@@ -118,10 +118,14 @@ escribir una función en `generador_guias.py` y registrarla en el diccionario `R
 | `guia-numeros-enteros-8b.pdf` | Salida generada |
 | `guias/algebra-productos-notables-factorizacion-01.json` | Guía de 50 ejercicios de lenguaje algebraico, reducción, productos notables y factorización, cerrando con 11 preguntas de alternativas nivel PAES (tarea de la Clase 5, sin solucionario, con ayuda memoria) |
 | `guia-algebra-productos-notables-factorizacion.pdf` | Salida generada |
+| `guias/factorizacion-paes-01.json` | Segunda parte de la guía de álgebra: 50 ejercicios de agrupación, trinomio cuadrado perfecto, ax<sup>2</sup> + bx + c, factorización en varios pasos, fracciones algebraicas y ecuaciones por factorización, cerrando con 12 preguntas de alternativas nivel PAES (sin solucionario, con ayuda memoria) |
+| `guia-factorizacion-paes.pdf` | Salida generada |
 | `guias/teorema-pitagoras-8b-01.json` | Guía de 40 ejercicios del teorema de Pitágoras para 8.º básico, todos con figura (sin solucionario, con ayuda memoria) |
 | `guia-teorema-pitagoras-8b.pdf` | Salida generada |
 | `guias/ecuaciones-funciones-01.json` | Guía de 40 ejercicios: 15 ecuaciones de nivel medio-alto y 25 de funciones, desde la evaluación hasta la modelación (sin solucionario, con ayuda memoria de ecuaciones, conceptual y práctico de funciones) |
 | `guia-ecuaciones-funciones.pdf` | Salida generada |
+| `guias/sistemas-ecuaciones-01.json` | Guía de 30 ejercicios de sistemas de ecuaciones 2 × 2 para 1.º medio: sustitución, igualación, reducción, sistemas con paréntesis y fracciones, y problemas en contexto (sin solucionario, con ayuda memoria) |
+| `guia-sistemas-ecuaciones.pdf` | Salida generada |
 | `landing-page/` | Landing con Vite que publica las guías (ver `landing-page/README.md`) |
 | `paes-regular-matematica1-p2025.md` | Folleto PAES Forma 113 transcrito |
 | `planificacion-paes-m1.md` | Planificación de 12 clases (reprogramada el 8 oct tras perder 3 clases) |

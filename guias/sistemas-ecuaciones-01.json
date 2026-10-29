@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: sistemas de ecuaciones",
+    "subtitulo": "Treinta ejercicios de sistemas de dos ecuaciones con dos incógnitas, por sustitución, igualación y reducción, hasta problemas en contexto",
+    "encabezado": "Guía de ejercicios: sistemas de ecuaciones",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "29 de octubre de 2026",
+    "asunto": "Matemáticas — álgebra: sistemas de ecuaciones lineales 2 × 2"
+  },
+  "resumen": "El presente material reúne treinta ejercicios de sistemas de dos ecuaciones con dos incógnitas, pensados para 1.º medio y ordenados de menor a mayor dificultad. Los primeros dieciocho entrenan un método a la vez: seis por sustitución, seis por igualación y seis por reducción. Dentro de cada bloque se parte con sistemas donde el primer paso ya está hecho y se termina con sistemas que hay que preparar. Los seis ejercicios siguientes tienen paréntesis y fracciones, y el método lo elige la estudiante. La guía cierra con seis problemas en contexto, donde además hay que plantear el sistema. No incluye solucionario: cada resultado se comprueba reemplazándolo en las dos ecuaciones. Incluye, en cambio, un ayuda memoria con el procedimiento de los tres métodos y de los problemas, cada uno con un ejemplo resuelto (Apéndice A).",
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {
+          "p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. La dificultad aumenta poco a poco y cada bloque usa lo aprendido en el anterior."
+        },
+        {
+          "vinetas": [
+            "Desarrolle cada ejercicio en el cuaderno, dejando registro de <b>todos</b> los pasos. En la tabla escriba solo los valores de x e y.",
+            "En los bloques 1.1, 1.2 y 1.3 use <b>el método que indica el título</b>, aunque otro le parezca más rápido: la idea es dominar los tres.",
+            "En el bloque 1.4 puede usar el método que prefiera. Antes de partir, mire el sistema y decida cuál conviene.",
+            "La solución de un sistema es un <b>par</b> de valores. Puede haber números negativos: eso no indica que el ejercicio esté mal hecho.",
+            "El <b>Apéndice A</b> contiene el ayuda memoria. Conviene tenerlo a la vista mientras se trabaja."
+          ]
+        },
+        {
+          "p": "<b>La verificación es obligatoria.</b> Se reemplazan x e y en las <b>dos</b> ecuaciones originales y se comprueba que ambas se cumplan. Si solo se cumple una, hay un error."
+        },
+        {
+          "formula": "x + y = 7;&nbsp;&nbsp;&nbsp;x - y = 1&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;x = 4, y = 3&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;4 + 3 = 7;&nbsp;&nbsp;&nbsp;4 - 3 = 1"
+        }
+      ]
+    },
+    {
+      "tipo": "ejercicios",
+      "titulo": "Primera parte: resolver sistemas",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Sistema",
+      "columnas": [
+        "x =",
+        "y ="
+      ],
+      "bloques": [
+        {
+          "titulo": "Método de sustitución",
+          "glosa": "Se despeja una incógnita en una ecuación y se <b>reemplaza</b> en la otra. Así queda una ecuación con una sola incógnita, como las que ya sabe resolver.",
+          "nota": "<b>Estrategia sugerida.</b> En los ejercicios 1, 2, 3 y 5 una incógnita ya está despejada: reemplácela directamente. En los ejercicios 4 y 6 despeje primero la letra que no tiene número delante. Al reemplazar, escriba la expresión <b>entre paréntesis</b>: en 3x + y = 15 con y = x - 1 queda 3x + (x - 1) = 15.",
+          "ancho_enunciado": 0.4,
+          "alto_fila": 1.3,
+          "items": [
+            {"e": "y = 2x<br/>x + y = 9", "sol": ["3", "6"]},
+            {"e": "x = y + 3<br/>x + 2y = 12", "sol": ["6", "3"]},
+            {"e": "y = x - 1<br/>3x + y = 15", "sol": ["4", "3"]},
+            {"e": "x + y = 7<br/>2x - y = 5", "sol": ["4", "3"]},
+            {"e": "y = 3x - 4<br/>2x + 3y = 21", "sol": ["3", "5"]},
+            {"e": "x - 2y = -1<br/>3x + y = 18", "sol": ["5", "3"]}
+          ]
+        },
+        {
+          "titulo": "Método de igualación",
+          "glosa": "Se despeja <b>la misma</b> incógnita en las dos ecuaciones y se igualan las dos expresiones. De nuevo queda una ecuación con una sola incógnita.",
+          "nota": "<b>Estrategia sugerida.</b> En los ejercicios 7, 8 y 9 la incógnita ya está despejada en ambas ecuaciones: basta con igualar. En los demás, elija la letra más fácil de despejar en las dos. Por ejemplo, en el ejercicio 12 conviene despejar y.",
+          "ancho_enunciado": 0.4,
+          "alto_fila": 1.3,
+          "items": [
+            {"e": "y = x + 2<br/>y = 3x - 4", "sol": ["3", "5"]},
+            {"e": "y = 2x + 1<br/>y = -x + 7", "sol": ["2", "5"]},
+            {"e": "x = 2y + 1<br/>x = y + 4", "sol": ["7", "3"]},
+            {"e": "x + y = 10<br/>x - y = 2", "sol": ["6", "4"]},
+            {"e": "y - 2x = 1<br/>y + x = 7", "sol": ["2", "5"]},
+            {"e": "2x + y = 1<br/>3x + y = -1", "sol": ["-2", "5"]}
+          ]
+        },
+        {
+          "titulo": "Método de reducción",
+          "glosa": "Se suman (o se restan) las dos ecuaciones para que una incógnita <b>desaparezca</b>. Para eso, esa incógnita debe tener el mismo coeficiente con signos opuestos.",
+          "nota": "<b>Estrategia sugerida.</b> En los ejercicios 13 y 14 basta con sumar. En el 15 conviene restar. En el 16 hay que multiplicar <b>una</b> ecuación antes de sumar, y en el 17 y el 18, <b>las dos</b>. Al multiplicar una ecuación, se multiplican <b>todos</b> sus términos, incluido el que está después del igual.",
+          "ancho_enunciado": 0.4,
+          "alto_fila": 1.3,
+          "items": [
+            {"e": "x + y = 8<br/>x - y = 2", "sol": ["5", "3"]},
+            {"e": "2x + 3y = 12<br/>4x - 3y = 6", "sol": ["3", "2"]},
+            {"e": "3x + 2y = 16<br/>x + 2y = 8", "sol": ["4", "2"]},
+            {"e": "x + 2y = 7<br/>3x - y = 7", "sol": ["3", "2"]},
+            {"e": "2x + 3y = 8<br/>5x - 2y = 1", "sol": ["1", "2"]},
+            {"e": "3x - 4y = -6<br/>2x + 3y = 13", "sol": ["2", "3"]}
+          ]
+        },
+        {
+          "titulo": "Paréntesis y fracciones: método a elección",
+          "glosa": "Antes de aplicar cualquier método, se <b>ordena</b> cada ecuación hasta dejarla de la forma ax + by = c: se eliminan paréntesis y denominadores. Después se resuelve con el método que más convenga.",
+          "nota": "<b>Estrategia sugerida.</b> Para eliminar las fracciones, multiplique <b>toda</b> la ecuación por el m.c.m. de sus denominadores. Si un numerador tiene dos términos, póngale paréntesis: (x - 1)/2 por 6 da 3(x - 1).",
+          "ancho_enunciado": 0.4,
+          "alto_fila": 1.5,
+          "items": [
+            {"e": "2(x + 1) + y = 11<br/>x - (y - 3) = 6", "sol": ["4", "1"]},
+            {"e": "3(x - y) = 6<br/>2x + 3(y - 1) = 6", "sol": ["3", "1"]},
+            {"e": "x/2 + y = 5<br/>x - y = 1", "sol": ["4", "3"]},
+            {"e": "x/3 + y/2 = 4<br/>x - y = 2", "sol": ["6", "4"]},
+            {"e": "(x + 1)/2 = y<br/>x/5 + y/3 = 2", "sol": ["5", "3"]},
+            {"e": "(x - 1)/2 + (y + 1)/3 = 3<br/>(x + y)/4 = 2", "sol": ["3", "5"]}
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "ejercicios",
+      "titulo": "Segunda parte: problemas en contexto",
+      "salto_antes": true,
+      "intro": "En estos problemas el sistema no viene escrito: hay que plantearlo. Primero se decide qué representa cada letra, después se escribe una ecuación por cada dato y al final se resuelve con el método que más convenga.",
+      "etiqueta_enunciado": "Problema",
+      "columnas": [
+        "Sistema planteado",
+        "Respuesta"
+      ],
+      "bloques": [
+        {
+          "titulo": "Plantear y resolver",
+          "glosa": "Los primeros problemas se traducen casi palabra por palabra. Los últimos piden fijarse más en qué dice cada dato.",
+          "nota": "<b>Estrategia sugerida.</b> Escriba en el cuaderno «x = ...» e «y = ...» con lo que representa cada letra <b>antes</b> de plantear. La respuesta final se da con palabras y unidades: «12 gallinas y 8 conejos», no «x = 12, y = 8».",
+          "ancho_enunciado": 0.5,
+          "alineacion": "izquierda",
+          "items": [
+            {"e": "La suma de dos números es 25 y su diferencia es 7. ¿Cuáles son los números?", "sol": ["x + y = 25; x - y = 7", "16 y 9"]},
+            {"e": "En una granja hay gallinas y conejos. En total se cuentan 20 cabezas y 56 patas. ¿Cuántas gallinas y cuántos conejos hay?", "sol": ["g + c = 20; 2g + 4c = 56", "12 gallinas y 8 conejos"]},
+            {"e": "Tres cuadernos y dos lápices cuestan $3.800. Un cuaderno y dos lápices cuestan $1.800. ¿Cuánto cuesta cada cuaderno y cada lápiz?", "sol": ["3c + 2l = 3800; c + 2l = 1800", "cuaderno $1.000; lápiz $400"]},
+            {"e": "En una función de cine la entrada de adulto cuesta $5.000 y la de niño $3.000. Se vendieron 40 entradas y se recaudaron $164.000. ¿Cuántas entradas de cada tipo se vendieron?", "sol": ["a + n = 40; 5000a + 3000n = 164000", "22 de adulto y 18 de niño"]},
+            {"e": "El perímetro de un rectángulo mide 34 cm. El largo mide 5 cm más que el doble del ancho. ¿Cuánto miden el largo y el ancho?", "sol": ["2l + 2a = 34; l = 2a + 5", "largo 13 cm; ancho 4 cm"]},
+            {"e": "Hoy la edad de un padre es el triple de la edad de su hija. Dentro de 10 años, la edad del padre será el doble de la de su hija. ¿Qué edad tiene cada uno hoy?", "sol": ["p = 3h; p + 10 = 2(h + 10)", "padre 30 años; hija 10 años"]}
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Errores frecuentes",
+      "salto_antes": true,
+      "cuerpo": [
+        {
+          "p": "Los errores que siguen concentran la mayor parte de las respuestas incorrectas en esta guía. Conviene revisarlos cada vez que la verificación no calce."
+        },
+        {
+          "vinetas": [
+            "<b>Reemplazar sin paréntesis.</b> Si y = x - 1 y la otra ecuación es 3x - y = 7, queda 3x - (x - 1) = 7, es decir, 3x - x + 1 = 7. Sin paréntesis se escribe 3x - x - 1 = 7, que está mal.",
+            "<b>Quedarse con una sola incógnita.</b> Encontrar x no termina el ejercicio: hay que reemplazar ese valor en una de las ecuaciones para encontrar y.",
+            "<b>Multiplicar solo un lado de la ecuación.</b> Al multiplicar x + 2y = 7 por 3 se obtiene 3x + 6y = 21, no 3x + 6y = 7.",
+            "<b>Sumar ecuaciones cuando la incógnita no se elimina.</b> En reducción, los coeficientes deben ser iguales con <b>signos opuestos</b> para sumar. Si son iguales con el mismo signo, se restan las ecuaciones.",
+            "<b>Restar ecuaciones y olvidar un signo.</b> Al restar, se restan <b>todos</b> los términos: (3x + 2y) - (x + 2y) = 2x, y al otro lado 16 - 8 = 8.",
+            "<b>Verificar en una sola ecuación.</b> El par debe cumplir las <b>dos</b>. Si se verifica en la ecuación que se usó para despejar, casi siempre «calza», aunque el resultado esté mal.",
+            "<b>En problemas, no decir qué es cada letra.</b> Sin esa definición es fácil plantear 4g + 2c = 56 en vez de 2g + 4c = 56 (las gallinas tienen 2 patas)."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria: sistemas de ecuaciones",
+      "salto_antes": true,
+      "cuerpo": [
+        {
+          "p": "<b>A.1. Qué es un sistema y qué es su solución.</b> Un sistema de ecuaciones son dos ecuaciones que deben cumplirse <b>al mismo tiempo</b>. La solución es el par de valores (x, y) que cumple las dos."
+        },
+        {
+          "formula": "x + y = 7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x - y = 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;solución: (x, y) = (4, 3)"
+        },
+        {
+          "nota": "El par (5, 2) cumple la primera ecuación (5 + 2 = 7) pero no la segunda (5 - 2 = 3, no 1). Por eso no es solución. Gráficamente, cada ecuación es una recta y la solución es el punto donde se cortan."
+        },
+        {
+          "p": "<b>A.2. Método de sustitución.</b> Ejemplo: el sistema y = x - 1;&nbsp;&nbsp;3x + y = 15."
+        },
+        {
+          "tabla": {
+            "cabecera": ["Paso", "Qué se hace", "Ejemplo"],
+            "filas": [
+              ["1.º", "Despejar una incógnita en una de las ecuaciones", "y = x - 1 (ya está despejada)"],
+              ["2.º", "Reemplazarla, entre paréntesis, en la <b>otra</b> ecuación", "3x + (x - 1) = 15"],
+              ["3.º", "Resolver la ecuación de una incógnita", "4x - 1 = 15  →  4x = 16  →  x = 4"],
+              ["4.º", "Reemplazar ese valor en el despeje para obtener la otra", "y = 4 - 1 = 3"],
+              ["5.º", "Verificar en las dos ecuaciones", "3 = 4 - 1;&nbsp;&nbsp;&nbsp;3 · 4 + 3 = 15"]
+            ],
+            "leyenda": "Tabla A.1. Conviene cuando una incógnita ya está despejada o no tiene número delante."
+          }
+        },
+        {
+          "p": "<b>A.3. Método de igualación.</b> Ejemplo: el sistema y = x + 2;&nbsp;&nbsp;y = 3x - 4."
+        },
+        {
+          "tabla": {
+            "cabecera": ["Paso", "Qué se hace", "Ejemplo"],
+            "filas": [
+              ["1.º", "Despejar <b>la misma</b> incógnita en las dos ecuaciones", "y = x + 2;&nbsp;&nbsp;&nbsp;y = 3x - 4"],
+              ["2.º", "Igualar las dos expresiones", "x + 2 = 3x - 4"],
+              ["3.º", "Resolver la ecuación de una incógnita", "2 + 4 = 3x - x  →  6 = 2x  →  x = 3"],
+              ["4.º", "Reemplazar en cualquiera de los despejes", "y = 3 + 2 = 5"],
+              ["5.º", "Verificar en las dos ecuaciones", "5 = 3 + 2;&nbsp;&nbsp;&nbsp;5 = 3 · 3 - 4"]
+            ],
+            "leyenda": "Tabla A.2. Conviene cuando las dos ecuaciones vienen de la forma y = ... (o x = ...)."
+          }
+        },
+        {
+          "p": "<b>A.4. Método de reducción.</b> Ejemplo: el sistema x + 2y = 7;&nbsp;&nbsp;3x - y = 7."
+        },
+        {
+          "tabla": {
+            "cabecera": ["Paso", "Qué se hace", "Ejemplo"],
+            "filas": [
+              ["1.º", "Elegir la incógnita que se va a eliminar", "Se elimina la y: tiene 2 arriba y -1 abajo"],
+              ["2.º", "Multiplicar una o las dos ecuaciones para que esa incógnita quede con coeficientes opuestos", "Segunda por 2:  6x - 2y = 14"],
+              ["3.º", "Sumar las ecuaciones: la incógnita desaparece", "x + 2y = 7 más 6x - 2y = 14  →  7x = 21"],
+              ["4.º", "Resolver y reemplazar en una ecuación original", "x = 3;  3 + 2y = 7  →  y = 2"],
+              ["5.º", "Verificar en las dos ecuaciones", "3 + 4 = 7;&nbsp;&nbsp;&nbsp;9 - 2 = 7"]
+            ],
+            "leyenda": "Tabla A.3. Conviene cuando las dos ecuaciones están de la forma ax + by = c."
+          }
+        },
+        {
+          "p": "<b>A.5. Cómo multiplicar para reducir.</b> Se busca que los coeficientes de la incógnita elegida sean el mismo número con signos opuestos:"
+        },
+        {
+          "vinetas": [
+            "Si ya son opuestos (3y en una, -3y en la otra), se suman las ecuaciones tal como están.",
+            "Si son iguales con el mismo signo (2y en ambas), se restan las ecuaciones.",
+            "Si uno es múltiplo del otro (2y en una, -y en la otra), se multiplica solo una ecuación: la segunda por 2.",
+            "Si no (3y en una, -2y en la otra), se cruzan: la primera por 2 y la segunda por 3, y quedan 6y en una y -6y en la otra."
+          ]
+        },
+        {
+          "p": "<b>A.6. ¿Qué método conviene?</b> Los tres llegan a la misma solución; lo que cambia es cuánto se trabaja."
+        },
+        {
+          "tabla": {
+            "cabecera": ["Si el sistema se ve así...", "Conviene...", "Ejemplo"],
+            "filas": [
+              ["Una incógnita ya despejada, o con coeficiente 1", "Sustitución", "y = 2x;&nbsp;&nbsp;&nbsp;x + y = 9"],
+              ["La misma incógnita despejada en las dos", "Igualación", "y = x + 2;&nbsp;&nbsp;&nbsp;y = 3x - 4"],
+              ["Las dos de la forma ax + by = c", "Reducción", "2x + 3y = 8;&nbsp;&nbsp;&nbsp;5x - 2y = 1"],
+              ["Con paréntesis o fracciones", "Ordenar primero y después decidir", "x/2 + y = 5  →  x + 2y = 10"]
+            ],
+            "leyenda": "Tabla A.4. Criterio práctico para elegir el método."
+          }
+        },
+        {
+          "p": "<b>A.7. Cómo plantear un problema.</b> Ejemplo: «La suma de dos números es 25 y su diferencia es 7»."
+        },
+        {
+          "tabla": {
+            "cabecera": ["Paso", "Qué se hace", "Ejemplo"],
+            "filas": [
+              ["1.º", "Decir qué representa cada letra", "x = número mayor;  y = número menor"],
+              ["2.º", "Escribir una ecuación por cada dato", "x + y = 25;&nbsp;&nbsp;&nbsp;x - y = 7"],
+              ["3.º", "Resolver el sistema", "Reducción: 2x = 32  →  x = 16;  y = 9"],
+              ["4.º", "Verificar con el enunciado, no solo con las ecuaciones", "16 + 9 = 25;&nbsp;&nbsp;&nbsp;16 - 9 = 7"],
+              ["5.º", "Responder con palabras", "Los números son 16 y 9."]
+            ],
+            "leyenda": "Tabla A.5. Secuencia para resolver problemas con sistemas."
+          }
+        },
+        {
+          "p": "<b>A.8. Traducir frases a ecuaciones.</b>"
+        },
+        {
+          "tabla": {
+            "cabecera": ["Frase", "Ecuación"],
+            "filas": [
+              ["La suma de dos números es 25", "x + y = 25"],
+              ["Su diferencia es 7", "x - y = 7"],
+              ["Uno es el triple del otro", "x = 3y"],
+              ["El largo mide 5 más que el doble del ancho", "l = 2a + 5"],
+              ["Dentro de 10 años", "Se suma 10 a <b>cada</b> edad: p + 10 y h + 10"],
+              ["3 cuadernos y 2 lápices cuestan $3.800", "3c + 2l = 3800"]
+            ],
+            "leyenda": "Tabla A.6. Frases típicas y su traducción."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Nota didáctica",
+      "salto_antes": true,
+      "cuerpo": [
+        {
+          "p": "La guía supone dominado el despeje de ecuaciones de primer grado, con paréntesis y fracciones (guía de ecuaciones de primer grado). Todas las soluciones son enteras para que la dificultad esté en el método y no en la aritmética; el ejercicio 12 tiene una solución negativa a propósito."
+        },
+        {
+          "p": "Los tres primeros bloques fijan un método cada uno y, dentro de cada bloque, los primeros ejercicios traen el primer paso hecho. Conviene exigir el método indicado aunque la estudiante vea un atajo: en el bloque 1.4 tendrá que elegir, y solo puede elegir bien si conoce los tres. Una buena actividad es resolver un mismo sistema, por ejemplo el ejercicio 4, con los tres métodos y comprobar que se llega al mismo par."
+        },
+        {
+          "p": "En la segunda parte la columna «Sistema planteado» es tan importante como la respuesta: la PAES suele preguntar por el sistema que modela una situación más que por su solución. El ejercicio 30 es el más exigente, porque «dentro de 10 años» afecta a las dos edades."
+        }
+      ]
+    }
+  ]
+}

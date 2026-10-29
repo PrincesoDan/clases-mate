@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "titulo": "Guía de ejercicios: factorización II",
+    "subtitulo": "Cincuenta ejercicios para llevar la factorización al nivel de la PAES, desde la agrupación de términos hasta las preguntas de alternativas",
+    "encabezado": "Guía de ejercicios: factorización II",
+    "autor": "Daniel Andrade",
+    "cargo": "Profesor de Matemáticas",
+    "fecha": "29 de octubre de 2026",
+    "asunto": "PAES M1 — eje Álgebra: factorización (segunda parte), fracciones algebraicas y ecuaciones por factorización"
+  },
+
+  "resumen": "El presente material es la continuación de la guía de álgebra del 8 de octubre y retoma la factorización exactamente donde esa guía la dejó: con el factor común, la diferencia de cuadrados y el trinomio x<super>2</super> + bx + c ya conocidos. Reúne cincuenta ejercicios organizados en ocho bloques de dificultad creciente. Tras un repaso relámpago de los tres casos, la guía agrega lo que la primera dejó fuera: el factor común polinomio y la agrupación de términos, el trinomio cuadrado perfecto reconocido en ambos sentidos, el trinomio ax<super>2</super> + bx + c con coeficiente principal distinto de 1 y las factorizaciones que exigen varios pasos encadenados. Los dos bloques siguientes muestran para qué sirve todo esto: simplificar fracciones algebraicas y resolver ecuaciones cuadráticas, que es el contenido de la Clase 9. El último bloque reúne doce preguntas de alternativas al nivel de la PAES. La guía no incluye solucionario: incluye un ayuda memoria en el Apéndice A y un repertorio de errores frecuentes en el Apéndice B.",
+
+  "secciones": [
+    {
+      "tipo": "texto",
+      "titulo": "Instrucciones",
+      "cuerpo": [
+        {"p": "Los ejercicios deben resolverse <b>sin calculadora</b> y en el orden propuesto. Esta guía supone dominada la primera: si el bloque 2.1 cuesta, conviene volver a los bloques 2.6 y 2.7 de la guía del 8 de octubre antes de seguir."},
+        {"vinetas": [
+          "Desarrolle cada ejercicio en el cuaderno, dejando registro escrito de <b>todos</b> los pasos intermedios. En la tabla escriba únicamente el resultado final.",
+          "Toda factorización debe entregarse <b>completa</b>: si uno de los factores todavía se puede factorizar, el ejercicio no está terminado.",
+          "Toda fracción algebraica debe entregarse <b>simplificada</b>: sin factores comunes entre numerador y denominador.",
+          "En el bloque de alternativas (bloque 2.8) anote en la tabla solo la letra, pero deje en el cuaderno el desarrollo que la justifica."
+        ]},
+        {"p": "La pregunta que ordena toda la guía es siempre la misma: <b>¿qué caso de factorización corresponde?</b> En la primera guía cada bloque avisaba el caso; aquí, desde el bloque 2.5 en adelante, hay que decidirlo. El procedimiento del Apéndice A.6 sirve para eso, y conviene seguirlo literalmente hasta que se vuelva automático:"},
+        {"formula": "factor común&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;contar términos&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;elegir el caso&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;¿se puede seguir?"},
+        {"nota": "Esta guía no incluye solucionario. Toda factorización se verifica multiplicando los factores obtenidos: tiene que volver exactamente la expresión del enunciado. Toda solución de una ecuación se verifica reemplazándola en la ecuación original."}
+      ]
+    },
+
+    {
+      "tipo": "ejercicios",
+      "titulo": "Ejercicios",
+      "salto_antes": true,
+      "etiqueta_enunciado": "Expresión",
+      "columnas": ["Respuesta"],
+      "bloques": [
+        {
+          "titulo": "Repaso relámpago: los tres casos conocidos",
+          "glosa": "Calentamiento. Los mismos casos de la primera guía, pero sin aviso: cada ejercicio usa uno distinto y dos de ellos necesitan dos pasos.",
+          "nota": "<b>Estrategia sugerida.</b> Antes de escribir nada, mire si hay factor común. En el primero y el último lo hay, y lo que queda después todavía se factoriza.",
+          "ancho_enunciado": 0.4,
+          "items": [
+            "5x<super>3</super> - 20x",
+            "x<super>2</super> - 11x + 28",
+            "16a<super>2</super> - 81b<super>2</super>",
+            "3x<super>2</super> - 3x - 36"
+          ]
+        },
+        {
+          "titulo": "Factor común polinomio y agrupación de términos",
+          "glosa": "El factor común no tiene por qué ser un número o una letra: puede ser un paréntesis completo. Y cuando hay cuatro términos sin factor común, a veces aparece uno al <b>agruparlos de a dos</b>.",
+          "nota": "<b>Estrategia sugerida.</b> En la agrupación, saque factor común en cada par por separado. Si los dos paréntesis que quedan son iguales, ese paréntesis es el nuevo factor común. Si quedan opuestos, como (y - 2) y (2 - y), cambie el signo de uno: 2 - y = -(y - 2).",
+          "ancho_enunciado": 0.46,
+          "items": [
+            "2x(x - 5) + 7(x - 5)",
+            "a(m - 3) - (m - 3)",
+            "3x(y - 2) + 5(2 - y)",
+            "ax + ay + 3x + 3y",
+            "x<super>3</super> - 2x<super>2</super> + 4x - 8",
+            "6ab - 4a - 9b + 6"
+          ]
+        },
+        {
+          "titulo": "Trinomio cuadrado perfecto",
+          "glosa": "El cuadrado de binomio recorrido al revés. Un trinomio es cuadrado perfecto cuando el primer y el último término son cuadrados y el término central es <b>exactamente</b> su doble producto.",
+          "nota": "<b>Estrategia sugerida.</b> Saque la raíz del primer y del último término y multiplique: 2 · (raíz del primero) · (raíz del último). Si da el término central, es cuadrado perfecto. En los dos últimos ejercicios la pregunta se invierte: hay que fabricar el trinomio.",
+          "ancho_enunciado": 0.55,
+          "alineacion": "izquierda",
+          "items": [
+            "x<super>2</super> + 14x + 49",
+            "9a<super>2</super> - 12a + 4",
+            "4x<super>2</super> + 20xy + 25y<super>2</super>",
+            "2x<super>2</super> - 12x + 18",
+            "x<super>2</super> + 10x + ___ : complete el término que falta y factorice.",
+            "4x<super>2</super> + kx + 9 : ¿qué valores de k lo convierten en trinomio cuadrado perfecto?"
+          ]
+        },
+        {
+          "titulo": "Trinomio de la forma ax<super>2</super> + bx + c",
+          "glosa": "Dificultad nueva: el término cuadrático tiene coeficiente distinto de 1 y no hay factor común que lo elimine. La búsqueda de «dos números» sigue funcionando, pero con otro producto.",
+          "nota": "<b>Estrategia sugerida.</b> Multiplique a · c. Busque dos números que multiplicados den a · c y sumados den b. Use esos números para <b>partir el término central en dos</b> y termine por agrupación, como en el bloque 2.2. Ejemplo en el Apéndice A.4.",
+          "ancho_enunciado": 0.4,
+          "items": [
+            "2x<super>2</super> + 7x + 3",
+            "3x<super>2</super> - 10x + 8",
+            "2x<super>2</super> + x - 6",
+            "6x<super>2</super> - x - 2",
+            "4x<super>2</super> - 4x - 15",
+            "6x<super>2</super> + 13x + 6"
+          ]
+        },
+        {
+          "titulo": "Factorización completa en varios pasos",
+          "glosa": "Aquí ningún ejercicio se termina con un solo caso. Es el tipo de expresión que aparece dentro de las preguntas de la PAES, sin aviso de cuántos pasos requiere.",
+          "nota": "<b>Estrategia sugerida.</b> Trate x<super>4</super> como (x<super>2</super>)<super>2</super> y un paréntesis al cuadrado como un solo término: (x + 1)<super>2</super> - 9 es una diferencia de cuadrados donde «el primero» es (x + 1). Al terminar, revise cada factor: ¿alguno se puede seguir factorizando?",
+          "ancho_enunciado": 0.42,
+          "items": [
+            "x<super>4</super> - 16",
+            "2x<super>3</super> - 8x<super>2</super> - 42x",
+            "a<super>3</super> - 6a<super>2</super> + 9a",
+            "x<super>4</super> - 13x<super>2</super> + 36",
+            "(x + 1)<super>2</super> - 9",
+            "x<super>2</super> - y<super>2</super> + 5x + 5y"
+          ]
+        },
+        {
+          "titulo": "Simplificación de fracciones algebraicas",
+          "glosa": "Primera aplicación de la factorización. Una fracción algebraica se simplifica igual que una numérica: se cancelan <b>factores</b> comunes, nunca términos sueltos.",
+          "nota": "<b>Estrategia sugerida.</b> Factorice por completo el numerador y el denominador <b>antes</b> de cancelar nada. Solo se tacha un paréntesis entero que esté multiplicando arriba y abajo. Suponga que los valores que anulan el denominador están excluidos.",
+          "ancho_enunciado": 0.5,
+          "items": [
+            "(x<super>2</super> + 5x + 6) / (x<super>2</super> - 4)",
+            "(3x - 6) / (x<super>2</super> - 4x + 4)",
+            "(x<super>2</super> - x - 20) / (x<super>2</super> - 25)",
+            "(2x<super>2</super> - 8) / (x<super>2</super> + x - 6)",
+            "(5 - x) / (x<super>2</super> - 25)"
+          ]
+        },
+        {
+          "titulo": "Factorizar para resolver y calcular",
+          "glosa": "Segunda aplicación, y la más importante: si un producto vale cero, alguno de sus factores vale cero. Así se resuelven las ecuaciones cuadráticas de la Clase 9.",
+          "nota": "<b>Estrategia sugerida.</b> Antes de factorizar, deje la ecuación <b>igualada a cero</b>: x<super>2</super> = 2x + 15 se escribe x<super>2</super> - 2x - 15 = 0. Nunca divida por x para «simplificar»: se pierde la solución x = 0.",
+          "ancho_enunciado": 0.6,
+          "alineacion": "izquierda",
+          "items": [
+            "Resuelva: x<super>2</super> - 5x = 0",
+            "Resuelva: x<super>2</super> - 7x + 10 = 0",
+            "Resuelva: x<super>2</super> = 2x + 15",
+            "Calcule sin calculadora: 1.002<super>2</super> - 998<super>2</super>",
+            "Un rectángulo tiene un área de (x<super>2</super> + 8x + 15) cm<super>2</super> y uno de sus lados mide (x + 3) cm. Exprese su perímetro."
+          ]
+        },
+        {
+          "titulo": "Nivel PAES: preguntas de alternativas",
+          "glosa": "El destino de la guía. Las preguntas mezclan los bloques anteriores y los de la primera guía sin decir cuál se necesita. Tiempo de referencia: <b>2 minutos por pregunta</b>; cronometre el bloque completo.",
+          "nota": "<b>Estrategia sugerida.</b> Cuando las alternativas son factores o factorizaciones, multiplíquelas en vez de factorizar el enunciado: es más rápido descartar que construir. Desconfíe de la alternativa «casi correcta»: en la PAES suele ser una factorización incompleta o con un signo cambiado.",
+          "ancho_enunciado": 0.7,
+          "alineacion": "izquierda",
+          "items": [
+            "¿Cuál es la factorización completa de 2x<super>3</super> - 50x?<br/>A) 2x(x<super>2</super> - 25)&nbsp;&nbsp;&nbsp;&nbsp;B) 2x(x - 5)<super>2</super>&nbsp;&nbsp;&nbsp;&nbsp;C) 2x(x + 5)(x - 5)&nbsp;&nbsp;&nbsp;&nbsp;D) 2(x + 5)(x - 5)",
+            "Si x<super>2</super> + bx + 36 es un trinomio cuadrado perfecto y b &lt; 0, ¿cuál es el valor de b?<br/>A) -6&nbsp;&nbsp;&nbsp;&nbsp;B) -12&nbsp;&nbsp;&nbsp;&nbsp;C) -18&nbsp;&nbsp;&nbsp;&nbsp;D) -36",
+            "¿Cuál de las siguientes expresiones es un factor de 2x<super>2</super> - 5x - 3?<br/>A) x + 3&nbsp;&nbsp;&nbsp;&nbsp;B) 2x - 1&nbsp;&nbsp;&nbsp;&nbsp;C) x + 1&nbsp;&nbsp;&nbsp;&nbsp;D) 2x + 1",
+            "Al simplificar (x<super>2</super> - 4x) / (x<super>2</super> - 16), con x ≠ 4 y x ≠ -4, se obtiene:<br/>A) x / (x + 4)&nbsp;&nbsp;&nbsp;&nbsp;B) x / (x - 4)&nbsp;&nbsp;&nbsp;&nbsp;C) 1/4&nbsp;&nbsp;&nbsp;&nbsp;D) -x/4",
+            "Si a - b = 5 y a · b = 6, ¿cuál es el valor de a<super>2</super> + b<super>2</super>?<br/>A) 25&nbsp;&nbsp;&nbsp;&nbsp;B) 13&nbsp;&nbsp;&nbsp;&nbsp;C) 37&nbsp;&nbsp;&nbsp;&nbsp;D) 31",
+            "¿Cuáles son las soluciones de la ecuación x<super>2</super> + 3x - 28 = 0?<br/>A) 7 y -4&nbsp;&nbsp;&nbsp;&nbsp;B) -7 y 4&nbsp;&nbsp;&nbsp;&nbsp;C) 7 y 4&nbsp;&nbsp;&nbsp;&nbsp;D) -7 y -4",
+            "La expresión x<super>2</super> - 6x + 5 es equivalente a:<br/>A) (x - 3)<super>2</super> - 4&nbsp;&nbsp;&nbsp;&nbsp;B) (x - 3)<super>2</super> + 5&nbsp;&nbsp;&nbsp;&nbsp;C) (x - 6)<super>2</super> + 5&nbsp;&nbsp;&nbsp;&nbsp;D) (x + 3)<super>2</super> - 4",
+            "El área de un cuadrado es (9x<super>2</super> + 30x + 25) cm<super>2</super>. ¿Cuál es su perímetro?<br/>A) (3x + 5) cm&nbsp;&nbsp;&nbsp;&nbsp;B) (12x + 5) cm&nbsp;&nbsp;&nbsp;&nbsp;C) (36x + 100) cm&nbsp;&nbsp;&nbsp;&nbsp;D) (12x + 20) cm",
+            "Si (2x + 3) · Q = 6x<super>2</super> + 5x - 6, entonces Q es igual a:<br/>A) 3x + 2&nbsp;&nbsp;&nbsp;&nbsp;B) 2x - 3&nbsp;&nbsp;&nbsp;&nbsp;C) 3x - 2&nbsp;&nbsp;&nbsp;&nbsp;D) 3x - 3",
+            "¿Cuál es el valor de (x<super>2</super> - 1) / (x - 1) para x = 99?<br/>A) 98&nbsp;&nbsp;&nbsp;&nbsp;B) 100&nbsp;&nbsp;&nbsp;&nbsp;C) 99&nbsp;&nbsp;&nbsp;&nbsp;D) 9.800",
+            "Si n es un número entero, la expresión n<super>3</super> - n es <b>siempre</b> divisible por:<br/>A) 4&nbsp;&nbsp;&nbsp;&nbsp;B) 5&nbsp;&nbsp;&nbsp;&nbsp;C) 9&nbsp;&nbsp;&nbsp;&nbsp;D) 6",
+            "¿Cuál(es) de las siguientes igualdades es (son) verdadera(s) para todo número real x?<br/>I) 4x<super>2</super> - 1 = (2x - 1)(2x + 1)<br/>II) x<super>2</super> - 6x + 9 = (3 - x)<super>2</super><br/>III) x<super>2</super> + 4 = (x + 2)<super>2</super><br/>A) Solo I&nbsp;&nbsp;&nbsp;&nbsp;B) Solo I y II&nbsp;&nbsp;&nbsp;&nbsp;C) Solo II y III&nbsp;&nbsp;&nbsp;&nbsp;D) I, II y III"
+          ]
+        }
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice A. Ayuda memoria",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "<b>A.1. Los casos de la primera guía.</b> Siguen siendo la base de todo lo que viene:"},
+        {"tabla": {
+          "cabecera": ["Caso", "Regla", "Ejemplo"],
+          "filas": [
+            ["Factor común", "ab + ac = a(b + c)", "6x<super>2</super> - 9x = 3x(2x - 3)"],
+            ["Diferencia de cuadrados", "a<super>2</super> - b<super>2</super> = (a + b)(a - b)", "x<super>2</super> - 49 = (x + 7)(x - 7)"],
+            ["Trinomio x<super>2</super> + bx + c", "Dos números: producto c, suma b", "x<super>2</super> - x - 30 = (x - 6)(x + 5)"]
+          ],
+          "leyenda": "Tabla A.1. Los tres casos de la guía del 8 de octubre."
+        }},
+        {"p": "<b>A.2. Factor común polinomio y agrupación.</b> Un paréntesis repetido se saca como factor común igual que una letra. Con cuatro términos, se agrupan de a dos:"},
+        {"formula": "x<super>3</super> - 2x<super>2</super> + 4x - 8 = x<super>2</super>(x - 2) + 4(x - 2) = (x - 2)(x<super>2</super> + 4)"},
+        {"nota": "Si los paréntesis quedan opuestos, cambie el signo de uno de ellos sacando un -1: 5(2 - y) = -5(y - 2)."},
+        {"p": "<b>A.3. Trinomio cuadrado perfecto.</b> Es el cuadrado de binomio leído de derecha a izquierda:"},
+        {"formula": "a<super>2</super> + 2ab + b<super>2</super> = (a + b)<super>2</super>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a<super>2</super> - 2ab + b<super>2</super> = (a - b)<super>2</super>"},
+        {"vinetas": [
+          "Se reconoce así: el primer y el último término son cuadrados positivos, y el central es 2 · (raíz del primero) · (raíz del último).",
+          "Ejemplo: 9a<super>2</super> - 12a + 4. Raíces: 3a y 2. Doble producto: 2 · 3a · 2 = 12a. Coincide, así que es (3a - 2)<super>2</super>.",
+          "Para <b>completar</b> el término que falta en x<super>2</super> + bx + __, se agrega (b/2)<super>2</super>: en x<super>2</super> + 10x falta 5<super>2</super> = 25."
+        ]},
+        {"p": "<b>A.4. Trinomio ax<super>2</super> + bx + c (método de la descomposición).</b> Ejemplo paso a paso con 6x<super>2</super> - x - 2:"},
+        {"tabla": {
+          "cabecera": ["Paso", "Qué se hace", "En el ejemplo"],
+          "filas": [
+            ["1", "Multiplicar a · c", "6 · (-2) = -12"],
+            ["2", "Buscar dos números: producto a · c, suma b", "-4 y 3 (producto -12, suma -1)"],
+            ["3", "Partir el término central con esos números", "6x<super>2</super> - 4x + 3x - 2"],
+            ["4", "Agrupar de a dos y sacar factor común", "2x(3x - 2) + 1(3x - 2)"],
+            ["5", "Sacar el paréntesis repetido", "(3x - 2)(2x + 1)"]
+          ],
+          "leyenda": "Tabla A.2. Si en el paso 4 no aparece el mismo paréntesis en ambos grupos, hay un error de signo en el paso 3."
+        }},
+        {"p": "<b>A.5. Factorización en varios pasos.</b> Dos ideas permiten ver casos conocidos donde no parece haberlos:"},
+        {"vinetas": [
+          "<b>Cambio de variable.</b> x<super>4</super> - 13x<super>2</super> + 36 es un trinomio en x<super>2</super>: (x<super>2</super> - 4)(x<super>2</super> - 9). Y cada factor sigue: (x + 2)(x - 2)(x + 3)(x - 3).",
+          "<b>Paréntesis como un solo término.</b> (x + 1)<super>2</super> - 9 = [(x + 1) + 3][(x + 1) - 3] = (x + 4)(x - 2)."
+        ]},
+        {"p": "<b>A.6. Cómo decidir qué caso usar.</b> Siga este orden, siempre:"},
+        {"vinetas": [
+          "<b>Paso 1.</b> ¿Hay factor común (número, letra o paréntesis)? Si lo hay, sáquelo primero.",
+          "<b>Paso 2.</b> Cuente los términos de lo que quedó. <b>Dos</b>: diferencia de cuadrados. <b>Tres</b>: ¿es cuadrado perfecto? Si no, trinomio x<super>2</super> + bx + c o ax<super>2</super> + bx + c. <b>Cuatro</b>: agrupación.",
+          "<b>Paso 3.</b> Mire cada factor obtenido: si todavía se puede factorizar, vuelva al paso 1 con ese factor.",
+          "<b>Paso 4.</b> Verifique multiplicando los factores."
+        ]},
+        {"p": "<b>A.7. Simplificación de fracciones algebraicas.</b> Se factoriza arriba y abajo, y se cancelan solo factores completos:"},
+        {"formula": "(x<super>2</super> - x - 20) / (x<super>2</super> - 25) = (x - 5)(x + 4) / [(x - 5)(x + 5)] = (x + 4) / (x + 5)"},
+        {"nota": "Los factores opuestos se cancelan dejando un -1: (5 - x) / (x - 5) = -1."},
+        {"p": "<b>A.8. Ecuaciones por factorización.</b> Si A · B = 0, entonces A = 0 o B = 0. Por eso la ecuación debe estar igualada a cero antes de factorizar:"},
+        {"formula": "x<super>2</super> - 7x + 10 = 0&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;(x - 2)(x - 5) = 0&nbsp;&nbsp;&nbsp;→&nbsp;&nbsp;&nbsp;x = 2&nbsp;&nbsp;o&nbsp;&nbsp;x = 5"},
+        {"p": "<b>A.9. Identidades que la PAES usa sin nombrarlas.</b> Permiten calcular una expresión conociendo solo la suma, la resta o el producto de dos números:"},
+        {"vinetas": [
+          "a<super>2</super> + b<super>2</super> = (a + b)<super>2</super> - 2ab&nbsp;&nbsp;&nbsp;y&nbsp;&nbsp;&nbsp;a<super>2</super> + b<super>2</super> = (a - b)<super>2</super> + 2ab",
+          "a<super>2</super> - b<super>2</super> = (a + b)(a - b): útil también con números, como 1.002<super>2</super> - 998<super>2</super>.",
+          "n<super>3</super> - n = (n - 1) · n · (n + 1): el producto de tres enteros consecutivos."
+        ]}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice B. Errores frecuentes",
+      "salto_antes": true,
+      "cuerpo": [
+        {"p": "Los errores que siguen son los característicos de esta segunda parte. Los de la primera guía —signos al quitar paréntesis, olvidar el doble producto, factorización incompleta— siguen vigentes y no se repiten aquí."},
+        {"tabla": {
+          "cabecera": ["Error", "Ejemplo del error", "Lo correcto"],
+          "filas": [
+            ["No reconocer paréntesis opuestos en la agrupación", "3x(y - 2) + 5(2 - y) no tiene factor común", "5(2 - y) = -5(y - 2): queda (y - 2)(3x - 5)"],
+            ["Aceptar como cuadrado perfecto un trinomio cuyo término central no es el doble producto", "x<super>2</super> + 6x + 36 = (x + 6)<super>2</super>", "2 · x · 6 = 12x ≠ 6x: no es cuadrado perfecto"],
+            ["Usar la regla de x<super>2</super> + bx + c cuando a ≠ 1", "2x<super>2</super> + 7x + 3 = (x + 6)(x + 1)", "Producto a · c = 6: (2x + 1)(x + 3)"],
+            ["Detenerse en el primer paso", "x<super>4</super> - 16 = (x<super>2</super> + 4)(x<super>2</super> - 4)", "Seguir: (x<super>2</super> + 4)(x + 2)(x - 2)"],
+            ["Cancelar términos en vez de factores", "(x<super>2</super> + 5x + 6) / (x<super>2</super> - 4) = (5x + 6) / (-4)", "Factorizar primero: (x + 3) / (x - 2)"],
+            ["Dividir la ecuación por x", "x<super>2</super> - 5x = 0 → x = 5", "x(x - 5) = 0: x = 0 o x = 5"],
+            ["Factorizar sin igualar a cero", "x<super>2</super> = 2x + 15 → x(x - 2) = 15", "x<super>2</super> - 2x - 15 = 0 → x = 5 o x = -3"],
+            ["Equivocar el signo de las soluciones", "(x + 7)(x - 4) = 0 → x = 7 o x = -4", "x + 7 = 0 da x = -7; x - 4 = 0 da x = 4"]
+          ],
+          "leyenda": "Tabla B.1. Errores frecuentes de la segunda parte. Los cuatro primeros son de factorización; los cuatro últimos, de sus aplicaciones."
+        }},
+        {"p": "<b>Cómo verificar sin solucionario.</b>"},
+        {"vinetas": [
+          "<b>Factorizaciones:</b> multiplique los factores. Si no vuelve exactamente la expresión del enunciado, hay un error.",
+          "<b>Fracciones:</b> reemplace x por un número sencillo (x = 3, por ejemplo, cuidando que no anule ningún denominador) en la fracción original y en la simplificada. Deben dar lo mismo.",
+          "<b>Ecuaciones:</b> reemplace cada solución en la ecuación original. Las dos tienen que cumplirla."
+        ]},
+        {"nota": "Una factorización que «casi» funciona —el término central sale con el signo cambiado, o sale 7x en vez de 13x— casi siempre indica que se eligieron los números correctos con los signos equivocados, o que se usó c en lugar de a · c."}
+      ]
+    },
+
+    {
+      "tipo": "texto",
+      "titulo": "Apéndice C. Nota didáctica",
+      "cuerpo": [
+        {"p": "Esta guía es la segunda parte de la guía de álgebra de la Clase 5 y se entrega antes de la Clase 9 (5 de noviembre), dedicada a la ecuación y la función cuadrática. Su propósito es que la factorización llegue a esa clase como herramienta automática, de modo que la atención pueda ponerse en la fórmula general y en la lectura de la parábola."},
+        {"p": "El bloque 2.7 es el puente directo: resuelve cuadráticas por factorización con los mismos trinomios de los bloques anteriores. La pregunta 7 del bloque 2.8, que escribe x<super>2</super> - 6x + 5 como (x - 3)<super>2</super> - 4, anticipa el vértice de la parábola y conviene retomarla en la Clase 9. El bloque 2.6 conecta con las <b>fracciones</b> de las Clases 2 y 3: la regla de cancelar solo factores es la misma que con números."},
+        {"nota": "Si el tiempo no alcanza, la prioridad es: bloques 2.1, 2.3, 2.5 y 2.7 completos, y al menos ocho preguntas del bloque 2.8. El bloque 2.4 (ax<super>2</super> + bx + c) puede reducirse a los tres primeros ejercicios; es el de mayor dificultad técnica y el que menos pregunta la PAES M1."}
+      ]
+    }
+  ]
+}
